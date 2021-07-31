@@ -198,28 +198,81 @@ h6 {
   color: #D87D4A;
 }
 
+body {
+  background-color: black;
+}
+
 .header {
   position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 15vh;
+  padding: 0px 25px;
   background-color: black;
+  -webkit-box-shadow: 0px 24px 2px -24px #F1F1F1;
+          box-shadow: 0px 24px 2px -24px #F1F1F1;
 }
 
-.header figure {
+@media (min-width: 600px) {
+  .header {
+    width: 90%;
+  }
+}
+
+.header figure, .header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-self: center;
+}
+
+.header .hamburger {
+  display: block;
+  fill: #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.header .hamburger:hover {
+  cursor: pointer;
+  fill: #D87D4A;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 800px) {
+  .header .hamburger {
+    display: none;
+  }
+}
+
+.header .logo a {
+  fill: #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.header .logo a:hover {
+  cursor: pointer;
+  fill: #D87D4A;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.header .logo a p {
+  display: none;
 }
 
 .header .nav-list {
@@ -227,6 +280,15 @@ h6 {
   width: -moz-fit-content;
   width: fit-content;
   height: auto;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .header .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header .nav-list .nav-links {
@@ -242,21 +304,23 @@ h6 {
   list-style: none;
 }
 
-.header .nav-list .nav-links .nav-link {
-  margin: 0px 20px;
+@media (min-width: 600px) {
+  .header .nav-list .nav-links .nav-link {
+    margin: 0px 20px;
+  }
 }
 
 .header .nav-list .nav-links .nav-link a {
   color: white;
   text-decoration: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header .nav-list .nav-links .nav-link a:hover {
   color: #D87D4A;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 * {
