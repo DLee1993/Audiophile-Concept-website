@@ -12,7 +12,7 @@ body {
   align-items: center;
   width: 100%;
   height: 10vh;
-  padding: 0px 15px;
+  padding: 0px 20px;
   background-color: black;
   box-shadow: 0px 20px 2px -20px colorSet(base, silver);
 
@@ -62,12 +62,28 @@ body {
   }
 
   & .nav-list {
-    width: fit-content;
-    height: auto;
-    display: none;
+    width: 91%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+
+    @include tablet {
+      top: 15vh;
+      height: 50vh;
+    }
 
     @include desktop {
-      display: flex;
+      width: auto;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+      background-color: transparent;
+      transform: none;
     }
 
     & .nav-links {
@@ -75,6 +91,11 @@ body {
       justify-content: center;
       align-items: center;
       list-style: none;
+      flex-direction: column;
+
+      @include tablet {
+        flex-direction: row;
+      }
 
       & .nav-link {
         @include tablet {
@@ -82,9 +103,13 @@ body {
         }
 
         & a {
-          color: white;
+          color: colorSet(base, black);
           text-decoration: none;
           transition: all 0.3s ease;
+
+          @include desktop {
+            color: colorSet(base, white);
+          }
 
           &:hover {
             color: colorSet(accent, dark-orange);
