@@ -22,6 +22,10 @@ body {
     padding: 0px 25px;
   }
 
+  @include desktop{
+    padding: 0px 20px;
+  }
+
   & figure,
   a {
     display: flex;
@@ -62,16 +66,16 @@ body {
   }
 
   & .nav-list {
-    width: 91%;
+    width: 93%;
     height: 90vh;
     position: absolute;
-    top: 10vh;
+    top: 100vh;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
+    transition: all .5s ease;
 
     @include tablet {
-      top: 15vh;
       height: 50vh;
     }
 
@@ -97,6 +101,14 @@ body {
         flex-direction: row;
       }
 
+      & .nav-link:first-of-type{
+        display: none;
+
+        @include desktop{
+          display: block;
+        }
+      }
+
       & .nav-link {
         @include tablet {
           margin: 0px 20px;
@@ -117,6 +129,18 @@ body {
           }
         }
       }
+    }
+  }
+  .openMenu{
+    top: 10vh;
+    transition: all .4s ease;
+
+    @include tablet{ 
+      top: 15vh;
+    }
+
+    @include desktop{
+      top: 0;
     }
   }
 }
