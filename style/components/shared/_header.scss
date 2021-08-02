@@ -39,8 +39,6 @@ body {
 
     &:hover {
       cursor: pointer;
-      fill: colorSet(accent, dark-orange);
-      transition: all 0.2s ease;
     }
 
     @include desktop {

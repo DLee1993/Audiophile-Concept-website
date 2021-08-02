@@ -256,9 +256,6 @@ body {
 
 .header .hamburger:hover {
   cursor: pointer;
-  fill: #D87D4A;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 @media (min-width: 800px) {
