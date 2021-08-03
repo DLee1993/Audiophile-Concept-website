@@ -194,10 +194,6 @@ h6 {
   margin-left: 10px;
 }
 
-.tertiary-btn:hover {
-  color: #D87D4A;
-}
-
 .header {
   position: fixed;
   left: 50%;
@@ -460,6 +456,10 @@ h6 {
   color: #D87D4A;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.header .nav-list .nav-links .nav-link a:hover button {
+  color: #D87D4A;
 }
 
 .header .nav-list .nav-links .nav-link button {

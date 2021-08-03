@@ -177,6 +177,10 @@
           &:hover {
             color: colorSet(accent, dark-orange);
             transition: all 0.3s ease;
+
+            & button {
+              color: colorSet(accent, dark-orange);
+            }
           }
         }
 
