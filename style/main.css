@@ -294,6 +294,7 @@ h6 {
 @media (min-width: 600px) {
   .header .nav-list {
     height: 50vh;
+    overflow: hidden;
   }
 }
 
