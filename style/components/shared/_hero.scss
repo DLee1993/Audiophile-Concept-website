@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url("/assets/home/mobile/image-header.jpg") no-repeat center
+  background: url("../../../assets/home/mobile/image-header.jpg") no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,7 +14,7 @@
   background-size: cover;
 
   @include tablet {
-    background: url("/assets/home/tablet/image-header.jpg") no-repeat center
+    background: url("../../../assets/home/tablet/image-header.jpg") no-repeat center
       center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -24,7 +24,7 @@
   }
 
   @include desktop {
-    background: url("/assets/home/desktop/image-hero.jpg") no-repeat center
+    background: url("../../../assets/home/desktop/image-hero.jpg") no-repeat center
       center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
