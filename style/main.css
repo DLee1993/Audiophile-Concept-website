@@ -38,7 +38,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   h1 {
     line-height: 58px;
   }
@@ -217,7 +217,7 @@ h6 {
           box-shadow: 0px 20px 2px -20px #F1F1F1;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .header {
     width: 100%;
     height: 15vh;
@@ -225,7 +225,7 @@ h6 {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header {
     padding: 0px 20px;
   }
@@ -250,7 +250,7 @@ h6 {
   cursor: pointer;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .hamburger {
     display: none;
   }
@@ -287,14 +287,14 @@ h6 {
   overflow: scroll;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .header .nav-list {
     height: 50vh;
     overflow: hidden;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .nav-list {
     width: auto;
     height: auto;
@@ -328,7 +328,7 @@ h6 {
   height: fit-content;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .header .nav-list .nav-links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -337,7 +337,7 @@ h6 {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .nav-list .nav-links {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -349,7 +349,7 @@ h6 {
   display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .nav-list .nav-links .nav-link:first-of-type {
     display: block;
   }
@@ -371,13 +371,13 @@ h6 {
   margin-top: 30px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .header .nav-list .nav-links .nav-link {
     margin: 0px 20px;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .nav-list .nav-links .nav-link {
     height: auto;
     margin-top: 0;
@@ -399,13 +399,13 @@ h6 {
   height: auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .header .nav-list .nav-links .nav-link img {
     top: 10px;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .nav-list .nav-links .nav-link img {
     display: none;
   }
@@ -435,7 +435,7 @@ h6 {
   transition: all 0.3s ease;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .header .nav-list .nav-links .nav-link a {
     width: 100%;
     height: 140px;
@@ -443,7 +443,7 @@ h6 {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .nav-list .nav-links .nav-link a {
     color: #FFFFFF;
     background-color: transparent;
@@ -466,7 +466,7 @@ h6 {
   display: block;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .nav-list .nav-links .nav-link button {
     display: none;
   }
@@ -478,13 +478,13 @@ h6 {
   transition: all 0.4s ease;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .header .openMenu {
     top: 15vh;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .openMenu {
     top: 0;
   }
