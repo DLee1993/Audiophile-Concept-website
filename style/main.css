@@ -507,24 +507,17 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("./assets/home/mobile/image-header.jpg") no-repeat center center fixed;
+  background: url("./assets/home/tablet/image-header.jpg") no-repeat center center fixed;
   background-size: cover;
-}
-
-@media (min-width: 650px) {
-  .index-hero {
-    background: url("./assets/home/tablet/image-header.jpg") no-repeat center center fixed;
-    background-size: cover;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
 }
 
 @media (min-width: 900px) {
   .index-hero {
     background: url("./assets/home/desktop/image-hero.jpg") no-repeat center center fixed;
     background-size: cover;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
