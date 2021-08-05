@@ -507,8 +507,9 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("./assets/home/mobile/image-header.jpg") no-repeat center center fixed;
-  background-size: 100%;
+  background: url("./assets/home/mobile/image-header.jpg") no-repeat fixed;
+  background-size: 100% 120vh;
+  background-position: center -100px;
 }
 
 @media (min-width: 650px) {
