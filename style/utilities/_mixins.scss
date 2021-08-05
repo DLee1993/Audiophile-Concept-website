@@ -10,3 +10,11 @@
         @content
     }
 }; 
+
+
+
+@mixin index-hero {
+    @media (min-width: 715px) {
+        @content
+    }
+}; 
