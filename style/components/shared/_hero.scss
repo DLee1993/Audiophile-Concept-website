@@ -6,12 +6,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url("./assets/home/mobile/image-header.jpg") no-repeat fixed; 
+  background: url("./assets/home/mobile/image-header.jpg") no-repeat center
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100% 120vh;
-  background-position: center -100px;
+  background-size: cover;
 
   @include tablet {
     background: url("./assets/home/tablet/image-header.jpg") no-repeat center

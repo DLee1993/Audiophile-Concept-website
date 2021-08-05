@@ -225,7 +225,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header {
     padding: 0px 20px;
   }
@@ -250,7 +250,7 @@ h6 {
   cursor: pointer;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .hamburger {
     display: none;
   }
@@ -294,7 +294,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .nav-list {
     width: auto;
     height: auto;
@@ -337,7 +337,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .nav-list .nav-links {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -349,7 +349,7 @@ h6 {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .nav-list .nav-links .nav-link:first-of-type {
     display: block;
   }
@@ -377,7 +377,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .nav-list .nav-links .nav-link {
     height: auto;
     margin-top: 0;
@@ -405,7 +405,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .nav-list .nav-links .nav-link img {
     display: none;
   }
@@ -443,7 +443,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .nav-list .nav-links .nav-link a {
     color: #FFFFFF;
     background-color: transparent;
@@ -466,7 +466,7 @@ h6 {
   display: block;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .nav-list .nav-links .nav-link button {
     display: none;
   }
@@ -484,7 +484,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .header .openMenu {
     top: 0;
   }
@@ -507,9 +507,8 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("./assets/home/mobile/image-header.jpg") no-repeat fixed;
-  background-size: 100% 120vh;
-  background-position: center -100px;
+  background: url("./assets/home/mobile/image-header.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 @media (min-width: 650px) {
@@ -522,7 +521,7 @@ h6 {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .index-hero {
     background: url("./assets/home/desktop/image-hero.jpg") no-repeat center center fixed;
     background-size: cover;
