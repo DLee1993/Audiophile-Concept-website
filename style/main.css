@@ -508,7 +508,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   background: url("./assets/home/mobile/image-header.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background-size: 100%;
 }
 
 @media (min-width: 650px) {
