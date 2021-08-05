@@ -507,13 +507,13 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("/assets/home/mobile/image-header.jpg") no-repeat center center fixed;
+  background: url("../../../assets/home/mobile/image-header.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
 @media (min-width: 650px) {
   .index-hero {
-    background: url("/assets/home/tablet/image-header.jpg") no-repeat center center fixed;
+    background: url("../../../assets/home/tablet/image-header.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -523,7 +523,7 @@ h6 {
 
 @media (min-width: 1000px) {
   .index-hero {
-    background: url("/assets/home/desktop/image-hero.jpg") no-repeat center center fixed;
+    background: url("../../../assets/home/desktop/image-hero.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 }
@@ -533,5 +533,9 @@ h6 {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
 }
 /*# sourceMappingURL=main.css.map */
