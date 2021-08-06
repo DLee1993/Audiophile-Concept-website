@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: colorSet(base, white);
   background: url("./assets/home/tablet/image-header.jpg") no-repeat center
     center fixed;
   -webkit-background-size: cover;
@@ -21,5 +22,38 @@
     -o-background-size: cover;
     background-size: cover;
     align-items: flex-start;
+    padding-left: 30px;
+  }
+
+  @include desktop{
+    padding-left: 100px;
+    transition: ease .3s;
+  }
+
+
+  & .sup-styling{
+    color: colorSet(base, offwhite);
+  }
+
+  & .h1-styling{
+    text-align: center;
+    margin-top: 20px;
+    width: auto;
+    max-width: 396px;
+
+    @include index-hero{
+      text-align: left;
+    }
+  }
+
+  & .sub-styling{
+    text-align: center;
+    margin: 20px 0px;
+    width: auto;
+    max-width: 349px;
+
+    @include index-hero {
+      text-align: left;
+    }
   }
 }

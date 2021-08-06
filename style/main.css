@@ -19,6 +19,7 @@ body {
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .sup-styling {
@@ -507,6 +508,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #FFFFFF;
   background: url("./assets/home/tablet/image-header.jpg") no-repeat center center fixed;
   background-size: cover;
 }
@@ -518,6 +520,45 @@ h6 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .index-hero {
+    padding-left: 100px;
+    -webkit-transition: ease .3s;
+    transition: ease .3s;
+  }
+}
+
+.index-hero .sup-styling {
+  color: #FAFAFA;
+}
+
+.index-hero .h1-styling {
+  text-align: center;
+  margin-top: 20px;
+  width: auto;
+  max-width: 396px;
+}
+
+@media (min-width: 715px) {
+  .index-hero .h1-styling {
+    text-align: left;
+  }
+}
+
+.index-hero .sub-styling {
+  text-align: center;
+  margin: 20px 0px;
+  width: auto;
+  max-width: 349px;
+}
+
+@media (min-width: 715px) {
+  .index-hero .sub-styling {
+    text-align: left;
   }
 }
 
