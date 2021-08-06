@@ -521,6 +521,7 @@ h6 {
         -ms-flex-align: start;
             align-items: flex-start;
     padding-left: 30px;
+    padding-top: 50px;
   }
 }
 
