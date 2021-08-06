@@ -8,7 +8,7 @@
   flex-direction: column;
   color: colorSet(base, white);
   background: url("./assets/home/tablet/image-header.jpg") no-repeat center
-    center fixed;
+    center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,7 +17,7 @@
 
   @include index-hero {
     background: url("./assets/home/desktop/image-hero.jpg") no-repeat center
-      center fixed;
+      center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
