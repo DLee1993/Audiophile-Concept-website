@@ -534,12 +534,12 @@ h6 {
 
 .index-hero .sup-styling {
   color: #FAFAFA;
-  margin-top: 10vh;
+  margin: 10vh 0 5vh 0;
 }
 
 .index-hero .h1-styling {
   text-align: center;
-  margin: 25px 0px;
+  margin: 5vh 0px;
   width: auto;
   max-width: 396px;
 }
@@ -552,7 +552,7 @@ h6 {
 
 .index-hero .sub-styling {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px;
   width: auto;
   max-width: 349px;
 }
