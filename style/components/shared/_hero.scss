@@ -18,6 +18,7 @@
 
 
   @include index-hero {
+    height: 100vh;
     background: url("./assets/home/desktop/image-hero.jpg") no-repeat center
       center;
     -webkit-background-size: cover;
@@ -29,6 +30,10 @@
     padding-top: 50px;
   }
 
+  @include tablet {
+    height: 100vh;
+  }
+
   @include desktop{
     padding-left: 100px;
     transition: ease .3s;
@@ -38,6 +43,18 @@
   & .sup-styling{
     color: colorSet(base, offwhite);
     margin: 12vh 0 5vh 0;
+
+    @include index-hero {
+      margin: 5vh 0 5vh 0;
+    }
+
+    @include tablet{
+      margin: 10vh 0 0 0;
+    }
+
+    @include desktop {
+      margin: 5vh 0 0 0;
+    }
   
   }
 
@@ -66,6 +83,10 @@
 
   & button {
     margin-top: 15vh;
+
+    @include index-hero {
+      margin-top: 0;
+    }
   }
 }
 /////////////////////////////////////

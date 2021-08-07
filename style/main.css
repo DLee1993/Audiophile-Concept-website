@@ -515,6 +515,7 @@ h6 {
 
 @media (min-width: 715px) {
   .index-hero {
+    height: 100vh;
     background: url("./assets/home/desktop/image-hero.jpg") no-repeat center center;
     background-size: cover;
     -webkit-box-align: start;
@@ -522,6 +523,12 @@ h6 {
             align-items: flex-start;
     padding-left: 30px;
     padding-top: 50px;
+  }
+}
+
+@media (min-width: 650px) {
+  .index-hero {
+    height: 100vh;
   }
 }
 
@@ -536,6 +543,24 @@ h6 {
 .index-hero .sup-styling {
   color: #FAFAFA;
   margin: 12vh 0 5vh 0;
+}
+
+@media (min-width: 715px) {
+  .index-hero .sup-styling {
+    margin: 5vh 0 5vh 0;
+  }
+}
+
+@media (min-width: 650px) {
+  .index-hero .sup-styling {
+    margin: 10vh 0 0 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .index-hero .sup-styling {
+    margin: 5vh 0 0 0;
+  }
 }
 
 .index-hero .h1-styling {
@@ -566,6 +591,12 @@ h6 {
 
 .index-hero button {
   margin-top: 15vh;
+}
+
+@media (min-width: 715px) {
+  .index-hero button {
+    margin-top: 0;
+  }
 }
 
 .cat-hero {
