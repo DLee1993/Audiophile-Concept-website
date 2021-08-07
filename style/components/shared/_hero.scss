@@ -37,14 +37,14 @@
 
   & .sup-styling{
     color: colorSet(base, offwhite);
-    margin: 0 0 5vh 0;
+    margin: 12vh 0 5vh 0;
   
   }
 
 
   & .h1-styling{
     text-align: center;
-    margin: 5vh 0px;
+    margin: 5vh 0 0 0;
     width: auto;
     max-width: 396px;
 
@@ -55,13 +55,17 @@
 
   & .sub-styling{
     text-align: center;
-    margin: 5vh 0 10vh 0;
+    margin: 30px 0 10vh 0;
     width: auto;
     max-width: 349px;
 
     @include index-hero {
       text-align: left;
     }
+  }
+
+  & button {
+    margin-top: 15vh;
   }
 }
 /////////////////////////////////////
