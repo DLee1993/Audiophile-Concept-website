@@ -1,0 +1,61 @@
+.link-list{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+
+    & .link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 327px;
+        height: 217px;
+        margin: 30px auto 0 auto;
+
+        @include tablet{
+            width: 300px;
+        }
+
+        @include desktop{
+            width: 350px;
+        }
+
+        & img {
+          position: absolute;
+          top: 5px;
+          z-index: 1;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 150px;
+          height: auto;
+        }
+
+        & a {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-direction: column;
+          width: 80%;
+          height: 165px;
+          padding-bottom: 40px;
+          color: colorSet(base, black);
+          background-color: colorSet(base, silver);
+          text-decoration: none;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: colorSet(accent, dark-orange);
+            transition: all 0.3s ease;
+
+            & button {
+              color: colorSet(accent, dark-orange);
+            }
+          }
+        }
+
+        & button {
+          display: block;
+        }
+      }
+}
