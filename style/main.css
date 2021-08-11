@@ -758,6 +758,7 @@ body {
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: center -100px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -821,16 +822,85 @@ body {
   }
 }
 
-.zx9-speaker button {
+.zx9-speaker a {
+  text-decoration: none;
   margin-top: 25px;
 }
 
 @media (min-width: 900px) {
-  .zx9-speaker button {
+  .zx9-speaker a {
     margin-top: 30px;
     margin-right: 120px;
     -webkit-transform: translateX(250px);
             transform: translateX(250px);
+  }
+}
+
+.zx7-speaker {
+  width: 100%;
+  height: 320px;
+  margin: 40px auto;
+  border-radius: 10px;
+  background-image: url("./assets/home/mobile/image-speaker-zx7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+@media (min-width: 650px) {
+  .zx7-speaker {
+    background-image: url("./assets/home/tablet/image-speaker-zx7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media (min-width: 900px) {
+  .zx7-speaker {
+    width: 89%;
+    background-image: url("./assets/home/desktop/image-speaker-zx7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.zx7-speaker .productName {
+  position: relative;
+  top: 80px;
+  left: 20px;
+}
+
+@media (min-width: 650px) {
+  .zx7-speaker .productName {
+    left: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .zx7-speaker .productName {
+    left: 100px;
+  }
+}
+
+.zx7-speaker a {
+  position: relative;
+  top: 110px;
+  left: 20px;
+  text-decoration: none;
+}
+
+@media (min-width: 650px) {
+  .zx7-speaker a {
+    left: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .zx7-speaker a {
+    left: 100px;
   }
 }
 

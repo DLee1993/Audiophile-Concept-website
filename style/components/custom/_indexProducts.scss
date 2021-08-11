@@ -1,74 +1,136 @@
-.zx9-speaker{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
+// * zx9 product
+
+.zx9-speaker {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+  background-color: colorSet(accent, dark-orange);
+  color: colorSet(base, white);
+  width: 100%;
+  height: 550px;
+  margin: 50px auto 0px auto;
+  background-image: url("./assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center -100px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include desktop {
+    background-size: 700px;
+    background-position: -50px -50px;
     align-items: center;
-    flex-direction: column;
-    padding-bottom: 40px;
-    background-color: colorSet(accent, dark-orange);
-    color: colorSet(base, white);
-    width: 100%;
-    height: 550px;
-    margin: 50px auto 0px auto; 
-    background-image: url("./assets/home/desktop/pattern-circles.svg");
+    justify-content: center;
+    padding-bottom: 0px;
+    height: 500px;
+    width: 89%;
+  }
+
+  & .zx9-speakerImage {
+    position: absolute;
+    top: 60px;
+    width: 130px;
+    height: auto;
+
+    @include desktop {
+      width: 300px;
+      top: 145px;
+      left: 140px;
+    }
+  }
+
+  & .productName {
+    width: 280px;
+    text-align: center;
+
+    @include desktop {
+      text-align: left;
+      transform: translateX(250px);
+    }
+  }
+
+  & .sub-text {
+    text-align: center;
+    margin-top: 20px;
+    width: 280px;
+
+    @include desktop {
+      text-align: left;
+      margin-top: 30px;
+      width: 350px;
+      transform: translateX(285px);
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    margin-top: 25px;
+
+    @include desktop {
+      margin-top: 30px;
+      margin-right: 120px;
+      transform: translateX(250px);
+    }
+  }
+}
+
+// * zx7 product
+
+.zx7-speaker {
+  width: 100%;
+  height: 320px;
+  margin: 40px auto;
+  border-radius: 10px;
+  background-image: url("./assets/home/mobile/image-speaker-zx7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+
+  @include tablet {
+    background-image: url("./assets/home/tablet/image-speaker-zx7.jpg");
     background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: center -100px;
-    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+  }
 
-    @include desktop{
-        background-size: 700px;
-        background-position: -50px -50px;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 0px;
-        height: 500px;
-        width: 89%;
+  @include desktop {
+    width: 89%;
+    background-image: url("./assets/home/desktop/image-speaker-zx7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  & .productName {
+    position: relative;
+    top: 80px;
+    left: 20px;
+
+    @include tablet {
+      left: 60px;
     }
 
-    & .zx9-speakerImage{
-        position: absolute;
-        top: 60px;
-        width: 130px;
-        height: auto;
+    @include desktop {
+      left: 100px;
+    }
+  }
 
-        @include desktop{
-            width: 300px;
-            top: 145px;
-            left: 140px;
-        }
+  & a {
+    position: relative;
+    top: 110px;
+    left: 20px;
+    text-decoration: none;
+
+    @include tablet {
+      left: 60px;
     }
 
-    & .productName{
-        width: 280px;
-        text-align: center;
-
-        @include desktop{
-            text-align: left;
-            transform: translateX(250px);
-        }
+    @include desktop {
+      left: 100px;
     }
-
-    & .sub-text{
-        text-align: center;
-        margin-top: 20px;
-        width: 280px;
-
-        @include desktop{
-            text-align: left;
-            margin-top: 30px;
-            width: 350px;
-            transform: translateX(285px);
-        }
-    }
-
-    & button {
-        margin-top: 25px;
-        
-        @include desktop{
-            margin-top: 30px;
-            margin-right: 120px;
-            transform: translateX(250px);
-        }
-    }
+  }
 }
