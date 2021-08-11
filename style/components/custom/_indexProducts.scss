@@ -1,0 +1,74 @@
+.zx9-speaker{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    background-color: colorSet(accent, dark-orange);
+    color: colorSet(base, white);
+    width: 100%;
+    height: 550px;
+    margin-top: 50px;
+    background-image: url("./assets/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center -100px;
+    overflow: hidden;
+
+    @include desktop{
+        background-size: 700px;
+        background-position: -50px -50px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+        padding-bottom: 0px;
+        height: 500px;
+    }
+
+    & .zx9-speakerImage{
+        position: absolute;
+        top: 60px;
+        width: 130px;
+        height: auto;
+
+        @include desktop{
+            width: 300px;
+            top: 145px;
+            left: 150px;
+        }
+    }
+
+    & .productName{
+        width: 280px;
+        text-align: center;
+
+        @include desktop{
+            text-align: left;
+            transform: translateX(200px);
+        }
+    }
+
+    & .sub-text{
+        text-align: center;
+        margin-top: 20px;
+        width: 280px;
+
+        @include desktop{
+            text-align: left;
+            margin-top: 30px;
+            width: 415px;
+            transform: translateX(270px);
+        }
+    }
+
+    & button {
+        margin-top: 25px;
+        
+        @include desktop{
+            margin-top: 30px;
+            margin-right: 120px;
+            transform: translateX(200px);
+        }
+    }
+}

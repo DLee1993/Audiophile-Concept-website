@@ -1,6 +1,6 @@
 //grouped styling
 
-.primary-btn, .secondary-btn, .tertiary-btn{
+.primary-btn, .secondary-btn, .tertiary-btn, .quaternary-btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     }
 }
 
-.primary-btn, .secondary-btn{
+.primary-btn, .secondary-btn, .quaternary-btn{
     width: 160px; 
     height: 48px; 
 }
@@ -56,3 +56,13 @@
         margin-left: 10px;
     }
 }; 
+
+.quaternary-btn{
+    background-color: colorSet(base, black);
+    color: colorSet(base, white);
+    transition: all .3s ease;
+
+    &:hover{
+        background-color: colorSet(base, dark-grey);
+    }
+}
