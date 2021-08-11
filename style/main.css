@@ -788,7 +788,7 @@ body {
   .zx9-speaker .zx9-speakerImage {
     width: 300px;
     top: 145px;
-    left: 150px;
+    left: 140px;
   }
 }
 
@@ -800,8 +800,8 @@ body {
 @media (min-width: 900px) {
   .zx9-speaker .productName {
     text-align: left;
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
   }
 }
 
@@ -816,8 +816,8 @@ body {
     text-align: left;
     margin-top: 30px;
     width: 415px;
-    -webkit-transform: translateX(270px);
-            transform: translateX(270px);
+    -webkit-transform: translateX(320px);
+            transform: translateX(320px);
   }
 }
 
@@ -829,8 +829,8 @@ body {
   .zx9-speaker button {
     margin-top: 30px;
     margin-right: 120px;
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
   }
 }
 

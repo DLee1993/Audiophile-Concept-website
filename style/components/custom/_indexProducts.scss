@@ -35,7 +35,7 @@
         @include desktop{
             width: 300px;
             top: 145px;
-            left: 150px;
+            left: 140px;
         }
     }
 
@@ -45,7 +45,7 @@
 
         @include desktop{
             text-align: left;
-            transform: translateX(200px);
+            transform: translateX(250px);
         }
     }
 
@@ -58,7 +58,7 @@
             text-align: left;
             margin-top: 30px;
             width: 415px;
-            transform: translateX(270px);
+            transform: translateX(320px);
         }
     }
 
@@ -68,7 +68,7 @@
         @include desktop{
             margin-top: 30px;
             margin-right: 120px;
-            transform: translateX(200px);
+            transform: translateX(250px);
         }
     }
 }
