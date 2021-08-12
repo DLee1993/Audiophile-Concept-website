@@ -33,12 +33,12 @@
 
 .secondary-btn{ 
     color: clr(base, black);
-    background: colorSet(base, white);
-    border: 1px solid clr(base, black);
+    background: transparent;
+    border: 1px solid colorSet(base, black);
     transition: all .3s ease; 
 
     &:hover{
-        background: clr(base, black); 
+        background: colorSet(base, black); 
         color: colorSet(base, white); 
     }
 }; 
