@@ -126,6 +126,11 @@
     top: 110px;
     left: 20px;
     text-decoration: none;
+    color: colorSet(base, black);
+
+    &:hover{
+      color: colorSet(base, white);
+    }
 
     @include tablet {
       left: 60px;

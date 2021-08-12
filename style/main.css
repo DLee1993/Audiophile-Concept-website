@@ -891,6 +891,11 @@ body {
   top: 110px;
   left: 20px;
   text-decoration: none;
+  color: #000000;
+}
+
+.zx7-speaker a:hover {
+  color: #FFFFFF;
 }
 
 @media (min-width: 650px) {
