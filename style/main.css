@@ -513,20 +513,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 85vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #000000;
 }
 
 @media (min-width: 650px) {
   .footer {
-    height: 400px;
-  }
-}
-
-@media (min-width: 900px) {
-  .footer {
-    height: 365px;
+    height: 300px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -581,8 +584,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  max-width: 900px;
-  height: 50%;
+  max-width: 950px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 30px;
 }
 
 @media (min-width: 650px) {
@@ -595,6 +601,10 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 0px;
   }
 }
 
@@ -602,6 +612,13 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding: 10px 0px 20px 0px;
+}
+
+@media (min-width: 650px) {
+  .footer .logoAndNav-container .logo {
+    padding: 0px;
+  }
 }
 
 .footer .logoAndNav-container .logo a {
@@ -625,14 +642,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: auto;
-  height: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 0px;
 }
 
 @media (min-width: 650px) {
@@ -642,6 +662,7 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding: 0px;
   }
 }
 
@@ -684,6 +705,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   height: auto;
+  padding: 10px 0px;
 }
 
 .footer .logoAndNav-container .footer-nav .nav-list .nav-link a {
@@ -693,11 +715,100 @@ body {
   transition: all .3s ease;
 }
 
-.footer .logoAndNav-container .footer-nav .nav-list .nav-link a :hover {
+.footer .logoAndNav-container .footer-nav .nav-list .nav-link a:hover {
   cursor: pointer;
   color: #D87D4A;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.footer .compDesc-container {
+  width: 100%;
+  max-width: 950px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0px auto;
+  padding: 30px 0px;
+}
+
+@media (min-width: 650px) {
+  .footer .compDesc-container {
+    width: 90%;
+  }
+}
+
+.footer .compDesc-container .comp-desc {
+  color: #FFFFFF;
+  opacity: 0.5;
+  width: auto;
+  max-width: 540px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  .footer .compDesc-container .comp-desc {
+    text-align: left;
+    max-width: 689px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer .compDesc-container .comp-desc {
+    max-width: 540px;
+  }
+}
+
+.footer .copyright {
+  width: 100%;
+  max-width: 950px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 0px 80px 0px;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  .footer .copyright {
+    width: 90%;
+    padding: 0px;
+    text-align: left;
+  }
+}
+
+.footer .copyright .copyright-claim {
+  color: #FFFFFF;
+}
+
+.footer .social-media {
+  position: absolute;
+  bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (min-width: 650px) {
+  .footer .social-media {
+    right: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer .social-media {
+    bottom: 100px;
+    right: 12vw;
+  }
+}
+
+.footer .social-media svg {
+  margin: 0px 10px;
 }
 
 .indexPage-hero {
@@ -1001,7 +1112,7 @@ body {
 .comp-insight .soundBooth-img .mobile-img {
   width: 100%;
   max-width: 400px;
-  height: 350px;
+  height: 325px;
   border-radius: 10px;
 }
 
