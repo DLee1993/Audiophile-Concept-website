@@ -502,6 +502,204 @@ body {
   }
 }
 
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 85vh;
+  background-color: #000000;
+}
+
+@media (min-width: 650px) {
+  .footer {
+    height: 400px;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer {
+    height: 365px;
+  }
+}
+
+.footer figure,
+.footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer .accent-shape {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 101px;
+  height: 4px;
+  background-color: #D87D4A;
+}
+
+@media (min-width: 650px) {
+  .footer .accent-shape {
+    left: 39px;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer .accent-shape {
+    left: 165px;
+  }
+}
+
+.footer .logoAndNav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  height: 50%;
+}
+
+@media (min-width: 650px) {
+  .footer .logoAndNav-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+  }
+}
+
+.footer .logoAndNav-container .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer .logoAndNav-container .logo a {
+  fill: #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer .logoAndNav-container .logo a:hover {
+  cursor: pointer;
+  fill: #D87D4A;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer .logoAndNav-container .logo a p {
+  display: none;
+}
+
+.footer .logoAndNav-container .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 80%;
+}
+
+@media (min-width: 650px) {
+  .footer .logoAndNav-container .footer-nav {
+    height: auto;
+    width: 70%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.footer .logoAndNav-container .footer-nav .nav-list {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+@media (min-width: 650px) {
+  .footer .logoAndNav-container .footer-nav .nav-list {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer .logoAndNav-container .footer-nav .nav-list .nav-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
+
+.footer .logoAndNav-container .footer-nav .nav-list .nav-link a {
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer .logoAndNav-container .footer-nav .nav-list .nav-link a :hover {
+  cursor: pointer;
+  color: #D87D4A;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 .indexPage-hero {
   position: relative;
   width: 100%;
