@@ -780,7 +780,7 @@ body {
 }
 
 .footer .copyright .copyright-claim {
-  color: #FFFFFF;
+  color: #4c4c4c;
 }
 
 .footer .social-media {
@@ -1061,6 +1061,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 650px) {
