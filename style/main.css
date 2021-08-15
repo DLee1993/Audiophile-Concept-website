@@ -1067,7 +1067,7 @@ body {
 @media (min-width: 650px) {
   .comp-insight {
     width: 89%;
-    margin: auto;
+    margin: 60px auto;
   }
 }
 
