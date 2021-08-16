@@ -194,6 +194,20 @@
       }
     }
   }
+
+  & .cart{
+    & svg{
+      fill: colorSet(base, white);
+      transition: all .3s ease;
+
+      &:hover{
+        cursor: pointer;
+        fill: colorSet(accent, dark-orange);
+        transition: all .3s ease;
+      }
+    }
+  }
+
   .openMenu {
     top: 10vh;
     transition: all 0.4s ease;
