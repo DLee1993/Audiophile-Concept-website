@@ -86,8 +86,9 @@
     }
   }
 
-  & button {
+  & a {
     margin-top: 2vh;
+    text-decoration: none;
 
     @include index-hero {
       margin-top: 0;
