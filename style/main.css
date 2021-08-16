@@ -809,6 +809,16 @@ body {
 
 .footer .social-media svg {
   margin: 0px 10px;
+  fill: #FFFFFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer .social-media svg:hover {
+  cursor: pointer;
+  fill: #D87D4A;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .indexPage-hero {
@@ -1105,7 +1115,7 @@ body {
 @media (min-width: 900px) {
   .comp-insight .soundBooth-img {
     width: 45%;
-    max-width: 550px;
+    max-width: 450px;
     height: 450px;
   }
 }
@@ -1155,6 +1165,7 @@ body {
   .comp-insight .soundBooth-img .desktop-img {
     display: block;
     width: 100%;
+    max-width: 450px;
     height: 100%;
     border-radius: 10px;
   }

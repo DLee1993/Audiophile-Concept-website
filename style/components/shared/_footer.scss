@@ -202,6 +202,14 @@
 
         & svg{
             margin: 0px 10px;
+            fill: colorSet(base, white);
+            transition: all .3s ease;
+
+            &:hover{
+                cursor: pointer;
+                fill: colorSet(accent, dark-orange);
+                transition: all .3s ease;
+            }
         }
     }
 }
