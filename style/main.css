@@ -301,7 +301,7 @@ body {
 
 @media (min-width: 650px) {
   .header .nav-list {
-    height: 50vh;
+    height: 55vh;
     overflow: hidden;
   }
 }
@@ -505,7 +505,7 @@ body {
 
 @media (min-width: 650px) {
   .header .openMenu {
-    top: 15vh;
+    top: 13vh;
   }
 }
 

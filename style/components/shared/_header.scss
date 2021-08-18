@@ -71,7 +71,7 @@
     overflow: scroll;
 
     @include tablet {
-      height: 50vh;
+      height: 55vh;
       overflow: hidden;
     }
 
@@ -213,7 +213,7 @@
     transition: all 0.4s ease;
 
     @include tablet {
-      top: 15vh;
+      top: 13vh;
     }
 
     @include desktop {
