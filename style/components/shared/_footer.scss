@@ -186,9 +186,12 @@
     }
 
     & .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         bottom: 20px;  
-        width: fit-content;
+        width: 140px;
         height: fit-content;
 
         @include tablet {
@@ -200,7 +203,9 @@
             right: 12vw; 
         }
 
-        & svg{
+        & a{
+            width: fit-content;
+            height: fit-content;
             margin: 0px 10px;
             fill: colorSet(base, white);
             transition: all .3s ease;
@@ -209,6 +214,13 @@
                 cursor: pointer;
                 fill: colorSet(accent, dark-orange);
                 transition: all .3s ease;
+            }
+
+            & p {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
             }
         }
     }

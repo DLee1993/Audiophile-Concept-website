@@ -797,11 +797,18 @@ body {
 }
 
 .footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 140px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -820,18 +827,31 @@ body {
   }
 }
 
-.footer .social-media svg {
+.footer .social-media a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 0px 10px;
   fill: #FFFFFF;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.footer .social-media svg:hover {
+.footer .social-media a:hover {
   cursor: pointer;
   fill: #D87D4A;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.footer .social-media a p {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .indexPage-hero {
