@@ -2,7 +2,9 @@
 // * Each product is within it's own container *
 // * All individual products are within a single parent container *
 //! All of the styling below applies to all 3 pages, do not remove !
-.category-headphones{
+
+
+.category-headphones, .category-speakers, .category-earphones{
     width: 100%;
     max-width: 1150px;
     min-height: 900px;
@@ -36,7 +38,7 @@
         width: 96%;
         height: 750px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: 20px 0px;
@@ -60,6 +62,7 @@
                 max-width: 327px;
                 height: 352px;
                 margin: 30px auto 0px auto;
+                border-radius: 8px;
 
                 @include tablet{
                     display: none;
@@ -76,6 +79,7 @@
                 max-width: 689px;
                 height: 352px;
                 margin: 30px auto 0px auto;
+                border-radius: 8px;
 
                 @include tablet{
                     display: block;
@@ -93,6 +97,7 @@
                     display: block;
                     width: auto;
                     height: 450px;
+                    border-radius: 8px;
                 }
             }
         }
@@ -154,3 +159,12 @@
     }
 }
 
+//* Slight change needed to earphones category, this is due to only one product on the page *
+
+.category-earphones{
+    min-height: 600px;
+
+    & .product-container{
+        height: 500px;
+    }
+}
