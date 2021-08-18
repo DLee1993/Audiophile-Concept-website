@@ -1314,14 +1314,14 @@ body {
 }
 
 .category-headphones .product-container, .category-speakers .product-container, .category-earphones .product-container {
-  width: 96%;
+  width: 99%;
   height: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1446,7 +1446,7 @@ body {
 
 .category-headphones .product-container .product-info .sup-text, .category-speakers .product-container .product-info .sup-text, .category-earphones .product-container .product-info .sup-text {
   color: #D87D4A;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 @media (min-width: 900px) {

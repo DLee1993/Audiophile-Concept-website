@@ -35,10 +35,10 @@
     }
 
     & .product-container{
-        width: 96%;
+        width: 99%;
         height: 750px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         margin: 20px 0px;
@@ -126,7 +126,7 @@
 
             & .sup-text{
                 color: colorSet(accent, dark-orange);
-                margin: 20px auto;
+                margin: 10px auto;
 
                 @include desktop {
                     margin: 0;
