@@ -1510,6 +1510,156 @@ body {
   height: 500px;
 }
 
+.suggest-products {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15vh;
+}
+
+.suggest-products .heading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.suggest-products .product-link {
+  width: 100%;
+  max-width: 1200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 650px) {
+  .suggest-products .product-link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.suggest-products .product-link .mark-1-headphones, .suggest-products .product-link .mark-2-headphones, .suggest-products .product-link .xx59-headphones, .suggest-products .product-link .zx9-speaker, .suggest-products .product-link .zx7-speaker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: auto;
+  height: 327px;
+}
+
+@media (min-width: 650px) {
+  .suggest-products .product-link .mark-1-headphones, .suggest-products .product-link .mark-2-headphones, .suggest-products .product-link .xx59-headphones, .suggest-products .product-link .zx9-speaker, .suggest-products .product-link .zx7-speaker {
+    width: 214px;
+    height: 471px;
+  }
+}
+
+@media (min-width: 900px) {
+  .suggest-products .product-link .mark-1-headphones, .suggest-products .product-link .mark-2-headphones, .suggest-products .product-link .xx59-headphones, .suggest-products .product-link .zx9-speaker, .suggest-products .product-link .zx7-speaker {
+    width: 295px;
+    height: 480px;
+  }
+}
+
+.suggest-products .product-link .mark-1-headphones .product-images, .suggest-products .product-link .mark-2-headphones .product-images, .suggest-products .product-link .xx59-headphones .product-images, .suggest-products .product-link .zx9-speaker .product-images, .suggest-products .product-link .zx7-speaker .product-images {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.suggest-products .product-link .mark-1-headphones .product-images .mobile-image, .suggest-products .product-link .mark-2-headphones .product-images .mobile-image, .suggest-products .product-link .xx59-headphones .product-images .mobile-image, .suggest-products .product-link .zx9-speaker .product-images .mobile-image, .suggest-products .product-link .zx7-speaker .product-images .mobile-image {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (min-width: 650px) {
+  .suggest-products .product-link .mark-1-headphones .product-images .mobile-image, .suggest-products .product-link .mark-2-headphones .product-images .mobile-image, .suggest-products .product-link .xx59-headphones .product-images .mobile-image, .suggest-products .product-link .zx9-speaker .product-images .mobile-image, .suggest-products .product-link .zx7-speaker .product-images .mobile-image {
+    display: none;
+    width: inherit;
+  }
+}
+
+@media (min-width: 900px) {
+  .suggest-products .product-link .mark-1-headphones .product-images .mobile-image, .suggest-products .product-link .mark-2-headphones .product-images .mobile-image, .suggest-products .product-link .xx59-headphones .product-images .mobile-image, .suggest-products .product-link .zx9-speaker .product-images .mobile-image, .suggest-products .product-link .zx7-speaker .product-images .mobile-image {
+    display: none;
+    width: inherit;
+  }
+}
+
+.suggest-products .product-link .mark-1-headphones .product-images .tablet-image, .suggest-products .product-link .mark-2-headphones .product-images .tablet-image, .suggest-products .product-link .xx59-headphones .product-images .tablet-image, .suggest-products .product-link .zx9-speaker .product-images .tablet-image, .suggest-products .product-link .zx7-speaker .product-images .tablet-image {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .suggest-products .product-link .mark-1-headphones .product-images .tablet-image, .suggest-products .product-link .mark-2-headphones .product-images .tablet-image, .suggest-products .product-link .xx59-headphones .product-images .tablet-image, .suggest-products .product-link .zx9-speaker .product-images .tablet-image, .suggest-products .product-link .zx7-speaker .product-images .tablet-image {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 900px) {
+  .suggest-products .product-link .mark-1-headphones .product-images .tablet-image, .suggest-products .product-link .mark-2-headphones .product-images .tablet-image, .suggest-products .product-link .xx59-headphones .product-images .tablet-image, .suggest-products .product-link .zx9-speaker .product-images .tablet-image, .suggest-products .product-link .zx7-speaker .product-images .tablet-image {
+    display: none;
+  }
+}
+
+.suggest-products .product-link .mark-1-headphones .product-images .desktop-image, .suggest-products .product-link .mark-2-headphones .product-images .desktop-image, .suggest-products .product-link .xx59-headphones .product-images .desktop-image, .suggest-products .product-link .zx9-speaker .product-images .desktop-image, .suggest-products .product-link .zx7-speaker .product-images .desktop-image {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .suggest-products .product-link .mark-1-headphones .product-images .desktop-image, .suggest-products .product-link .mark-2-headphones .product-images .desktop-image, .suggest-products .product-link .xx59-headphones .product-images .desktop-image, .suggest-products .product-link .zx9-speaker .product-images .desktop-image, .suggest-products .product-link .zx7-speaker .product-images .desktop-image {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.suggest-products .product-link a {
+  text-decoration: none;
+}
+
 .zx9-speaker-container {
   position: relative;
   display: -webkit-box;
