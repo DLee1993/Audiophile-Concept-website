@@ -1,0 +1,126 @@
+.collage-grid-container {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.5fr;
+    gap: 10px;
+    grid-template-areas:
+        "img1"
+        "img2"
+        "img3";
+    margin: auto;
+
+    @include tablet {
+        grid-template-columns: 0.7fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr;
+        gap: 10px;
+        grid-template-areas:
+            "img1 img3"
+            "img2 img3";
+    }
+
+    @include desktop {
+        grid-template-columns: 0.8fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr;
+        gap: 10px;
+        grid-template-areas:
+            "img1 img3"
+            "img2 img3";
+    }
+
+    
+    .image-1-container {
+        grid-area: img1;
+        width: 100%;
+        max-width: 327px;
+        height: 174px;
+
+        @include tablet {
+            max-width: 277px;
+        }
+
+        @include desktop {
+            max-width: 440px;
+            height: 242px;
+        }
+    }
+
+    .image-2-container {
+        grid-area: img2;
+        width: 100%;
+        max-width: 327px;
+        height: 174px;
+
+        @include tablet {
+            max-width: 277px;
+        }
+
+        @include desktop {
+            max-width: 440px;
+            height: 242px;
+        }
+    }
+
+    .image-3-container {
+        grid-area: img3;
+        width: 100%;
+        max-width: 327px;
+        height: 360px;
+
+        @include tablet {
+            max-width: 395px;
+        }
+
+        @include desktop {
+            max-width: 650px;
+            height: 494px;
+        }
+        
+    }
+
+    .image-1-container,
+    .image-2-container,
+    .image-3-container {
+        .mobile-image-1,
+        .mobile-image-2,
+        .mobile-image-3 {
+            display: block;
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+        .tablet-image-1,
+        .tablet-image-2,
+        .tablet-image-3 {
+            display: none;
+
+            @include tablet {
+                display: block;
+                width: inherit;
+                height: inherit;
+                border-radius: 10px;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+        .desktop-image-1,
+        .desktop-image-2,
+        .desktop-image-3 {
+            display: none;
+
+            @include desktop {
+                display: block;
+                width: inherit;
+                height: inherit;
+                border-radius: 10px;
+            }
+        }
+    }
+}
