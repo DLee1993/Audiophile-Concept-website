@@ -1540,7 +1540,6 @@ body {
 
 .suggest-products .product-link {
   width: 100%;
-  max-width: 1200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
