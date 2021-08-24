@@ -1,0 +1,16 @@
+.return-btn{
+    width: 75%;
+    height: fit-content;
+    margin: 0px auto 30px auto;
+    padding-top: 100px;
+
+    & a {
+        text-decoration: none;
+        color: colorSet(base, dark-grey);
+
+        &:hover{
+            cursor: pointer;
+            color: colorSet(accent, dark-orange);
+        }
+    }
+}
