@@ -1867,12 +1867,26 @@ body {
 }
 
 .return-btn {
-  width: 75%;
+  width: 70%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 0px auto 30px auto;
-  padding-top: 100px;
+  padding-top: 90px;
+}
+
+@media (min-width: 650px) {
+  .return-btn {
+    width: 80%;
+    padding-top: 110px;
+    margin: 0px auto 50px auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .return-btn {
+    margin: 0px auto 30px auto;
+  }
 }
 
 .return-btn a {
@@ -1883,6 +1897,184 @@ body {
 .return-btn a:hover {
   cursor: pointer;
   color: #D87D4A;
+}
+
+.add-to-cart-container {
+  width: 95%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 650px) {
+  .add-to-cart-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.add-to-cart-container .img-container {
+  width: 100%;
+  height: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 650px) {
+  .add-to-cart-container .img-container {
+    width: 50%;
+  }
+}
+
+.add-to-cart-container .img-container .mobile-vp-image {
+  display: block;
+  width: 327px;
+  height: 327px;
+}
+
+@media (min-width: 650px) {
+  .add-to-cart-container .img-container .mobile-vp-image {
+    display: none;
+  }
+}
+
+.add-to-cart-container .img-container .tablet-vp-image {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .add-to-cart-container .img-container .tablet-vp-image {
+    display: block;
+    width: 281px;
+    height: 480px;
+  }
+}
+
+@media (min-width: 900px) {
+  .add-to-cart-container .img-container .tablet-vp-image {
+    display: none;
+  }
+}
+
+.add-to-cart-container .img-container .desktop-vp-image {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .add-to-cart-container .img-container .desktop-vp-image {
+    display: block;
+    width: 400px;
+    height: 420px;
+  }
+}
+
+.add-to-cart-container .product-info {
+  width: 100%;
+  max-width: 327px;
+  height: 470px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 650px) {
+  .add-to-cart-container .product-info {
+    width: 50%;
+    max-width: 600px;
+    height: 450px;
+  }
+}
+
+.add-to-cart-container .product-info .sup-text {
+  color: #D87D4A;
+}
+
+.add-to-cart-container .product-info .title {
+  max-width: 445px;
+}
+
+.add-to-cart-container .product-info .sub-text {
+  max-width: 500px;
+}
+
+.add-to-cart-container .product-info .addToCart-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  width: 40px;
+  height: 48px;
+  background-color: #F1F1F1;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+input[type="button"] {
+  width: 40px;
+  height: 48px;
+  border: none;
+  outline: none;
+  background-color: #F1F1F1;
+  color: #4c4c4c;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
 }
 
 .zx9-speaker-container {
