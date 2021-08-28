@@ -1,5 +1,5 @@
 .add-to-cart-container {
-    width: 95%;
+    width: 89%;
     height: fit-content;
     margin: 0px auto;
     display: flex;
@@ -17,6 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 3px;
 
         @include tablet {
             width: 50%;
@@ -26,6 +27,7 @@
             display: block;
             width: 327px;
             height: 327px;
+            border-radius: 3px;
 
             @include tablet {
                 display: none;
@@ -39,6 +41,7 @@
                 display: block;
                 width: 281px;
                 height: 480px;
+                border-radius: 3px;
             }
 
             @include desktop {
@@ -53,6 +56,7 @@
                 display: block;
                 width: 400px;
                 height: 420px;
+                border-radius: 3px;
             }
         }
     }

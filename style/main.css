@@ -1900,7 +1900,7 @@ body {
 }
 
 .add-to-cart-container {
-  width: 95%;
+  width: 89%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1941,6 +1941,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 3px;
 }
 
 @media (min-width: 650px) {
@@ -1953,6 +1954,7 @@ body {
   display: block;
   width: 327px;
   height: 327px;
+  border-radius: 3px;
 }
 
 @media (min-width: 650px) {
@@ -1970,6 +1972,7 @@ body {
     display: block;
     width: 281px;
     height: 480px;
+    border-radius: 3px;
   }
 }
 
@@ -1988,6 +1991,7 @@ body {
     display: block;
     width: 400px;
     height: 420px;
+    border-radius: 3px;
   }
 }
 
