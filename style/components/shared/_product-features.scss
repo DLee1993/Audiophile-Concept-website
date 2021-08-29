@@ -1,5 +1,6 @@
 .product-featuresAndIcludedItems{
-    width: 85%;
+    width: 80%;
+    max-width: 320px;
     height: fit-content;
     margin: 40px auto 40px auto;
     display: flex;
@@ -9,10 +10,12 @@
 
     @include tablet {
         width: 77%;
+        max-width: 680px;
     }
 
     @include desktop {
         width: 75%;
+        max-width: 970px;
         height: 475px;
         margin: 40px auto 70px auto;
         flex-direction: row;

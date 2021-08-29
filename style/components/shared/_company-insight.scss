@@ -16,7 +16,9 @@
   }
 
   @include desktop {
+    width: 95%;
     flex-direction: row-reverse;
+    max-width: 980px;
   }
 
   // * the below code is for the left container of the yx1 earphones section

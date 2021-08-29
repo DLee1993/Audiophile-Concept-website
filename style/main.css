@@ -1007,6 +1007,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 1050px;
+  margin: auto;
 }
 
 .link-list .link {
@@ -1117,10 +1119,12 @@ body {
 
 @media (min-width: 900px) {
   .comp-insight {
+    width: 95%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    max-width: 980px;
   }
 }
 
@@ -1529,6 +1533,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 15vh;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .suggest-products .heading {
@@ -1878,7 +1884,7 @@ body {
 @media (min-width: 650px) {
   .return-btn {
     width: 80%;
-    padding-top: 110px;
+    padding-top: 140px;
     margin: 0px auto 50px auto;
   }
 }
@@ -1901,6 +1907,7 @@ body {
 
 .add-to-cart-container {
   width: 89%;
+  max-width: 1150px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2082,7 +2089,8 @@ input[type="button"]:hover {
 }
 
 .product-featuresAndIcludedItems {
-  width: 85%;
+  width: 80%;
+  max-width: 320px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2105,12 +2113,14 @@ input[type="button"]:hover {
 @media (min-width: 650px) {
   .product-featuresAndIcludedItems {
     width: 77%;
+    max-width: 680px;
   }
 }
 
 @media (min-width: 900px) {
   .product-featuresAndIcludedItems {
     width: 75%;
+    max-width: 970px;
     height: 475px;
     margin: 40px auto 70px auto;
     -webkit-box-orient: horizontal;

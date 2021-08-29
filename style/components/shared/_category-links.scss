@@ -3,6 +3,8 @@
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1050px;
+    margin: auto;
 
     & .link {
         position: relative;
