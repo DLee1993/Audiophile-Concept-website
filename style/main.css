@@ -1007,8 +1007,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1050px;
-  margin: auto;
 }
 
 .link-list .link {
@@ -1300,7 +1298,9 @@ body {
 .category-headphones, .category-speakers, .category-earphones {
   width: 100%;
   max-width: 1150px;
-  min-height: 900px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1339,7 +1339,7 @@ body {
 
 .category-headphones .product-container, .category-speakers .product-container, .category-earphones .product-container {
   width: 99%;
-  height: 750px;
+  height: 750px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1358,7 +1358,6 @@ body {
 
 @media (min-width: 900px) {
   .category-headphones .product-container, .category-speakers .product-container, .category-earphones .product-container {
-    height: 500px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1382,7 +1381,7 @@ body {
   width: 100%;
   max-width: 327px;
   height: 352px;
-  margin: 30px auto 0px auto;
+  margin: 60px auto 0px auto;
   border-radius: 8px;
 }
 
