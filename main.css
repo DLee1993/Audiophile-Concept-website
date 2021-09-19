@@ -141,15 +141,6 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -177,30 +168,32 @@ body {
   height: auto;
 }
 
-.nav-bar .nav-list {
+.nav-bar .grid-container {
   width: 100%;
-  height: 25px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100%;
+  padding: 3px;
 }
 
-.nav-bar .nav-list p {
-  display: none;
+.nav-bar .grid-container .home-link {
+  position: relative;
+  display: block;
+  color: black;
+  width: 60%;
+  height: 92px;
 }
 
-.nav-bar .nav-list img {
-  padding: 7px;
-  border-radius: 5px;
-  width: 50px;
+.nav-bar .grid-container .home-link img {
+  width: 100%;
   height: auto;
+}
+
+.nav-bar .grid-container .home-link p {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  z-index: 2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .hamburger-btn {
