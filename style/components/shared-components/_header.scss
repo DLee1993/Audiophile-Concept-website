@@ -1,6 +1,6 @@
 .nav-bar{
     width: 100%;
-    height: 400px;
+    height: 100vh;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -11,6 +11,16 @@
     background-color: #D87D4A;
     transform: translateY(100%);
     transition: transform .3s ease;
+
+    & .comp-logo{
+        width: fit-content;
+        height: fit-content;
+
+        & img {
+            width: 250px;
+            height: auto;
+        }
+    }
 
     & .nav-list{
         width: 100%;
@@ -25,9 +35,10 @@
         }
 
         & img {
-            background-color: white;
             padding: 7px;
             border-radius: 5px;
+            width: 50px;
+            height: auto;
         }
     }
 }
@@ -44,7 +55,7 @@
     border: none;
     padding: 5px;
     width: 100%;
-    height: 70px;
+    height: 60px;
     max-width: 426px;
     border-radius: 5px 5px 0 0 ;
 }
