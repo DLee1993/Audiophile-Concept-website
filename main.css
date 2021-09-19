@@ -171,15 +171,15 @@ body {
 .nav-bar .grid-container {
   width: 100%;
   height: 100%;
-  padding: 3px;
+  padding: 5px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr .7fr;
-      grid-template-columns: 1fr .7fr;
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
-  gap: 3px;
-      grid-template-areas: "home cart" ". speaker" "headphone ." ". earphone" "promo promo";
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+      grid-template-areas: "home cart" "headphone speaker" "headphone earphone" "contact contact";
 }
 
 .nav-bar .grid-container .home-link {
@@ -209,6 +209,148 @@ body {
   height: 100%;
 }
 
+.nav-bar .grid-container .cart-link {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cart;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.nav-bar .grid-container .cart-link img {
+  width: 400px;
+  height: 100%;
+}
+
+.nav-bar .grid-container .headphones-link {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: headphone;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.nav-bar .grid-container .headphones-link img {
+  width: 400px;
+  height: 100%;
+}
+
+.nav-bar .grid-container .speakers-link {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: speaker;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.nav-bar .grid-container .speakers-link img {
+  width: 400px;
+  height: 100%;
+}
+
+.nav-bar .grid-container .earphones-link {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: earphone;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.nav-bar .grid-container .earphones-link img {
+  width: 400px;
+  height: 100%;
+}
+
+.nav-bar .grid-container .contact-link {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contact;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.nav-bar .grid-container .contact-link img {
+  width: 400px;
+  height: 100%;
+}
+
 .hamburger-btn {
   position: fixed;
   z-index: 3;
@@ -230,7 +372,7 @@ body {
   border: none;
   padding: 5px;
   width: 100%;
-  height: 60px;
+  height: 40px;
   max-width: 426px;
   border-radius: 5px 5px 0 0;
 }

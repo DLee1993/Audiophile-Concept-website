@@ -22,21 +22,116 @@
     .grid-container{
         width: 100%;
         height: 100%;
-        padding: 3px;
+        padding: 5px;
         display: grid;
-        grid-template-columns: 1fr .7fr;
-        grid-template-rows: repeat(5, 1fr);
-        gap: 3px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
         grid-template-areas: 
         "home cart"
-        ". speaker"
-        "headphone ."
-        ". earphone"
-        "promo promo"
+        "headphone speaker"
+        "headphone earphone"
+        "contact contact"
         ;
 
         & .home-link{
             grid-area: home;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: white;
+            overflow: hidden;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            & img {
+                width: 400px;
+                height: 100%;
+            }
+        }
+
+        & .cart-link{
+            grid-area: cart; 
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: white;
+            overflow: hidden;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            & img {
+                width: 400px;
+                height: 100%;
+            }
+        }
+        & .headphones-link{
+            grid-area: headphone;
+            background-color: white; 
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: white;
+            overflow: hidden;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            & img {
+                width: 400px;
+                height: 100%;
+            }
+        }
+        & .speakers-link{
+            grid-area: speaker; 
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: white;
+            overflow: hidden;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            & img {
+                width: 400px;
+                height: 100%;
+            }
+        }
+        & .earphones-link{
+            grid-area: earphone; 
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: white;
+            overflow: hidden;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            & img {
+                width: 400px;
+                height: 100%;
+            }
+        }
+        & .contact-link{
+            grid-area: contact; 
+            background-color: white;
             position: relative;
             display: flex;
             justify-content: center;
@@ -70,7 +165,7 @@
     border: none;
     padding: 5px;
     width: 100%;
-    height: 60px;
+    height: 40px;
     max-width: 426px;
     border-radius: 5px 5px 0 0 ;
 }
