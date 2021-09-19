@@ -1,4 +1,4 @@
-const testbtn = document.querySelector(".button"); 
+const testbtn = document.querySelector(".hamburger-btn"); 
 const mobileMenu = document.querySelector(".nav-bar"); 
 
 testbtn.addEventListener("click", () => {
