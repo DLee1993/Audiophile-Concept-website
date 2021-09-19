@@ -1,9 +1,10 @@
 .nav-bar{
     width: 100%;
-    height: 86vh;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 3;
     flex-direction: column;
     background-color: #D87D4A;
     transform: translateY(110%);
@@ -31,7 +32,7 @@
         "home cart"
         "headphone speaker"
         "headphone earphone"
-        "contact contact"
+        "contact close"
         ;
 
         & .home-link{
@@ -148,12 +149,15 @@
                 height: 100%;
             }
         }
+        & .close-menu{
+            grid-area: close;
+        }
     }
 }
 
 .hamburger-btn{
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
