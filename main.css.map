@@ -13,7 +13,7 @@
         "style/components/shared-components/_categoryPage-links.scss",
         "style/components/shared-components/_company-details.scss",
         "style/components/shared-components/_footer.scss",
-        "style/components/shared-components/_header.scss",
+        "style/components/shared-components/_navigation.scss",
         "style/components/shared-components/_hero.scss",
         "style/components/shared-components/_suggested-products.scss"
     ],
