@@ -204,6 +204,11 @@ body {
   width: fit-content;
 }
 
+.mobile-nav .nav-list .home-link svg {
+  width: 40px;
+  height: 40px;
+}
+
 .mobile-nav .nav-list p {
   display: none;
 }
