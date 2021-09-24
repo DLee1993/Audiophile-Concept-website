@@ -1,6 +1,10 @@
-const navbar = document.querySelector(".mobile-navbar"); 
+const btn = document.querySelector(".open-menu"); 
+const menu = document.querySelector(".mobile-navbar");
 
-navbar.addEventListener("click", () => {
-    navbar.style.height = "90%"
-    navbar.style.transition = "all .5s ease";
+btn.addEventListener("click", () => { 
+    if(menu.classList.contains("navbar-open")){
+        menu.classList.remove("navbar-open")
+    } else {
+        menu.classList.add("navbar-open")
+    }
 })

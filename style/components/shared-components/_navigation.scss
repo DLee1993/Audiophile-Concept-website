@@ -5,4 +5,19 @@
     height: 3.2rem;
     background-color: colorSet(accent, dark-orange);
     border-radius: 10px 10px 0 0;
+    transition: all .5s ease;
+
+    & .open-menu{
+        width: 100%;
+        height: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }   
+
+
+.navbar-open{
+    height: 90%;
+    transition: all .5s ease;
+}
