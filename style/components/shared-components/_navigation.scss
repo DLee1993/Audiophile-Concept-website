@@ -7,12 +7,36 @@
     border-radius: 10px 10px 0 0;
     transition: all .5s ease;
 
+    @include tablet{
+        display: none;
+    }
+
+    & .comp-name{
+        position: relative;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        height: fit-content;
+        z-index: 0;
+        color: white;
+        letter-spacing: 10px;
+
+        & span{
+            color: colorSet(accent, deep-orange);
+        }
+    }
+
     & .open-menu{
         width: 100%;
         height: 3.2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        & svg{
+            fill: colorSet(accent, deep-orange);;
+        }
     }
 }   
 

@@ -6,5 +6,6 @@ btn.addEventListener("click", () => {
         menu.classList.remove("navbar-open")
     } else {
         menu.classList.add("navbar-open")
+        btn.style.display = "none";
     }
 })
