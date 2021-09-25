@@ -197,23 +197,71 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 50px;
-  background-color: red;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
 }
 
 .mobile-navbar .category-list li {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
+          box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
+}
+
+.mobile-navbar .category-list li svg {
+  width: 100px;
+  height: auto;
+  fill: #fff;
+}
+
+.mobile-navbar .category-list li a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 7px;
+}
+
+.mobile-navbar .category-list .speakers-link {
+  width: 45%;
+  height: 400px;
+  background-color: transparent;
+}
+
+.mobile-navbar .category-list .second-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+  margin-left: 5%;
+}
+
+.mobile-navbar .category-list .second-column .headphones-link, .mobile-navbar .category-list .second-column .earphones-link {
+  width: 100%;
+  height: 175px;
 }
 
 .mobile-navbar .close-menu {
   position: relative;
-  top: 68%;
+  top: 15%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
