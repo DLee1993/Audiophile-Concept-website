@@ -167,6 +167,7 @@ body {
   z-index: 0;
   color: white;
   letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 .mobile-navbar .comp-name span {
