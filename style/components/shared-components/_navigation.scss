@@ -36,7 +36,7 @@
         align-items: center;
 
         & svg {
-            fill: #d6d6d7;
+            fill: colorSet(base, offwhite);
         }
     }
 
@@ -104,7 +104,7 @@
         box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
         font-size: 30px;
         font-weight: 600;
-        color: #d6d6d7;
+        color: colorSet(base, offwhite);
     }
 }
 
