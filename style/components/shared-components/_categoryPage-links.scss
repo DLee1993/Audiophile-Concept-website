@@ -1,4 +1,4 @@
-.category-links{
+.category-links {
     width: 100%;
     height: fit-content;
     padding: 0px 10px;
@@ -9,7 +9,9 @@
     list-style: none;
     margin-top: 50px;
 
-    & .headphones-link{
+    & .headphones-link,
+    .speakers-link,
+    .earphones-link {
         position: relative;
         width: 100%;
         max-width: 327px;
@@ -17,6 +19,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        margin: 10px 0;
 
         & a {
             display: block;
@@ -29,7 +32,7 @@
             border-radius: 8px;
             box-shadow: 5px 5px 10px #cc7543, -5px -5px 10px #f48d54;
 
-            & img{
+            & img {
                 position: absolute;
                 top: 0;
                 left: 50%;
@@ -38,7 +41,7 @@
                 height: auto;
             }
 
-            .link-text{
+            .link-text {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -47,7 +50,7 @@
                 width: inherit;
                 padding-bottom: 20px;
 
-                & .shop-btn{
+                & .shop-btn {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -59,8 +62,8 @@
                     height: fit-content;
                     margin-top: 10px;
                     color: colorSet(base, dark-grey);
-    
-                    & span{
+
+                    & span {
                         position: relative;
                         margin-top: 10px;
                         width: fit-content;

@@ -156,7 +156,9 @@ body {
   margin-top: 50px;
 }
 
-.category-links .headphones-link {
+.category-links .headphones-link,
+.category-links .speakers-link,
+.category-links .earphones-link {
   position: relative;
   width: 100%;
   max-width: 327px;
@@ -170,9 +172,12 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin: 10px 0;
 }
 
-.category-links .headphones-link a {
+.category-links .headphones-link a,
+.category-links .speakers-link a,
+.category-links .earphones-link a {
   display: block;
   width: inherit;
   height: 165px;
@@ -185,7 +190,9 @@ body {
           box-shadow: 5px 5px 10px #cc7543, -5px -5px 10px #f48d54;
 }
 
-.category-links .headphones-link a img {
+.category-links .headphones-link a img,
+.category-links .speakers-link a img,
+.category-links .earphones-link a img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -195,7 +202,9 @@ body {
   height: auto;
 }
 
-.category-links .headphones-link a .link-text {
+.category-links .headphones-link a .link-text,
+.category-links .speakers-link a .link-text,
+.category-links .earphones-link a .link-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +223,9 @@ body {
   padding-bottom: 20px;
 }
 
-.category-links .headphones-link a .link-text .shop-btn {
+.category-links .headphones-link a .link-text .shop-btn,
+.category-links .speakers-link a .link-text .shop-btn,
+.category-links .earphones-link a .link-text .shop-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +249,9 @@ body {
   color: #4c4c4c;
 }
 
-.category-links .headphones-link a .link-text .shop-btn span {
+.category-links .headphones-link a .link-text .shop-btn span,
+.category-links .speakers-link a .link-text .shop-btn span,
+.category-links .earphones-link a .link-text .shop-btn span {
   position: relative;
   margin-top: 10px;
   width: -webkit-fit-content;
@@ -247,7 +260,9 @@ body {
   height: 100%;
 }
 
-.category-links .headphones-link a .link-text .shop-btn span img {
+.category-links .headphones-link a .link-text .shop-btn span img,
+.category-links .speakers-link a .link-text .shop-btn span img,
+.category-links .earphones-link a .link-text .shop-btn span img {
   width: 10px;
 }
 
@@ -404,7 +419,7 @@ body {
 }
 
 .navbar-open {
-  height: 90%;
+  height: 100%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
