@@ -176,12 +176,13 @@ body {
   display: block;
   width: inherit;
   height: 165px;
+  background-color: #F1F1F1;
   text-decoration: none;
   color: black;
   text-align: center;
   border-radius: 8px;
-  -webkit-box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
-          box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
+  -webkit-box-shadow: 5px 5px 10px #cc7543, -5px -5px 10px #f48d54;
+          box-shadow: 5px 5px 10px #cc7543, -5px -5px 10px #f48d54;
 }
 
 .category-links .headphones-link a img {

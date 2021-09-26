@@ -22,12 +22,12 @@
             display: block;
             width: inherit;
             height: 165px;
-            background-color: colorSet(base, dark-orange);
+            background-color: colorSet(base, light-silver);
             text-decoration: none;
             color: black;
             text-align: center;
             border-radius: 8px;
-            box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
+            box-shadow: 5px 5px 10px #cc7543, -5px -5px 10px #f48d54;
 
             & img{
                 position: absolute;
