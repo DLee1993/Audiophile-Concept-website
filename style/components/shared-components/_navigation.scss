@@ -36,7 +36,7 @@
         align-items: center;
 
         & svg {
-            fill: colorSet(accent, deep-orange);
+            fill: #d6d6d7;
         }
     }
 
@@ -102,9 +102,9 @@
         border-radius: 10px;
         background: transparent;
         box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 600;
-        color: colorSet(accent, deep-orange);
+        color: #d6d6d7;
     }
 }
 
