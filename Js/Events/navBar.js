@@ -7,7 +7,7 @@ openbtn.addEventListener("click", () => {
     menu.classList.add("navbar-open")
     openbtn.style.display = "none";
     compName.style.display = "block"
-    body.style.overflow = "hidden"
+    document.body.style.overflow = "hidden"
 })
 
 closebtn.addEventListener("click", () => {
