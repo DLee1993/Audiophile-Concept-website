@@ -1,13 +1,12 @@
 .category-links {
     width: 100%;
-    height: fit-content;
+    height: 90%;
     padding: 0px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 30px;
 
     & .headphones-link,
     .speakers-link,
@@ -19,7 +18,6 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        margin: 10px 0;
 
         & a {
             display: block;
