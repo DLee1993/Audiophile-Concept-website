@@ -137,7 +137,9 @@ body {
 
 .category-links {
   width: 100%;
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +153,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
+  margin-top: 30px;
 }
 
 .category-links .headphones-link,
@@ -169,6 +172,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin: 10px 0;
 }
 
 .category-links .headphones-link a,
@@ -264,7 +268,7 @@ body {
 
 .mobile-navbar {
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: 3.2rem;
   background-color: #D87D4A;
@@ -324,6 +328,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +420,6 @@ body {
 
 .navbar-open {
   height: 100%;
-  border-radius: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
