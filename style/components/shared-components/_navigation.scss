@@ -6,6 +6,7 @@
     background-color: colorSet(accent, dark-orange);
     border-radius: 10px 10px 0 0;
     transition: all 0.5s ease;
+    overflow: scroll;
 
     @include tablet {
         display: none;
