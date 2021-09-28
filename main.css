@@ -278,8 +278,8 @@ body {
 }
 
 .mobile-navbar {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  bottom: -900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,12 +290,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   background-color: #D87D4A;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  overflow: scroll;
 }
 
 .hamburger-menuBtn {
@@ -306,9 +305,10 @@ body {
 }
 
 .menu-open {
-  top: 0%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: 0.9s ease;
+  transition: 0.9s ease;
+  bottom: 0px;
+  overflow: visible;
 }
 
 * {

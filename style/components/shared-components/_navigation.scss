@@ -1,13 +1,14 @@
 .mobile-navbar{
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    bottom: -900px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     background-color: colorSet(accent, dark-orange);
-    transition: all .3s ease;
+    transition: 1s ease;
+    overflow: scroll;
 }
 
 .hamburger-menuBtn{
@@ -17,8 +18,8 @@
     z-index: 3;
 }
 
-
 .menu-open{
-    top: 0%;
-    transition: all .3s ease;
-}
+    transition: 0.9s ease;
+    bottom: 0px;
+    overflow: visible;
+  }
