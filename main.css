@@ -297,6 +297,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: fixed;
+  -webkit-position: fixed;
   background-color: #D87D4A;
   padding: 20px 0;
   -webkit-transform: translateY(130%);
@@ -323,6 +324,7 @@ button {
 
 .menu-open {
   position: relative;
+  -webkit-position: relative;
   top: 0;
   left: 0;
   -webkit-transition: 0.9s ease;
