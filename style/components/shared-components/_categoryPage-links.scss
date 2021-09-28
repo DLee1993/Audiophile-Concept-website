@@ -1,93 +1,99 @@
 .category-links {
     width: 100%;
     max-width: 1240px;
-    margin: 0px auto;
     height: fit-content;
+    margin: 0px auto;
     padding: 0px 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+}
 
-    & .headphones-link,
-    .speakers-link,
-    .earphones-link {
-        position: relative;
-        width: 100%;
-        max-width: 327px;
-        height: 217px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin: 10px 0;
+.headphones-link,
+.speakers-link,
+.earphones-link {
+    position: relative;
+    width: 100%;
+    max-width: 327px;
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 10px 0;
+    transition: all .3s ease;
 
-        & a {
-            display: block;
+    & a {
+        display: block;
+        width: inherit;
+        height: 165px;
+        background-color: colorSet(base, light-silver);
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        border-radius: 8px;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: auto;
+        }
+
+        .link-text {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            height: inherit;
             width: inherit;
-            height: 165px;
-            background-color: colorSet(base, light-silver);
-            text-decoration: none;
-            color: black;
-            text-align: center;
-            border-radius: 8px;
+            padding-bottom: 20px;
 
-            & img {
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 150px;
-                height: auto;
-            }
-
-            .link-text {
+            & .shop-btn {
                 display: flex;
-                justify-content: flex-end;
+                justify-content: space-between;
                 align-items: center;
-                flex-direction: column;
-                height: inherit;
-                width: inherit;
-                padding-bottom: 20px;
+                outline: none;
+                border: none;
+                background-color: transparent;
+                width: fit-content;
+                min-width: 60px;
+                height: fit-content;
+                margin-top: 10px;
+                color: colorSet(base, dark-grey);
 
-                & .shop-btn {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    outline: none;
-                    border: none;
-                    background-color: transparent;
-                    width: fit-content;
-                    min-width: 60px;
-                    height: fit-content;
+                & span {
+                    position: relative;
                     margin-top: 10px;
-                    color: colorSet(base, dark-grey);
+                    width: fit-content;
+                    height: 100%;
 
-                    & span {
-                        position: relative;
-                        margin-top: 10px;
-                        width: fit-content;
-                        height: 100%;
-
-                        & img {
-                            width: 10px;
-                        }
+                    & img {
+                        width: 10px;
                     }
                 }
             }
         }
-
-        @include tablet{
-            width: 225px;
-        }
     }
 
-    //* Due to the product being smaller, I needed to adjust the position so it is in the same position as the other product images
-    .earphones-link {
-        & a {
-            & img {
-                top: 10px;
-            }
+    @include tablet {
+        width: 225px;
+        transition: all .3s ease;
+    }
+
+    @include desktop-small{
+        width: 327px;
+        transition: all .3s ease;
+    }
+}
+//* Due to the product being smaller, I needed to adjust the position so it is in the same position as the other product images
+.earphones-link {
+    & a {
+        & img {
+            top: 10px;
         }
     }
 }
