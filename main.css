@@ -297,8 +297,8 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: fixed;
+  transform: translateY(130%);
   -webkit-transform: translateY(130%);
-          transform: translateY(130%);
   background-color: #D87D4A;
   padding: 10px 0;
 }
@@ -327,8 +327,8 @@ button {
   left: 0;
   -webkit-transition: 0.9s ease;
   transition: 0.9s ease;
+  transform: translateY(10%);
   -webkit-transform: translateY(10%);
-          transform: translateY(10%);
 }
 
 * {

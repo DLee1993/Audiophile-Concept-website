@@ -3,6 +3,7 @@
     height: fit-content;
     position: fixed;
     transform: translateY(130%);
+    -webkit-transform: translateY(130%);
     background-color: colorSet(accent, dark-orange);
     padding: 10px 0;
 
@@ -31,4 +32,5 @@ button{
     left: 0;
     transition: 0.9s ease;
     transform: translateY(10%);
+    -webkit-transform: translateY(10%);
 }
