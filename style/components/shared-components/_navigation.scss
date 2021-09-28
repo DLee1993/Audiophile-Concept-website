@@ -2,7 +2,7 @@
     width: 100%;
     height: fit-content;
     position: fixed;
-    bottom: -900px;
+    top: 900px;
     background-color: colorSet(accent, dark-orange);
     padding: 20px 0;
     transition: all 3s ease;
@@ -27,6 +27,7 @@ button {
 }
 
 .menu-open {
+    position: fixed;
     transition: all 3s ease;
-    bottom: 0px;
+    top: 0px;
 }

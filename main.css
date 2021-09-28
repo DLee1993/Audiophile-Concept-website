@@ -297,7 +297,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: fixed;
-  bottom: -900px;
+  top: 900px;
   background-color: #D87D4A;
   padding: 20px 0;
   -webkit-transition: all 3s ease;
@@ -323,9 +323,10 @@ button {
 }
 
 .menu-open {
+  position: fixed;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
-  bottom: 0px;
+  top: 0px;
 }
 
 * {
