@@ -1,2 +1,10 @@
+const navbar = document.querySelector(".mobile-navbar"); 
+const navbarBtn = document.querySelector(".hamburger-menuBtn"); 
 
-//https://youtu.be/2btuhCYf7zw?t=274
+navbarBtn.addEventListener("click", () => {
+    if(navbar.classList.contains("menu-open")){
+        navbar.classList.remove("menu-open")
+    } else {
+        navbar.classList.add("menu-open")
+    }
+}); 
