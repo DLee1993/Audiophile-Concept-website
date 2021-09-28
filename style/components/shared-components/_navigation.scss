@@ -1,5 +1,5 @@
 .mobile-navbar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 3.2rem;
@@ -9,23 +9,6 @@
 
     @include tablet {
         display: none;
-    }
-
-    & .comp-name {
-        position: relative;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: fit-content;
-        height: fit-content;
-        z-index: 0;
-        color: white;
-        letter-spacing: 10px;
-        text-transform: uppercase;
-
-        & span {
-            color: colorSet(accent, deep-orange);
-        }
     }
 
     & .open-menu {
@@ -40,53 +23,6 @@
         }
     }
 
-    .category-list {
-        width: 100%;
-        height: fit-content;
-        margin-top: 70px;
-        display: flex;
-        list-style: none;
-
-        & li {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-            box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
-
-            & svg {
-                width: 100px;
-                height: auto;
-                fill: #fff;
-            }
-
-            & a {
-                color: white;
-                text-decoration: none;
-                letter-spacing: 7px;
-            }
-        }
-
-        & .speakers-link{
-            width: 45%;
-            height: 400px;
-            background-color: transparent;
-        }
-
-        .second-column{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 45%;
-            margin-left: 5%;
-
-            & .headphones-link, .earphones-link{
-                width: 100%;
-                height: 175px;
-            }
-        }
-    }
-
     .close-menu {
         position: relative;
         top: 2%;
@@ -97,6 +33,7 @@
         align-items: center;
         width: 50px;
         height: 50px;
+        margin: 0 0 20px 0;
         outline: none;
         border: none;
         border-radius: 10px;
@@ -110,5 +47,6 @@
 
 .navbar-open {
     height: 100%;
+    overflow: auto;
     transition: all 0.5s ease;
 }
