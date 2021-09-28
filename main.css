@@ -137,6 +137,8 @@ body {
 
 .category-links {
   width: 100%;
+  max-width: 1240px;
+  margin: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -144,16 +146,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  margin: 10px 0px;
 }
 
 .category-links .headphones-link,
@@ -186,8 +187,6 @@ body {
   color: black;
   text-align: center;
   border-radius: 8px;
-  -webkit-box-shadow: 5px 5px 10px #cc7543, -5px -5px 10px #f48d54;
-          box-shadow: 5px 5px 10px #cc7543, -5px -5px 10px #f48d54;
 }
 
 .category-links .headphones-link a img,
@@ -266,79 +265,16 @@ body {
   width: 10px;
 }
 
-.category-links .earphones-link a img {
-  top: 10px;
-}
-
-.mobile-navbar {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3.2rem;
-  background-color: #D87D4A;
-  border-radius: 10px 10px 0 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 @media (min-width: 600px) {
-  .mobile-navbar {
-    display: none;
+  .category-links .headphones-link,
+  .category-links .speakers-link,
+  .category-links .earphones-link {
+    width: 225px;
   }
 }
 
-.mobile-navbar .open-menu {
-  width: 100%;
-  height: 3.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.mobile-navbar .open-menu svg {
-  fill: #FAFAFA;
-}
-
-.mobile-navbar .close-menu {
-  position: relative;
-  top: 2%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  margin: 0 0 20px 0;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  background: transparent;
-  -webkit-box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
-          box-shadow: 5px 5px 10px #bc6d40, -5px -5px 10px #f48d54;
-  font-size: 30px;
-  font-weight: 600;
-  color: #FAFAFA;
-}
-
-.navbar-open {
-  height: 100%;
-  overflow: auto;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.category-links .earphones-link a img {
+  top: 10px;
 }
 
 * {
