@@ -2,13 +2,14 @@
     width: 100%;
     height: fit-content;
     position: fixed;
+    top: 100%;
+    left: 0;
     -webkit-position: fixed;
     background-color: colorSet(accent, dark-orange);
     padding: 20px 0;
--ms-transform: translateY(130%);
--webkit-transform: translateY(130%);
--moz-transform: translateY(130%);
--o-transform: translateY(130%);
+    -ms-transform: translateY(130%);
+    -webkit-transform: translateY(130%);
+    -moz-transform: translateY(130%);
     transform: translateY(130%);
 
     & .navbar-category-links {
@@ -32,13 +33,12 @@ button {
 
 .menu-open {
     position: relative;
-    -webkit-position: relative; 
+    -webkit-position: relative;
     top: 0;
     left: 0;
     transition: 0.9s ease;
--ms-transform: translateY(0%);
--webkit-transform: translateY(0%);
--moz-transform: translateY(0%);
--o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
     transform: translateY(0%);
 }

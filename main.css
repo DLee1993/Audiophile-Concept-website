@@ -297,6 +297,8 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: fixed;
+  top: 100%;
+  left: 0;
   -webkit-position: fixed;
   background-color: #D87D4A;
   padding: 20px 0;
