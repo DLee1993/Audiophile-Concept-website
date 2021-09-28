@@ -297,13 +297,11 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: fixed;
-  top: 100%;
-  left: 0;
-  -webkit-position: fixed;
+  bottom: -900px;
   background-color: #D87D4A;
   padding: 20px 0;
-  -webkit-transform: translateY(130%);
-  transform: translateY(130%);
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 .mobile-navbar .navbar-category-links {
@@ -325,14 +323,9 @@ button {
 }
 
 .menu-open {
-  position: relative;
-  -webkit-position: relative;
-  top: 0;
-  left: 0;
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease;
-  -webkit-transform: translateY(0%);
-  transform: translateY(0%);
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  bottom: 0px;
 }
 
 * {
