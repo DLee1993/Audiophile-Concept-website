@@ -297,10 +297,10 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: fixed;
-  transform: translateY(130%);
-  -webkit-transform: translateY(130%);
   background-color: #D87D4A;
-  padding: 10px 0;
+  padding: 20px 0;
+  -webkit-transform: translateY(130%);
+  transform: translateY(130%);
 }
 
 .mobile-navbar .navbar-category-links {
@@ -311,7 +311,7 @@ body {
 .mobile-navbar .navbar-category-links .headphones-link,
 .mobile-navbar .navbar-category-links .speakers-link,
 .mobile-navbar .navbar-category-links .earphones-link {
-  margin: 0 auto 30px auto;
+  margin: 0 auto 40px auto;
 }
 
 button {
@@ -327,8 +327,8 @@ button {
   left: 0;
   -webkit-transition: 0.9s ease;
   transition: 0.9s ease;
-  transform: translateY(10%);
-  -webkit-transform: translateY(10%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 * {
