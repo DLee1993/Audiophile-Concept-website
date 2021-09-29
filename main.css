@@ -287,7 +287,7 @@ body {
   }
 }
 
-.earphones-link a img {
+.earphones-link a .earphones-image {
   top: 10px;
 }
 
@@ -300,6 +300,12 @@ body {
   padding: 20px 0;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
+}
+
+@media (max-width: 500px) {
+  .mobile-navbar {
+    height: 90vh;
+  }
 }
 
 .mobile-navbar .navbar-category-links {

@@ -7,6 +7,10 @@
     padding: 20px 0;
     transition: all 3s ease;
 
+    @media (max-width: 500px) {
+        height: 90vh;
+    }
+
     & .navbar-category-links {
         width: 100%;
         height: fit-content;
