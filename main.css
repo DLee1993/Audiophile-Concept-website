@@ -291,28 +291,211 @@ body {
   top: 10px;
 }
 
-.mobile-navbar {
-  width: 100%;
-  height: 100vh;
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+.navbar {
   position: fixed;
-  top: 1000px;
   background-color: #D87D4A;
-  padding: 20px 0;
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  -webkit-transition: width 600ms ease;
+  transition: width 600ms ease;
+  border-radius: 10px 10px 0 0;
 }
 
-button {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
+@media (min-width: 600px) {
+  .navbar {
+    border-radius: 0 10px 10px 0;
+  }
 }
 
-.menu-open {
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
-  top: 0px;
+@media (min-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  -webkit-filter: grayscale(100%) opacity(0.7);
+          filter: grayscale(100%) opacity(0.7);
+  -webkit-transition: var(--transition-speed);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  -webkit-filter: grayscale(0%) opacity(1);
+          filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary {
+  color: #ff7eee;
+}
+
+.fa-secondary {
+  color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+  -webkit-transition: var(--transition-speed);
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.navbar:hover .logo svg {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 4rem;
+  }
+  #hamburger-icon {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main {
+    margin: 0;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  #hamburger-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+  .navbar:hover {
+    width: 16rem;
+  }
+  .navbar:hover .link-text {
+    display: inline;
+  }
+  .navbar:hover .logo svg {
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    margin-left: 13rem;
+  }
+  .navbar:hover .logo-text {
+    left: 0px;
+  }
 }
 
 * {
