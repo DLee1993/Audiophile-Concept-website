@@ -6,22 +6,6 @@
     background-color: colorSet(accent, dark-orange);
     padding: 20px 0;
     transition: all 3s ease;
-
-    @media (max-width: 500px) {
-        height: 90vh;
-    }
-
-    & .navbar-category-links {
-        width: 100%;
-        height: fit-content;
-        background-color: colorSet(accent, dark-orange);
-
-        & .headphones-link,
-        .speakers-link,
-        .earphones-link {
-            margin: 0 auto 20px auto;
-        }
-    }
 }
 
 button {
@@ -34,5 +18,4 @@ button {
 .menu-open {
     transition: all 3s ease;
     top: 0px;
-    overflow: visible;
 }

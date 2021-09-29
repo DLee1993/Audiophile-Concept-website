@@ -302,26 +302,6 @@ body {
   transition: all 3s ease;
 }
 
-@media (max-width: 500px) {
-  .mobile-navbar {
-    height: 90vh;
-  }
-}
-
-.mobile-navbar .navbar-category-links {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #D87D4A;
-}
-
-.mobile-navbar .navbar-category-links .headphones-link,
-.mobile-navbar .navbar-category-links .speakers-link,
-.mobile-navbar .navbar-category-links .earphones-link {
-  margin: 0 auto 20px auto;
-}
-
 button {
   position: fixed;
   top: 0;
@@ -333,7 +313,6 @@ button {
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
   top: 0px;
-  overflow: visible;
 }
 
 * {
