@@ -57,12 +57,10 @@ main {
   height: 5rem;
   color: var(--text-primary);
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
 }
 
 .nav-link:hover {
-  filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
 }
@@ -78,14 +76,6 @@ main {
   margin: 0 1.5rem;
 }
 
-.fa-primary {
-  color: #ff7eee;
-}
-
-.fa-secondary {
-  color: #df49a6;
-}
-
 .fa-primary,
 .fa-secondary {
   transition: var(--transition-speed);
@@ -96,8 +86,6 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--text-secondary);
-  background: var(--bg-secondary);
   font-size: 1.5rem;
   letter-spacing: 0.3ch;
   width: 100%;
