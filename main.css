@@ -293,26 +293,25 @@ body {
 
 .mobile-navbar {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   position: fixed;
-  top: 900px;
+  top: 1000px;
   background-color: #D87D4A;
   padding: 20px 0;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
+  overflow: scroll;
 }
 
 .mobile-navbar .navbar-category-links {
   width: 100%;
-  height: 100%;
+  background-color: #D87D4A;
 }
 
 .mobile-navbar .navbar-category-links .headphones-link,
 .mobile-navbar .navbar-category-links .speakers-link,
 .mobile-navbar .navbar-category-links .earphones-link {
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
 }
 
 button {
