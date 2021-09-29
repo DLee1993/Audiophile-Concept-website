@@ -54,10 +54,14 @@ main {
 .nav-link {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: inherit;
   color: var(--text-primary);
   text-decoration: none;
   transition: var(--transition-speed);
+
+  @include tablet {
+    height: 5rem;
+  }
 }
 
 .nav-link:hover {
@@ -113,7 +117,7 @@ main {
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 3rem;
+    height: 3.5rem;
   }
 
   #hamburger-icon{
