@@ -291,18 +291,6 @@ body {
   top: 10px;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
-
 main {
   margin-left: 5rem;
   padding: 1rem;
@@ -310,9 +298,10 @@ main {
 
 .navbar {
   position: fixed;
-  background-color: #D87D4A;
+  background-color: #FFFFFF;
   -webkit-transition: width 600ms ease;
   transition: width 600ms ease;
+  border-top: 3px solid #F1F1F1;
   border-radius: 10px 10px 0 0;
 }
 
@@ -387,6 +376,7 @@ main {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
+  fill: #4c4c4c;
 }
 
 .fa-primary,
