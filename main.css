@@ -296,17 +296,15 @@ body {
   background-color: #D87D4A;
   -webkit-transition: width 600ms ease;
   transition: width 600ms ease;
-  border-top: 3px solid #F1F1F1;
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
   bottom: 0;
+  z-index: 10;
   width: 100vw;
   height: 4rem;
 }
 
 @media (min-width: 600px) {
   .navbar {
-    border-top: none;
-    border-right: 3px solid #F1F1F1;
     border-radius: 0 10px 10px 0;
     top: 0;
     width: 5rem;
@@ -338,6 +336,8 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 100%;
+  background-color: #D87D4A;
+  border-radius: 10px 10px 0 0;
 }
 
 @media (min-width: 600px) {
@@ -369,7 +369,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 70px;
+  height: 4rem;
   color: #FFFFFF;
   text-decoration: none;
   -webkit-transition: 0.3 ease;
@@ -384,7 +384,6 @@ body {
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background-color: #FFFFFF;
   color: #D87D4A;
 }
 
@@ -399,8 +398,12 @@ body {
 }
 
 .navbar .navbar-nav .sub-list {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,8 +414,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #D87D4A;
-  width: 100%;
+  width: 0px;
+  border-radius: 10px 10px 0 0;
   list-style: none;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 @media (min-width: 600px) {
@@ -467,6 +475,17 @@ body {
   fill: #D87D4A;
 }
 
+.navbar .navbar-nav .open-subList {
+  width: 100%;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 1;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
 .navbar .navbar-nav #category-link {
   display: block;
 }
@@ -480,6 +499,11 @@ body {
 .navbar .navbar-nav .speaker-icon {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.main-content {
+  width: 100%;
+  height: 100vh;
 }
 
 * {
