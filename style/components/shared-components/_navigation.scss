@@ -59,17 +59,22 @@ main {
     @include tablet {
         height: 5rem;
     }
+
+
+    & svg{
+        width: 1.5rem;
+        height: auto;
+    }
+
+    & .home-svg{
+        width: 1.7rem;
+        height: auto;
+    }
 }
 
 .nav-link:hover {
     background: var(--bg-secondary);
     color: var(--text-secondary);
-}
-
-.nav-link svg {
-    width: 1.5rem;
-    min-width: 1.5rem;
-    fill: colorSet(base, dark-grey);
 }
 
 /* Small screens */

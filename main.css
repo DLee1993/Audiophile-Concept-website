@@ -381,15 +381,19 @@ main {
   }
 }
 
+.nav-link svg {
+  width: 1.5rem;
+  height: auto;
+}
+
+.nav-link .home-svg {
+  width: 1.7rem;
+  height: auto;
+}
+
 .nav-link:hover {
   background: var(--bg-secondary);
   color: var(--text-secondary);
-}
-
-.nav-link svg {
-  width: 1.5rem;
-  min-width: 1.5rem;
-  fill: #4c4c4c;
 }
 
 /* Small screens */
