@@ -84,7 +84,7 @@
         transition: all .3s ease;
     }
 
-    @include desktop-small{
+    @include desktop{
         width: 327px;
         transition: all .3s ease;
     }

@@ -24,3 +24,12 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #D87D4A;
 }
+
+main {
+    margin: 0;
+
+    @include tablet {
+        margin-left: 5rem;
+        padding: 1rem;
+    }
+}

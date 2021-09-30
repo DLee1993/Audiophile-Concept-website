@@ -1,16 +1,12 @@
-main {
-    margin-left: 5rem;
-    padding: 1rem;
-}
-
 .navbar {
     position: fixed;
-    background-color: colorSet(base, white);
+    background-color: colorSet(accent, dark-orange);
     transition: width 600ms ease;
-
     border-top: 3px solid colorSet(base, light-silver);
-
     border-radius: 10px 10px 0 0;
+    bottom: 0;
+    width: 100vw;
+    height: 4rem;
 
     @include tablet {
         border-top: none;
@@ -21,87 +17,120 @@ main {
         height: 100vh;
     }
 
-    @include desktop-small {
-        display: none;
-    }
-}
-
-.navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-
-    @include tablet {
-      justify-content: space-around;
-    }
-}
-
-.nav-item {
-    width: 100%;
-}
-
-.nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 70px;
-    color: var(--text-primary);
-    text-decoration: none;
-    transition: var(--transition-speed);
-    font-size: 12px;
-
-    @include tablet {
-        height: 5rem;
-    }
-
-
-    & svg{
-        width: 1.5rem;
-        height: 1.7rem;
-    }
-
-    & .home-svg{
-        width: 1.7rem;
-        height: auto;
-    }
-}
-
-.nav-link:hover {
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-}
-
-/* Small screens */
-@media only screen and (max-width: 600px) {
-    .navbar {
-        bottom: 0;
-        width: 100vw;
-        height: 4 rem;
-    }
-
-    #hamburger-icon {
+    @include desktop {
         display: none;
     }
 
-    .logo {
-        display: none;
-    }
 
     .navbar-nav {
-        flex-direction: row;
-    }
-
-    .nav-link {
-        justify-content: center;
-    }
-
-    main {
+        list-style: none;
+        padding: 0;
         margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+
+        @include tablet {
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+
+        .nav-item {
+            width: 100%;
+
+            .nav-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 70px;
+                color: colorSet(base, white);
+                text-decoration: none;
+                transition: 0.3 ease;
+                font-size: 12px;
+
+                @include tablet {
+                    height: 5rem;
+                }
+
+                &:hover{
+                    background-color: colorSet(base, white);
+                    color: colorSet(accent, dark-orange);
+
+                    & svg{
+                        fill: colorSet(accent, dark-orange);
+                    }
+                }
+            }
+
+            .nav-link svg {
+                width: 1.5rem;
+                min-width: 1.5rem;
+                fill: colorSet(base, white);
+            }
+        }
+
+
+
+        .sub-list {
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: colorSet(accent, dark-orange);
+            width: 100%;
+            list-style: none;
+
+            @include tablet {
+                position: relative;
+                height: 43%;
+                flex-direction: column;
+            }
+
+            .nav-item{
+                width: 100%;
+
+                & .nav-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 70px;
+                    color: colorSet(base, white);
+                    text-decoration: none;
+                    transition: 0.3 ease;
+                    font-size: 12px;
+    
+                    @include tablet {
+                        height: 5rem;
+                    }
+
+                    &:hover{
+                        background-color: colorSet(base, white);
+                        color: colorSet(accent, dark-orange);
+    
+                        & svg{
+                            fill: colorSet(accent, dark-orange);
+                        }
+                    }
+                }
+            }
+        }
+
+        #category-link {
+            display: block;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        .speaker-icon {
+            transform: rotate(90deg);
+        }
     }
 }

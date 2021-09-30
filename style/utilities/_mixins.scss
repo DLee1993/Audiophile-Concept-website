@@ -4,8 +4,8 @@
     }
 }; 
 
-@mixin desktop-small {
-    @media (min-width: 1000px) {
+@mixin desktop {
+    @media (min-width: 1024px) {
         @content
     }
 }; 
