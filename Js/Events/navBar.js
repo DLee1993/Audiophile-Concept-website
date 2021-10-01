@@ -1,6 +1,8 @@
 const categories = document.getElementById("category-link"); 
 const subList = document.querySelector(".product-list"); 
-const main = document.querySelector(".main-content")
+const main = document.querySelector(".main-content"); 
+const navbar = document.querySelector(".navbar"); 
+const navbarNav = document.querySelector(".navbar-nav"); 
 
 categories.addEventListener("click", () => {
     if(subList.classList.contains("open-subList")){
@@ -9,7 +11,3 @@ categories.addEventListener("click", () => {
         subList.classList.add("open-subList")
     }
 });
-
-main.addEventListener("click", () => {
-    subList.classList.remove("open-subList")
-})

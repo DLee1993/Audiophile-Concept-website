@@ -25,11 +25,12 @@ body::-webkit-scrollbar-thumb {
     background: #D87D4A;
 }
 
-main {
-    margin: 0;
-
-    @include tablet {
+main{
+    @include tablet{
         margin-left: 5rem;
-        padding: 1rem;
+    }
+
+    @include desktop {
+        margin-left: 0;
     }
 }
