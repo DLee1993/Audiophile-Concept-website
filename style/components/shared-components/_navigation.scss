@@ -55,10 +55,6 @@
                 @include tablet {
                     height: 50px;
                 }
-
-                &:hover{
-                    background-color: colorSet(accent, deep-orange);
-                }
             }
 
             .nav-link svg {

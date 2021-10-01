@@ -383,10 +383,6 @@ body {
   }
 }
 
-.mobile-navbar .navbar-nav .nav-item .nav-link:hover {
-  background-color: #8a5130;
-}
-
 .mobile-navbar .navbar-nav .nav-item .nav-link svg {
   width: 1.5rem;
   min-width: 1.5rem;
