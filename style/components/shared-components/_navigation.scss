@@ -1,6 +1,8 @@
+//* Styling for mobile and tablet navigation *
+
 .mobile-navbar {
     position: fixed;
-    background-color: colorSet(accent, dark-orange);
+    background-color: colorSet(base, dark-grey);
     transition: width 600ms ease;
     border-radius: 20px 20px 0 0;
     bottom: 0;
@@ -19,7 +21,6 @@
         display: none;
     }
 
-
     .navbar-nav {
         list-style: none;
         padding: 0;
@@ -29,14 +30,13 @@
         align-items: center;
         flex-direction: row;
         height: 100%;
-        background-color: colorSet(accent, dark-orange);
+        background-color: transparent;
         border-radius: 10px 10px 0 0;
 
         @include tablet {
             justify-content: space-around;
             flex-direction: column;
         }
-
 
         .nav-item {
             width: 100%;
@@ -64,8 +64,6 @@
             }
         }
 
-
-
         .sub-list {
             list-style: none;
             position: absolute;
@@ -76,14 +74,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: colorSet(accent, dark-orange);
+            background-color: colorSet(base, dark-grey);
             width: 100%;
             border-radius: 10px 10px 0 0;
             list-style: none;
             overflow: hidden;
             opacity: 0;
-            transition: all .7s ease;
-            
+            transition: all 0.7s ease;
 
             @include tablet {
                 position: relative;
@@ -91,20 +88,20 @@
                 justify-content: space-between;
                 align-items: center;
                 transform: none;
-                left: 0; 
+                left: 0;
                 top: 0;
                 opacity: 1;
                 z-index: 3;
                 width: 100%;
                 height: 46%;
                 flex-direction: column;
-                
-                @media (min-height: 600px){
+
+                @media (min-height: 600px) {
                     height: 43%;
                 }
             }
 
-            .nav-item{
+            .nav-item {
                 width: 100%;
 
                 & .nav-link {
@@ -121,12 +118,12 @@
             }
         }
 
-        .open-subList{
-            bottom: 50px;
+        .open-subList {
+            bottom: 45px;
             left: 50%;
             transform: translateX(-50%);
             opacity: 1;
-            transition: all .7s ease;
+            transition: all 0.7s ease;
             padding-bottom: 20px;
         }
 
@@ -140,6 +137,57 @@
 
         .speaker-icon {
             transform: rotate(90deg);
+        }
+    }
+}
+
+//* Styling for desktop navigation *
+
+.desktop-navbar {
+    width: 100%;
+    height: 5rem;
+    display: none;
+    background-color: black;
+    padding: 0px 50px;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        color: white;
+        list-style: none;
+
+        .nav-links {
+            margin: 0px 20px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                color: colorSet(accent, dark-orange);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    .cart-icon {
+        transition: all 0.3s ease;
+        fill: #fff;
+
+        &:hover {
+            cursor: pointer;
+            fill: colorSet(accent, dark-orange);
+            transition: all 0.3s ease;
         }
     }
 }

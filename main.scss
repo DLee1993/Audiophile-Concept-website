@@ -14,15 +14,7 @@ body, html{
 }
 
 body::-webkit-scrollbar {
-    width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-    background: #D87D4A;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #D87D4A;
+    width: 0rem;
 }
 
 main{
@@ -34,6 +26,6 @@ main{
     }
 
     @include desktop {
-        margin-left: 0;
+        padding-left: 0;
     }
 }
