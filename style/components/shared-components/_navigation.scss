@@ -57,12 +57,7 @@
                 }
 
                 &:hover{
-                    background-color: colorSet(base, white);
-                    color: colorSet(accent, dark-orange);
-
-                    & svg{
-                        fill: colorSet(accent, dark-orange);
-                    }
+                    background-color: colorSet(accent, deep-orange);
                 }
             }
 
@@ -78,7 +73,7 @@
         .sub-list {
             list-style: none;
             position: absolute;
-            bottom: -1px;
+            bottom: -20px;
             left: 50%;
             transform: translateX(-50%);
             z-index: -1;
@@ -126,27 +121,17 @@
                     text-decoration: none;
                     transition: 0.3 ease;
                     font-size: 12px;
-
-
-                    &:hover{
-                        background-color: colorSet(base, white);
-                        color: colorSet(accent, dark-orange);
-    
-                        & svg{
-                            fill: colorSet(accent, dark-orange);
-                        }
-                    }
                 }
             }
         }
 
         .open-subList{
-            bottom: 55px;
+            bottom: 50px;
             left: 50%;
-            height: 7rem;
             transform: translateX(-50%);
             opacity: 1;
             transition: all .7s ease;
+            padding-bottom: 20px;
         }
 
         #category-link {
