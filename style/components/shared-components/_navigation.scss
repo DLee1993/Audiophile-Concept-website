@@ -100,9 +100,10 @@
     width: 100%;
     border-radius: 10px 10px 0 0;
     list-style: none;
+    opacity: 0;
     overflow: hidden;
     transition: all 0.7s ease;
-    background-color: colorSet(accent, light-orange);
+    background-color: colorSet(base, dark-grey);
 
     @include tablet {
         position: relative;

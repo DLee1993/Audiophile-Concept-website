@@ -436,10 +436,11 @@ body {
   width: 100%;
   border-radius: 10px 10px 0 0;
   list-style: none;
+  opacity: 0;
   overflow: hidden;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
-  background-color: #FBAF85;
+  background-color: #4c4c4c;
 }
 
 @media (min-width: 600px) {
