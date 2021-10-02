@@ -296,7 +296,7 @@ body {
   background-color: #D87D4A;
   -webkit-transition: width 600ms ease;
   transition: width 600ms ease;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   bottom: 0;
   z-index: 3;
   width: 100vw;
