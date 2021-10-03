@@ -277,7 +277,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .headphones-link,
   .speakers-link,
   .earphones-link {
@@ -289,6 +289,41 @@ body {
 
 .earphones-link a .earphones-image {
   top: 10px;
+}
+
+.mobile-tablet-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #FAFAFA;
+  border-top: 3px solid #F1F1F1;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 600px) {
+  .mobile-tablet-navbar {
+    width: 3rem;
+    height: 100vh;
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+    border-top: none;
+    border-right: 3px solid #F1F1F1;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .mobile-tablet-navbar {
+    display: none;
+  }
+}
+
+.nav-open {
+  width: 10rem;
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
 }
 
 .desktop-navbar {
@@ -305,7 +340,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .desktop-navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -397,7 +432,7 @@ main {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   main {
     padding-left: 0;
   }
