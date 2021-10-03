@@ -277,7 +277,7 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .headphones-link,
   .speakers-link,
   .earphones-link {
@@ -305,7 +305,7 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .desktop-navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -332,7 +332,6 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: white;
   list-style: none;
 }
 
@@ -342,20 +341,29 @@ body {
   transition: all 0.3s ease;
 }
 
-.desktop-navbar .nav-list .nav-links:hover {
+.desktop-navbar .nav-list .nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.desktop-navbar .nav-list .nav-links a:hover {
   cursor: pointer;
   color: #D87D4A;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.desktop-navbar .cart-icon {
+.desktop-navbar .cart-link p {
+  display: none;
+}
+
+.desktop-navbar .cart-link .cart-icon {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   fill: #fff;
 }
 
-.desktop-navbar .cart-icon:hover {
+.desktop-navbar .cart-link .cart-icon:hover {
   cursor: pointer;
   fill: #D87D4A;
   -webkit-transition: all 0.3s ease;
@@ -389,7 +397,7 @@ main {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   main {
     padding-left: 0;
   }

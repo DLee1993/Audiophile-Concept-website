@@ -23,29 +23,39 @@
         justify-content: center;
         align-items: center;
         width: fit-content;
-        color: white;
         list-style: none;
 
         .nav-links {
             margin: 0px 20px;
             transition: all 0.3s ease;
 
-            &:hover {
-                cursor: pointer;
-                color: colorSet(accent, dark-orange);
-                transition: all 0.3s ease;
+            a{
+                color: colorSet(base, white);
+                text-decoration: none;
+
+                &:hover {
+                    cursor: pointer;
+                    color: colorSet(accent, dark-orange);
+                    transition: all 0.3s ease;
+                }
             }
         }
     }
 
-    .cart-icon {
-        transition: all 0.3s ease;
-        fill: #fff;
+    .cart-link{
+        p {
+            display: none;
+        }
 
-        &:hover {
-            cursor: pointer;
-            fill: colorSet(accent, dark-orange);
+        .cart-icon {
             transition: all 0.3s ease;
+            fill: #fff;
+    
+            &:hover {
+                cursor: pointer;
+                fill: colorSet(accent, dark-orange);
+                transition: all 0.3s ease;
+            }
         }
     }
 }
