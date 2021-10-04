@@ -1,8 +1,10 @@
 .mobile-navigation {
-    width: 100%;
+    width: 80%;
     height: 3rem;
     position: fixed;
-    bottom: 0px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +23,7 @@
         align-items: flex-end;
         list-style: none;
         background-color: colorSet(base, light-silver);
-        border-radius: 10px 10px 0 0;
+        border-radius: 15px 15px 0 0;
 
         & .nav-item {
             & a {

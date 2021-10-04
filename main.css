@@ -292,10 +292,13 @@ body {
 }
 
 .mobile-navigation {
-  width: 100%;
+  width: 80%;
   height: 3rem;
   position: fixed;
-  bottom: 0px;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +332,7 @@ body {
           align-items: flex-end;
   list-style: none;
   background-color: #F1F1F1;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .mobile-navigation .nav-list .nav-item a {
