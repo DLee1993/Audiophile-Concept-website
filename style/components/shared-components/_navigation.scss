@@ -22,9 +22,59 @@
         align-items: flex-end;
         list-style: none;
         background-color: colorSet(accent, dark-orange);
-        border-radius: 10px 10px 0 0;
 
         & .nav-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: colorSet(base, light-silver);
+            & a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: colorSet(base, light-silver);
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+
+.mobile-subMenu{
+    position: fixed;
+    bottom: -20px;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+    background-color: colorSet(accent, dark-orange);
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid colorSet(base, light-silver);
+    transition: all .3s ease;
+
+    & .products{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+
+        & .product-item {
             & a {
                 display: flex;
                 justify-content: center;
@@ -40,30 +90,12 @@
                 }
             }
         }
+
     }
 }
 
 
-.mobile-subMenu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 94vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: red;
-    overflow: scroll;
-
-    & .products{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+.menu-open{
+    bottom: 56px;
+    transition: all .3s ease;
 }
