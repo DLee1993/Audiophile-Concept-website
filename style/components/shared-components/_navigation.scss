@@ -22,7 +22,7 @@
         justify-content: space-around;
         align-items: flex-end;
         list-style: none;
-        background-color: colorSet(base, light-silver);
+        background-color: colorSet(accent, dark-orange);
         border-radius: 15px;
 
         & .nav-item {
@@ -31,9 +31,10 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                color: colorSet(base, dark-grey);
+                color: colorSet(base, light-silver);
                 text-decoration: none;
                 font-size: 12px;
+
                 & svg {
                     width: 20px;
                     height: 20px;
