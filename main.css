@@ -485,11 +485,10 @@ body {
             flex-direction: column;
     width: 3rem;
     height: 100vh;
-    padding: 10px 0px;
     background-color: #D87D4A;
     overflow: hidden;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   .tablet-desktop-navigation .nav-list {
     display: -webkit-box;
@@ -507,8 +506,22 @@ body {
             flex-direction: column;
     width: 100%;
     height: inherit;
-    margin-top: 10px;
     list-style: none;
+  }
+  .tablet-desktop-navigation .nav-list .home {
+    display: inline;
+  }
+  .tablet-desktop-navigation .nav-list .home svg {
+    width: 30px;
+    height: auto;
+  }
+  .tablet-desktop-navigation .nav-list .home img {
+    position: relative;
+    left: -400px;
+    margin: auto;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    margin-right: 10px;
   }
   .tablet-desktop-navigation .nav-list .nav-item {
     width: 100%;
@@ -533,11 +546,11 @@ body {
     width: 24px;
     min-width: 2rem;
     height: 24px;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     margin-right: 20px;
   }
   .tablet-desktop-navigation .nav-list .nav-item .open-btn {
-    width: 80%;
+    width: 100%;
   }
   .tablet-desktop-navigation .nav-list .nav-item .open-btn svg {
     width: 24px;
@@ -545,10 +558,9 @@ body {
   }
   .tablet-desktop-navigation .nav-list .nav-item .close-btn {
     display: none;
+    width: 100%;
   }
   .tablet-desktop-navigation .nav-list .nav-item:last-child {
-    position: relative;
-    top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -571,8 +583,8 @@ body {
 
 .tablet-menu-open {
   width: 13rem;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 * {

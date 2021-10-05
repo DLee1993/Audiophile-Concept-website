@@ -4,7 +4,7 @@ const productsBtn = document.querySelector(".subMenu-btn"),
     tabletMenu = document.querySelector(".tablet-desktop-navigation"), 
     tabletOpenBtn = document.querySelector(".open-btn"), 
     tabletCloseBtn = document.querySelector(".close-btn"), 
-    homeLink = document.querySelector(".home-link")
+    homeLink = document.querySelector(".home img")
 
 
 productsBtn.addEventListener("click", () => {
@@ -23,12 +23,14 @@ tabletOpenBtn.addEventListener("click", () => {
     tabletMenu.classList.add("tablet-menu-open")
     tabletOpenBtn.style.display = "none"
     tabletCloseBtn.style.display = "block"
+    homeLink.style.left = "0px"
 })
 
 tabletCloseBtn.addEventListener("click", () => {
     tabletMenu.classList.remove("tablet-menu-open")
     tabletOpenBtn.style.display = "block"
     tabletCloseBtn.style.display = "none"
+    homeLink.style.left = "-400px"
 })
 
 window.addEventListener("resize", () => {
