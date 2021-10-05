@@ -5,9 +5,11 @@ const productsBtn = document.querySelector(".subMenu-btn"),
 productsBtn.addEventListener("click", () => {
     if(subMenu.classList.contains("menu-open")){
         subMenu.classList.remove("menu-open")
+        productsBtn.style.color = "#F1F1F1"
         menu.style.borderTop = "none"
     } else {
         subMenu.classList.add("menu-open")
+        productsBtn.style.color = "#4c4c4c"
         menu.style.borderTop = "2px solid #F1F1F1"
     }
 })
