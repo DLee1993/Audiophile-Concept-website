@@ -39,7 +39,7 @@ body {
   letter-spacing: 2px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .h1-styling {
     line-height: 58px;
   }
@@ -267,7 +267,7 @@ body {
   width: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .headphones-link,
   .speakers-link,
   .earphones-link {
@@ -277,7 +277,7 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .headphones-link,
   .speakers-link,
   .earphones-link {
@@ -310,7 +310,7 @@ body {
   transition: all 0.3s ease;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .mobile-navigation {
     display: none;
   }
@@ -402,7 +402,7 @@ body {
   transition: all 0.3s ease;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .mobile-subMenu {
     display: none;
   }
@@ -464,7 +464,7 @@ body {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .tablet-desktop-navigation {
     position: fixed;
     z-index: 3;
@@ -507,9 +507,11 @@ body {
     width: 100%;
     height: inherit;
     list-style: none;
+    padding: 40px 0px;
   }
   .tablet-desktop-navigation .nav-list .home {
     display: inline;
+    margin-bottom: auto;
   }
   .tablet-desktop-navigation .nav-list .home .soundwave {
     width: 30px;
@@ -517,14 +519,13 @@ body {
   }
   .tablet-desktop-navigation .nav-list .home .company-logo {
     width: 150px;
-    position: relative;
-    left: -400px;
     fill: #fff;
-    -webkit-transition: .4s ease;
-    transition: .4s ease;
   }
   .tablet-desktop-navigation .nav-list .home:hover .company-logo {
     fill: #D87D4A;
+  }
+  .tablet-desktop-navigation .nav-list .headphones, .tablet-desktop-navigation .nav-list .earphones, .tablet-desktop-navigation .nav-list .speakers, .tablet-desktop-navigation .nav-list .cart {
+    margin: 20px 0px;
   }
   .tablet-desktop-navigation .nav-list .nav-item {
     width: 100%;
@@ -544,8 +545,8 @@ body {
             align-items: center;
     color: #F1F1F1;
     text-decoration: none;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .tablet-desktop-navigation .nav-list .nav-item a svg {
     width: 24px;
@@ -557,8 +558,8 @@ body {
   .tablet-desktop-navigation .nav-list .nav-item a:hover {
     background-color: #FFFFFF;
     color: #D87D4A;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   .tablet-desktop-navigation .nav-list .nav-item .open-btn {
     width: 100%;
@@ -593,16 +594,106 @@ body {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    margin-top: auto;
   }
   .tablet-desktop-navigation .logo-text {
     display: none;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .tablet-desktop-navigation {
     width: 100%;
     height: 4rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #000000;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .tablet-desktop-navigation .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    height: inherit;
+    list-style: none;
+    padding: 0;
+  }
+  .tablet-desktop-navigation .nav-list .home {
+    display: inline;
+    margin: 0 auto 0 0;
+  }
+  .tablet-desktop-navigation .nav-list .home .soundwave {
+    display: none;
+  }
+  .tablet-desktop-navigation .nav-list .home:hover .company-logo {
+    fill: #FFFFFF;
+  }
+  .tablet-desktop-navigation .nav-list .home:hover .company-logo:hover {
+    fill: #D87D4A;
+  }
+  .tablet-desktop-navigation .nav-list .headphones, .tablet-desktop-navigation .nav-list .earphones, .tablet-desktop-navigation .nav-list .speakers {
+    margin: 0px 20px;
+  }
+  .tablet-desktop-navigation .nav-list .headphones svg, .tablet-desktop-navigation .nav-list .earphones svg, .tablet-desktop-navigation .nav-list .speakers svg {
+    display: none;
+  }
+  .tablet-desktop-navigation .nav-list .cart {
+    margin: 0 0 0 auto;
+  }
+  .tablet-desktop-navigation .nav-list .cart .item-text {
+    display: none;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 3rem;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item a svg {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item a:hover {
+    background-color: transparent;
+    color: #D87D4A;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item .open-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item .open-btn:hover {
+    cursor: pointer;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item .close-btn {
+    display: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #F1F1F1;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item .close-btn:hover {
+    cursor: pointer;
+  }
+  .tablet-desktop-navigation .nav-list .nav-item:last-child {
+    display: none;
+  }
+  .tablet-desktop-navigation .logo-text {
+    display: none;
   }
 }
 
@@ -633,13 +724,13 @@ main {
   height: 100vh;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   main {
     padding-left: 3rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   main {
     padding-left: 0;
   }
