@@ -23,7 +23,8 @@ tabletOpenBtn.addEventListener("click", () => {
     tabletMenu.classList.add("tablet-menu-open")
     tabletOpenBtn.style.display = "none"
     tabletCloseBtn.style.display = "block"
-    homeLink.style.left = "0px"
+    homeLink.style.left = "-10px"
+    homeLink.style.opacity = "1"
 })
 
 tabletCloseBtn.addEventListener("click", () => {
@@ -31,6 +32,7 @@ tabletCloseBtn.addEventListener("click", () => {
     tabletOpenBtn.style.display = "block"
     tabletCloseBtn.style.display = "none"
     homeLink.style.left = "-400px"
+    homeLink.style.opacity = 0
 })
 
 window.addEventListener("resize", () => {

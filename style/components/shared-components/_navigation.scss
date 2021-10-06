@@ -146,9 +146,8 @@
                 & img {
                     position: relative;
                     left: -400px;
-                    margin: auto;
-                    transition: .3s ease;
                     margin-right: 10px;
+                    transition: .4s ease;
                 }
             }
 
@@ -176,6 +175,9 @@
 
                 & .open-btn {
                     width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    color: colorSet(base, light-silver);
 
                     & svg {
                         width: 24px;
@@ -186,19 +188,16 @@
                 & .close-btn {
                     display: none;
                     width: 100%;
-                }
-            }
-
-            & .nav-item:last-child {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                & button {
                     background-color: transparent;
                     border: none;
                     color: colorSet(base, light-silver);
                 }
+            }
+
+            & .nav-item{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
             }
         }
 

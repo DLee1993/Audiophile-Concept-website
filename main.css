@@ -518,10 +518,9 @@ body {
   .tablet-desktop-navigation .nav-list .home img {
     position: relative;
     left: -400px;
-    margin: auto;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
     margin-right: 10px;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
   }
   .tablet-desktop-navigation .nav-list .nav-item {
     width: 100%;
@@ -551,6 +550,9 @@ body {
   }
   .tablet-desktop-navigation .nav-list .nav-item .open-btn {
     width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #F1F1F1;
   }
   .tablet-desktop-navigation .nav-list .nav-item .open-btn svg {
     width: 24px;
@@ -559,22 +561,20 @@ body {
   .tablet-desktop-navigation .nav-list .nav-item .close-btn {
     display: none;
     width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #F1F1F1;
   }
-  .tablet-desktop-navigation .nav-list .nav-item:last-child {
+  .tablet-desktop-navigation .nav-list .nav-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .tablet-desktop-navigation .nav-list .nav-item:last-child button {
-    background-color: transparent;
-    border: none;
-    color: #F1F1F1;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .tablet-desktop-navigation .logo-text {
     display: none;
