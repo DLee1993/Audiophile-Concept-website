@@ -4,7 +4,7 @@ const productsBtn = document.querySelector(".subMenu-btn"),
     tabletMenu = document.querySelector(".tablet-desktop-navigation"), 
     tabletOpenBtn = document.querySelector(".open-btn"), 
     tabletCloseBtn = document.querySelector(".close-btn"), 
-    homeLink = document.querySelector(".home img")
+    homeLink = document.querySelector(".company-logo")
 
 
 productsBtn.addEventListener("click", () => {

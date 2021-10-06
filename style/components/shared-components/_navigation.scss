@@ -137,17 +137,26 @@
 
             & .home {
                 display: inline;
+                
 
-                & svg{
+                & .soundwave{
                     width: 30px;
                     height: auto;
                 }
 
-                & img {
+                & .company-logo {
+                    width: 150px;
                     position: relative;
                     left: -400px;
-                    margin-right: 10px;
+                    fill: #fff;
                     transition: .4s ease;
+                }
+
+            }
+
+            & .home:hover{
+                .company-logo{
+                    fill: colorSet(accent, dark-orange);
                 }
             }
 
@@ -163,6 +172,7 @@
                     align-items: center;
                     color: colorSet(base, light-silver);
                     text-decoration: none;
+                    transition: all .5s ease;
 
                     svg {
                         width: 24px;
@@ -170,6 +180,12 @@
                         height: 24px;
                         margin-left: 0.5rem;
                         margin-right: 20px;
+                    }
+
+                    &:hover{
+                        background-color: colorSet(base, white);
+                        color: colorSet(accent, dark-orange);
+                        transition: .5s ease;
                     }
                 }
 
@@ -183,6 +199,10 @@
                         width: 24px;
                         height: 24px;
                     }
+
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
 
                 & .close-btn {
@@ -191,10 +211,14 @@
                     background-color: transparent;
                     border: none;
                     color: colorSet(base, light-silver);
+
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
 
-            & .nav-item{
+            & .nav-item:last-child{
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
@@ -205,9 +229,14 @@
             display: none;
         }
     }
+
+    @include desktop{
+        width: 100%;
+        height: 4rem;
+    }
 }
 
 .tablet-menu-open {
-    width: 13rem;
+    width: 15rem;
     transition: all 0.3s ease;
 }
