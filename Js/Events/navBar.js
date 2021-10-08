@@ -1,8 +1,8 @@
-const test = document.querySelector(".nav"), 
-menu = document.querySelector(".navbar"), 
+const hamburger = document.querySelector(".hamburger-icon"), 
+menu = document.querySelector(".mobile-nav-list"), 
 mainContent = document.querySelector(".main-content")
 
-test.addEventListener("click", () => {
+hamburger.addEventListener("click", () => {
     if(menu.classList.contains("nav-open")){
         menu.classList.remove("nav-open")
     } else{

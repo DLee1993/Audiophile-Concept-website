@@ -290,51 +290,110 @@ body {
 }
 
 .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
   width: 100%;
   height: 4rem;
+  color: white;
   background-color: black;
 }
 
 .nav .navbar {
-  position: absolute;
-  top: -1000px;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0px auto;
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
-  background-color: red;
-}
-
-.nav .navbar .nav-item-list {
-  width: 100%;
-  height: inherit;
+  width: 90%;
+  height: 4rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar .desktop-nav-list {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .nav .navbar .desktop-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  .nav .navbar .desktop-nav-list .nav-item {
+    margin: 0px 15px;
+  }
+  .nav .navbar .desktop-nav-list .nav-item a {
+    color: #F1F1F1;
+    text-decoration: none;
+  }
+  .nav .navbar .desktop-nav-list .nav-item a:hover {
+    cursor: pointer;
+    color: #D87D4A;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+}
+
+.nav .navbar svg {
+  fill: white;
+}
+
+.nav .navbar svg:hover {
+  cursor: pointer;
+  fill: #D87D4A;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 1100px) {
+  .nav .navbar .hamburger-icon {
+    display: none;
+  }
+}
+
+.nav .navbar .cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-nav-list {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
 }
 
-.nav .nav-open {
+.nav-open {
   top: 4rem;
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
 }
 
 * {
@@ -346,7 +405,7 @@ body {
 
 body, html {
   width: 100%;
-  height: 200vh;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -354,8 +413,9 @@ body::-webkit-scrollbar {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  margin: auto;
+  padding: 0 30px;
+  margin: 4rem auto 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
