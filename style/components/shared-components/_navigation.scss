@@ -42,6 +42,14 @@
             }
         }
 
+        .home-link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .company-text{
+                display: none;
+            }
+        }
         svg {
             fill: white;
 

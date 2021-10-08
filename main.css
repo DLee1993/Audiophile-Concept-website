@@ -347,6 +347,22 @@ body {
   }
 }
 
+.nav .navbar .home-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar .home-link .company-text {
+  display: none;
+}
+
 .nav .navbar svg {
   fill: white;
 }
