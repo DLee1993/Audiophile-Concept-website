@@ -17,6 +17,7 @@ hamburger.addEventListener("click", () => {
 mainContent.addEventListener("click", () => {
     if(menu.classList.contains("nav-open")){
         menu.classList.remove("nav-open")
+        hamburger.style.fill = "#fff"
         document.body.style.overflow = "auto"
     }
 })
