@@ -137,19 +137,25 @@ body {
 
 .nav {
   position: fixed;
+  z-index: 3;
   top: 0;
   left: 0;
-  z-index: 3;
   width: 100%;
   height: 4rem;
-  color: white;
-  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav .navbar {
   width: 90%;
-  height: 4rem;
-  margin: 0 auto;
+  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,39 +165,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0px auto;
 }
 
-.nav .navbar .desktop-nav-list {
-  display: none;
+.nav .navbar .hamburger-icon {
+  fill: white;
 }
 
-@media (min-width: 1100px) {
-  .nav .navbar .desktop-nav-list {
-    width: 100%;
-    max-width: 650px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    list-style: none;
-  }
-  .nav .navbar .desktop-nav-list .nav-item {
-    margin: 0px 15px;
-  }
-  .nav .navbar .desktop-nav-list .nav-item a {
-    color: #F1F1F1;
-    text-decoration: none;
-  }
-  .nav .navbar .desktop-nav-list .nav-item a:hover {
-    cursor: pointer;
-    color: #D87D4A;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+@media (min-width: 1000px) {
+  .nav .navbar .hamburger-icon {
+    display: none;
   }
 }
 
@@ -211,40 +194,63 @@ body {
   display: none;
 }
 
-.nav .navbar svg {
+.nav .navbar .home-link svg {
   fill: white;
 }
 
-.nav .navbar svg:hover {
-  cursor: pointer;
+.nav .navbar .home-link svg:hover {
   fill: #D87D4A;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
 }
 
-.nav .navbar .hamburger-icon {
-  width: 22px;
-  height: 20px;
+.nav .navbar .desktop-nav-list {
+  display: none;
 }
 
-@media (min-width: 1100px) {
-  .nav .navbar .hamburger-icon {
-    display: none;
+@media (min-width: 1000px) {
+  .nav .navbar .desktop-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 500px;
+    list-style: none;
   }
 }
 
+.nav .navbar .desktop-nav-list li a {
+  color: #F1F1F1;
+  text-decoration: none;
+}
+
+.nav .navbar .desktop-nav-list li a:hover {
+  color: #D87D4A;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
 .nav .navbar .cart-icon {
-  width: 26px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
+  fill: white;
+}
+
+.nav .navbar .cart-icon:hover {
+  fill: #D87D4A;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
 }
 
 .mobile-nav-list {
   position: absolute;
   top: -1000px;
-  left: 0;
-  background-color: white;
-  width: 100%;
-  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,17 +262,21 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  width: 100%;
+  background-color: #FAFAFA;
+  -webkit-transition: top .8s ease;
+  transition: top .8s ease;
 }
 
 .nav-open {
-  top: 8%;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  top: 4rem;
+  -webkit-transition: top .8s ease;
+  transition: top .8s ease;
 }
 
 .index-hero {
+  position: relative;
+  top: -4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,14 +300,13 @@ body {
   .index-hero {
     background-image: url("./style/assets/home/tablet/image-header.jpg");
     background-position: center -50px;
-    height: 950px;
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .index-hero {
     background-image: url("./style/assets/home/desktop/image-hero.jpg");
-    background-position: center -100px;
+    background-position: center;
   }
 }
 
@@ -443,7 +452,7 @@ body {
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .headphones-link,
   .speakers-link,
   .earphones-link {
