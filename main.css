@@ -142,6 +142,7 @@ body {
   left: 0;
   width: 100%;
   height: 4rem;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,14 +266,13 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   padding: 10px 0px;
   background-color: #FAFAFA;
   -webkit-transition: left .8s ease;
   transition: left .8s ease;
   overflow: scroll;
+  border-radius: 0 0 8px 8px;
 }
 
 .nav-open {
