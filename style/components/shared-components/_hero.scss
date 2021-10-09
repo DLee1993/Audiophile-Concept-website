@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../style/assets/home/tablet/image-header.jpg");
+    background-image: url("./style/assets/home/tablet/image-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -12,13 +12,13 @@
     height: 100%;
 
     @include tablet{
-        background-image: url("../style/assets/home/tablet/image-header.jpg");
+        background-image: url("./style/assets/home/tablet/image-header.jpg");
         background-position: center -50px;
         height: 950px;
     }
 
     @include desktop{
-        background-image: url("../style/assets/home/desktop/image-hero.jpg");
+        background-image: url("./style/assets/home/desktop/image-hero.jpg");
         background-position: center -100px;
     }
 }
