@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
     background-image: url("./style/assets/home/tablet/image-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,5 +23,22 @@
     @include desktop{
         background-image: url("./style/assets/home/desktop/image-hero.jpg");
         background-position: center;
+    }
+
+
+    & .index-hero-text{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+
+        & .sup-heading{
+            color: colorSet(base, light-grey);
+        }
+
+        & .sub-text{
+            color: colorSet(base, light-grey);
+        }
     }
 }
