@@ -20,6 +20,7 @@
 
         & .hamburger-icon {
             fill: white;
+            width: 25px;
 
             @include desktop {
                 display: none;
@@ -71,11 +72,12 @@
         }
 
         & .cart-icon {
-            width: 25px;
-            height: 25px;
+            width: 28px;
+            height: 28px;
             fill: white;
 
             &:hover{
+                cursor: pointer;
                 fill:#D87D4A;
                 transition: fill .3s ease;
             }
@@ -100,6 +102,10 @@
     transition: left .8s ease;
     overflow: scroll;
     border-radius: 0 0 8px 8px;
+
+    @include desktop{
+        display: none;
+    }
 }
 
 .nav-open{

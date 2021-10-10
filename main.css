@@ -171,6 +171,7 @@ body {
 
 .nav .navbar .hamburger-icon {
   fill: white;
+  width: 25px;
 }
 
 @media (min-width: 1000px) {
@@ -238,12 +239,13 @@ body {
 }
 
 .nav .navbar .cart-icon {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   fill: white;
 }
 
 .nav .navbar .cart-icon:hover {
+  cursor: pointer;
   fill: #D87D4A;
   -webkit-transition: fill .3s ease;
   transition: fill .3s ease;
@@ -275,6 +277,12 @@ body {
   border-radius: 0 0 8px 8px;
 }
 
+@media (min-width: 1000px) {
+  .mobile-nav-list {
+    display: none;
+  }
+}
+
 .nav-open {
   position: absolute;
   top: 4rem;
@@ -298,7 +306,7 @@ body {
           align-items: center;
   background-image: url("./style/assets/home/tablet/image-header.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position-x: center;
   background-position-y: 20%;
   color: white;
