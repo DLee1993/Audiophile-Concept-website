@@ -84,7 +84,9 @@
     }
 
     @include desktop{
-        display: none;
+        width: 100%;
+        max-width: 327px;
+        transition: all .3s ease;
     }
 }
 //* Due to the product being smaller, I needed to adjust the position so it is in the same position as the other product images

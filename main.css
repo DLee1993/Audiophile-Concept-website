@@ -812,7 +812,10 @@ body {
   .headphones-link,
   .speakers-link,
   .earphones-link {
-    display: none;
+    width: 100%;
+    max-width: 327px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
   }
 }
 
