@@ -46,8 +46,10 @@
         }
 
         @include desktop{
+            justify-content: space-between;
             align-items: flex-start;
             text-align: left;
+            margin-top: 40px;
         }
     }
 }
