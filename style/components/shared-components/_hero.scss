@@ -17,14 +17,14 @@
     @include tablet{
         background-image: url("./style/assets/home/tablet/image-header.jpg");
         background-position: center;
-        height: 800px;
     }
 
     @include desktop{
         background-image: url("./style/assets/home/desktop/image-hero.jpg");
         background-position: center;
         align-items: flex-start;
-        padding-left: 150px;
+        padding-left: 100px;
+        height: 600px;
     }
 
 

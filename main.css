@@ -321,7 +321,6 @@ body {
   .index-hero {
     background-image: url("./style/assets/home/tablet/image-header.jpg");
     background-position: center;
-    height: 800px;
   }
 }
 
@@ -332,7 +331,8 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 150px;
+    padding-left: 100px;
+    height: 600px;
   }
 }
 
