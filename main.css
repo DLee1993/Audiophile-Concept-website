@@ -828,6 +828,7 @@ body {
 }
 
 .zx9-speaker-promotion {
+  position: relative;
   width: 90%;
   max-width: 1100px;
   height: 500px;
@@ -836,8 +837,9 @@ body {
   border-radius: 10px;
   background-image: url("./style/assets/home/desktop/pattern-circles.svg");
   background-repeat: no-repeat;
-  background-size: 475px auto;
-  background-position: center -100px;
+  background-size: 575px auto;
+  background-position: center -150px;
+  overflow: hidden;
 }
 
 @media (min-width: 700px) {
@@ -851,6 +853,32 @@ body {
   .zx9-speaker-promotion {
     background-size: 900px;
     background-position: -180px -15px;
+  }
+}
+
+.zx9-speaker-promotion img {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 160px;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker-promotion img {
+    width: 170px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-promotion img {
+    top: 145px;
+    left: 100px;
+    -webkit-transform: none;
+            transform: none;
+    width: 300px;
   }
 }
 
