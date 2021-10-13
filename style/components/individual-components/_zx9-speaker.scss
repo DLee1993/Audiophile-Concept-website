@@ -1,8 +1,11 @@
 .zx9-speaker-promotion{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     width: 90%;
     max-width: 1100px;
-    height: 500px;
+    height: 550px;
     margin: 100px auto 100px auto;
     background-color: colorSet(accent, dark-orange);
     border-radius: 10px;
@@ -13,11 +16,15 @@
     overflow: hidden;
 
     @include tablet{
+        height: 600px;
         background-size: 650px;
         background-position: center -210px;
     }
 
     @include desktop{
+        height: 500px;
+        justify-content: end;
+        align-items: center;
         background-size: 900px;
         background-position: -180px -15px;
     }
@@ -36,10 +43,50 @@
         }
 
         @include desktop{
-            top: 145px;
+            top: 143px;
             left: 100px;
             transform: none;
             width: 300px;
+        }
+    }
+
+    .zx9-speaker-text{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        width: 400px;
+        height: 300px;
+
+        @include desktop{
+            align-items: start;
+            height: 350px;
+            width: 415px;
+            margin: 40px 100px 0 0;
+        }
+
+        & h1{
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+
+            @include desktop{
+                text-align: left;
+                margin: 0;
+            }
+        }
+
+        & p {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+
+            @include desktop{
+                width: auto;
+                margin: 0;
+                text-align: left;
+            }
         }
     }
 }
