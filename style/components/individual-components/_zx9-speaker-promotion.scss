@@ -5,7 +5,7 @@
     align-items: flex-end;
     width: 90%;
     max-width: 1100px;
-    height: 550px;
+    height: 600px;
     margin: 100px auto 50px auto;
     background-color: colorSet(accent, dark-orange);
     border-radius: 10px;
@@ -16,8 +16,8 @@
     overflow: hidden;
 
     @include tablet{
-        height: 600px;
-        background-size: 650px;
+        height: 720px;
+        background-size: 800px;
         background-position: center -210px;
     }
 
@@ -39,7 +39,8 @@
         height: auto;
 
         @include tablet{
-            width: 170px;
+            top: 50px;
+            width: 200px;
         }
 
         @include desktop{
@@ -57,7 +58,11 @@
         flex-direction: column;
         color: white;
         width: 400px;
-        height: 300px;
+        height: 380px;
+
+        @include tablet{
+            height: 400px;
+        }
 
         @include desktop{
             align-items: start;
