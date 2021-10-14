@@ -428,7 +428,7 @@ body {
 }
 
 .secondary-btn {
-  color: clr(base, black);
+  color: #000000;
   background: transparent;
   border: 1px solid #000000;
   -webkit-transition: all .3s ease;

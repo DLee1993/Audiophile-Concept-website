@@ -32,7 +32,7 @@
 
 
 .secondary-btn{ 
-    color: clr(base, black);
+    color: colorSet(base, black);
     background: transparent;
     border: 1px solid colorSet(base, black);
     transition: all .3s ease; 
