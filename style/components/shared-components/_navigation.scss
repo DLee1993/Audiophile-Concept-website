@@ -86,7 +86,7 @@
 
 
 .mobile-nav-list{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 4rem;
     left: -1000px;
@@ -108,7 +108,7 @@
 }
 
 .nav-open{
-    position: absolute;
+    position: fixed;
     top: 4rem;
     left: 0px;
     overflow-y: scroll;
