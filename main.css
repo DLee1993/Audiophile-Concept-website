@@ -672,19 +672,18 @@ body {
 }
 
 .category-links {
-  width: 100%;
-  max-width: 1240px;
+  width: 90%;
+  max-width: 1100px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 0px auto;
-  padding: 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1109,6 +1108,142 @@ body {
   .yx1-earphones-promotion .yx1-earphones-cta {
     width: 49%;
     height: 320px;
+  }
+}
+
+.company-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+  height: 733px;
+  margin: 100px auto 50px auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .company-desc {
+    height: 633px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc {
+    height: 500px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.company-desc .company-desc-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-image: url("../../../style/assets/shared/mobile/image-best-gear.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-image {
+    background-image: url("../../../style/assets/shared/tablet/image-best-gear.jpg");
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-image {
+    width: 49%;
+    height: 100%;
+    background-image: url("../../../style/assets/shared/desktop/image-best-gear.jpg");
+  }
+}
+
+.company-desc .company-desc-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-text {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-text {
+    width: 49%;
+    height: 100%;
+  }
+}
+
+.company-desc .company-desc-text .title {
+  width: 100%;
+  max-width: 327px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.company-desc .company-desc-text .title span {
+  color: #D87D4A;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-text .title {
+    width: 480px;
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-text .title {
+    width: 400px;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.company-desc .company-desc-text .desc-text {
+  padding: 10px 0;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-text .desc-text {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-text .desc-text {
+    max-width: 400px;
+    text-align: left;
   }
 }
 
