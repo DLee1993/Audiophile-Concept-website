@@ -64,6 +64,10 @@
                 margin-top: 10px;
                 color: colorSet(base, dark-grey);
 
+                &:hover{
+                    cursor: pointer;
+                }
+
                 & span {
                     position: relative;
                     margin-top: 10px;

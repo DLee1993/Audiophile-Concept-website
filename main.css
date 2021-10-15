@@ -785,6 +785,12 @@ body {
   color: #4c4c4c;
 }
 
+.headphones-link a .link-text .shop-btn:hover,
+.speakers-link a .link-text .shop-btn:hover,
+.earphones-link a .link-text .shop-btn:hover {
+  cursor: pointer;
+}
+
 .headphones-link a .link-text .shop-btn span,
 .speakers-link a .link-text .shop-btn span,
 .earphones-link a .link-text .shop-btn span {
