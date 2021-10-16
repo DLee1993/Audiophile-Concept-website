@@ -135,6 +135,122 @@ body {
   }
 }
 
+.bottom-nav {
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background-color: #000000;
+  color: #4c4c4c;
+}
+
+.bottom-nav .accent-bar {
+  width: 100px;
+  height: 5px;
+  margin: 0 auto;
+  background-color: #D87D4A;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .accent-bar {
+    margin: 0 0 0 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .accent-bar {
+    margin: 0 0 0 50px;
+  }
+}
+
+.bottom-nav .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0px;
+}
+
+.bottom-nav .footer-nav svg {
+  margin: 25px 0px 30px 0px;
+}
+
+.bottom-nav .footer-nav ul {
+  text-align: center;
+  list-style: none;
+}
+
+.bottom-nav .footer-nav ul li {
+  margin: 30px 0px;
+}
+
+.bottom-nav .footer-nav ul li a {
+  color: #F1F1F1;
+}
+
+.bottom-nav .footer-comp-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+}
+
+.bottom-nav .footer-comp-desc .comp-desc {
+  text-align: center;
+  margin: 10px 0 15px 0;
+}
+
+.bottom-nav .footer-comp-desc .social-media {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-nav .footer-comp-desc .social-media li {
+  margin: 20px 20px;
+}
+
+.bottom-nav .footer-comp-desc .social-media li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-nav .footer-comp-desc .social-media li > a > p {
+  display: none;
+}
+
 .nav {
   position: fixed;
   z-index: 3;
