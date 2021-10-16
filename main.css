@@ -215,6 +215,8 @@ body {
 
 .bottom-nav .footer-comp-desc .comp-desc {
   text-align: center;
+  width: auto;
+  max-width: 400px;
   margin: 10px 0 15px 0;
 }
 
