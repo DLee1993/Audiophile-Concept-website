@@ -136,29 +136,41 @@ body {
 }
 
 .bottom-nav {
-  left: 0;
+  position: relative;
   width: 100%;
   height: 700px;
   background-color: #000000;
   color: #4c4c4c;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav {
+    height: 400px;
+  }
 }
 
 .bottom-nav .accent-bar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100px;
   height: 5px;
   margin: 0 auto;
   background-color: #D87D4A;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media (min-width: 700px) {
   .bottom-nav .accent-bar {
-    margin: 0 0 0 20px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .bottom-nav .accent-bar {
-    margin: 0 0 0 50px;
+    top: 0;
+    left: 30px;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -166,9 +178,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -176,11 +187,60 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 0px;
+  height: 50%;
+  width: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav {
+    height: 40%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+  }
 }
 
 .bottom-nav .footer-nav svg {
-  margin: 25px 0px 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0px 0px 0px;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav svg {
+    margin: 25px 0px 30px 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-nav svg {
+    margin: 0;
+  }
 }
 
 .bottom-nav .footer-nav ul {
@@ -188,21 +248,48 @@ body {
   list-style: none;
 }
 
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .bottom-nav .footer-nav ul li {
   margin: 30px 0px;
 }
 
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav ul li {
+    margin: 0 30px;
+  }
+}
+
 .bottom-nav .footer-nav ul li a {
   color: #F1F1F1;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.bottom-nav .footer-nav ul li a:hover {
+  color: #D87D4A;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .bottom-nav .footer-comp-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -210,17 +297,57 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 300px;
+  height: 40%;
+  width: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc {
+    height: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .bottom-nav .footer-comp-desc .comp-desc {
   text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   width: auto;
   max-width: 400px;
-  margin: 10px 0 15px 0;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc .comp-desc {
+    text-align: left;
+    max-width: 700px;
+    margin: 0;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-comp-desc .comp-desc {
+    max-width: 570px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc .copyright {
+    padding-left: 30px;
+  }
 }
 
 .bottom-nav .footer-comp-desc .social-media {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 25px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,6 +358,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc .social-media {
+    right: 5px;
+    bottom: 50px;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-comp-desc .social-media {
+    bottom: 100px;
+  }
 }
 
 .bottom-nav .footer-comp-desc .social-media li {
@@ -247,6 +394,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  fill: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.bottom-nav .footer-comp-desc .social-media li a:hover {
+  fill: #D87D4A;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .bottom-nav .footer-comp-desc .social-media li > a > p {
