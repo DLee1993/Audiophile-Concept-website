@@ -1152,7 +1152,7 @@ body {
   width: 100%;
   height: 300px;
   border-radius: 10px;
-  background-image: url("../../../style/assets/shared/mobile/image-best-gear.jpg");
+  background-image: url("./style/assets/shared/mobile/image-best-gear.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1160,7 +1160,7 @@ body {
 
 @media (min-width: 700px) {
   .company-desc .company-desc-image {
-    background-image: url("../../../style/assets/shared/tablet/image-best-gear.jpg");
+    background-image: url("./style/assets/shared/tablet/image-best-gear.jpg");
   }
 }
 
@@ -1168,7 +1168,7 @@ body {
   .company-desc .company-desc-image {
     width: 49%;
     height: 100%;
-    background-image: url("../../../style/assets/shared/desktop/image-best-gear.jpg");
+    background-image: url("./style/assets/shared/desktop/image-best-gear.jpg");
   }
 }
 
