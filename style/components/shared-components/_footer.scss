@@ -26,6 +26,10 @@
             left: 30px;
             transform: none;
         }
+
+        @include desktop{
+            left: 120px;
+        }
     }
 
     & .footer-nav {
