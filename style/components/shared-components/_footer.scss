@@ -100,6 +100,7 @@
     }
 
     & .footer-comp-desc {
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -141,9 +142,9 @@
 
         & .social-media {
             position: absolute;
+            bottom: -15%;
             left: 50%;
             transform: translateX(-50%);
-            bottom: 25px;
             list-style: none;
             display: flex;
             justify-content: center;
@@ -151,13 +152,14 @@
             transition: all .3s ease;
 
             @include tablet {
-                right: 5px;
-                bottom: 50px;
+                right: 50px;
+                bottom: 7px;
                 transform: none;
                 justify-content: flex-end;
             }
 
             @include desktop{
+                right: 15px;
                 bottom: 100px;
             }
 
