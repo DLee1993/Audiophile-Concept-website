@@ -1258,6 +1258,125 @@ body {
   top: 10px;
 }
 
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  height: 724px;
+  margin: 50px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .product {
+    height: 650px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product {
+    height: 480px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.product .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-headphones/mobile/image-xx99-mark-two.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .product .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-headphones/tablet/image-xx99-mark-two.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-headphones/desktop/image-xx99-mark-two.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.product .product-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 60%;
+  max-width: 327px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .product .product-description {
+    max-width: 689px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product .product-description {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 50%;
+    height: 80%;
+    max-width: 445px;
+    text-align: left;
+  }
+}
+
+.product .product-description .sup-header {
+  color: #D87D4A;
+}
+
+.product .product-description .title {
+  width: auto;
+  max-width: 400px;
+}
+
+.product .product-description .sub-text {
+  max-width: 550px;
+  padding-bottom: 25px;
+}
+
 .yx1-earphones-promotion {
   display: -webkit-box;
   display: -ms-flexbox;
