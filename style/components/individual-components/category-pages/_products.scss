@@ -1,7 +1,7 @@
 //* the below styling/layout is used for all of the products listed on the category pages*
 .product {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 90%;
     max-width: 1100px;
@@ -75,12 +75,78 @@
 
         & .title{
             width: auto;
-            max-width: 400px;
+            max-width: 300px;
         }
 
         & .sub-text{
             max-width: 550px;
             padding-bottom: 25px;
+        }
+    }
+}
+
+.product:nth-child(3){
+    & .product-image {
+        width: 100%;
+        max-width: 327px;
+        height: 352px;
+        background: url("./style/assets/category-headphones/mobile/image-xx99-mark-one.jpg")
+            no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        transition: all .3s ease;
+
+        @include tablet {
+            max-width: 689px;
+            background: url("./style/assets/category-headphones/tablet/image-xx99-mark-one.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @include desktop {
+            max-width: 400px;
+            height: 400px;
+            background: url("./style/assets/category-headphones/desktop/image-xx99-mark-one.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    
+    @include desktop{
+        flex-direction: row-reverse;
+    }
+}
+
+.product:nth-child(4){
+    & .product-image {
+        width: 100%;
+        max-width: 327px;
+        height: 352px;
+        background: url("./style/assets/category-headphones/mobile/image-xx59.jpg")
+            no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        transition: all .3s ease;
+
+        @include tablet {
+            max-width: 689px;
+            background: url("./style/assets/category-headphones/tablet/image-xx59.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @include desktop {
+            max-width: 400px;
+            height: 400px;
+            background: url("./style/assets/category-headphones/desktop/image-xx59.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
         }
     }
 }

@@ -1262,9 +1262,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1369,12 +1368,83 @@ body {
 
 .product .product-description .title {
   width: auto;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .product .product-description .sub-text {
   max-width: 550px;
   padding-bottom: 25px;
+}
+
+.product:nth-child(3) .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-headphones/mobile/image-xx99-mark-one.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .product:nth-child(3) .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-headphones/tablet/image-xx99-mark-one.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product:nth-child(3) .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-headphones/desktop/image-xx99-mark-one.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product:nth-child(3) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.product:nth-child(4) .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-headphones/mobile/image-xx59.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .product:nth-child(4) .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-headphones/tablet/image-xx59.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product:nth-child(4) .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-headphones/desktop/image-xx59.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .yx1-earphones-promotion {
