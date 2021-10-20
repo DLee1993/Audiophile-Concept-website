@@ -1752,5 +1752,6 @@ main {
   height: -moz-fit-content;
   height: fit-content;
   margin: 4rem auto 0 auto;
+  padding-bottom: 100px;
 }
 /*# sourceMappingURL=main.css.map */
