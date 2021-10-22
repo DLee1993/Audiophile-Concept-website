@@ -18,7 +18,13 @@ body, html{
 }
 
 body::-webkit-scrollbar {
-    width: 0rem;
+    width: .4rem;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: colorSet(accent, dark-orange);
+    border-radius: 50px;
 }
 
 main{
