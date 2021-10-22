@@ -1643,6 +1643,107 @@ body {
   }
 }
 
+.collage-grid-container {
+  width: 90%;
+  max-width: 1100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (0.5fr)[3];
+      grid-template-rows: repeat(3, 0.5fr);
+      grid-template-areas: "img1" "img2" "img3";
+  background-color: red;
+  margin: 100px auto;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "img1 img3" "img2 img3";
+    gap: 5px;
+  }
+}
+
+.collage-grid-container .image-1-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img1;
+  width: 100%;
+  max-width: 327px;
+  height: 174px;
+  margin: 0px auto;
+  background-color: blue;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container .image-1-container {
+    max-width: 277px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container .image-1-container {
+    max-width: 445px;
+    height: 280px;
+  }
+}
+
+.collage-grid-container .image-2-container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img2;
+  width: 100%;
+  max-width: 327px;
+  height: 174px;
+  margin: 0px auto;
+  background-color: yellowgreen;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container .image-2-container {
+    max-width: 277px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container .image-2-container {
+    max-width: 445px;
+    height: 280px;
+  }
+}
+
+.collage-grid-container .image-3-container {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img3;
+  width: auto;
+  max-width: 327px;
+  height: 368px;
+  margin: 0px auto;
+  background-color: gray;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container .image-3-container {
+    max-width: 395px;
+    height: 353px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container .image-3-container {
+    max-width: 635px;
+    height: 565px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

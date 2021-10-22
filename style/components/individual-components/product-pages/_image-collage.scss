@@ -1,0 +1,78 @@
+.collage-grid-container {
+    width: 90%;
+    max-width: 1100px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, .5fr);
+    grid-template-areas:
+        "img1"
+        "img2"
+        "img3";
+    background-color: red;
+    margin: 100px auto;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "img1 img3"
+            "img2 img3";
+        gap: 5px;
+    }
+
+    & .image-1-container {
+        grid-area: img1;
+        width: 100%;
+        max-width: 327px;
+        height: 174px;
+        margin: 0px auto;
+        background-color: blue;
+
+        @include tablet {
+            max-width: 277px;
+        }
+
+        @include desktop {
+            max-width: 445px;
+            height: 280px;
+        }
+    }
+
+    & .image-2-container {
+        grid-area: img2;
+        width: 100%;
+        max-width: 327px;
+        height: 174px;
+        margin: 0px auto;
+        background-color: yellowgreen;
+
+        @include tablet {
+            max-width: 277px;
+        }
+
+        @include desktop {
+            max-width: 445px;
+            height: 280px;
+        }
+    }
+
+    & .image-3-container {
+        grid-area: img3;
+        width: auto;
+        max-width: 327px;
+        height: 368px;
+        margin: 0px auto;
+        background-color: gray;
+
+        @include tablet {
+            max-width: 395px;
+            height: 353px;
+        }
+
+        @include desktop {
+            max-width: 635px;
+            height: 565px;
+        }
+    }
+}
