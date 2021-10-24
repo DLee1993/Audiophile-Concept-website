@@ -1,4 +1,4 @@
-.mark-two-collage-grid-container {
+.collage-grid-container {
     width: 90%;
     max-width: 1100px;
     margin: 150px auto 100px auto;
@@ -23,91 +23,128 @@
             "img-2 img-3";
     }
 
-    @include desktop{
+    @include desktop {
         max-width: 1100px;
     }
+
+    //* Responsive design for all image containers *
+    //! Do not remove !
+
+    .image-1-container {
+        grid-area: img-1;
+        width: 100%;
+        max-width: 327px;
+        height: 174px;
+        margin: 0 auto;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    
+        @include tablet {
+            max-width: 277px;
+        }
+    
+        @include desktop {
+            max-width: 445px;
+            height: 280px;
+        }
+    }
+    
+    .image-2-container {
+        grid-area: img-2;
+        width: 100%;
+        max-width: 327px;
+        height: 174px;
+        margin: 0 auto;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    
+        @include tablet {
+            max-width: 277px;
+        }
+    
+        @include desktop {
+            max-width: 445px;
+            height: 280px;
+        }
+    }
+    
+    .image-3-container {
+        grid-area: img-3;
+        width: 100%;
+        max-width: 327px;
+        height: 353px;
+        margin: 0 auto;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    
+        @include tablet {
+            max-width: 395px;
+        }
+    
+        @include desktop {
+            max-width: 635px;
+            height: 565px;
+        }
+    }
 }
 
-.image-1-container {
-    grid-area: img-1;
-    width: 100%;
-    max-width: 327px;
-    height: 174px;
-    margin: 0 auto;
-    background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg")
-        no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    transition: all .3s ease;
+//* Individual styling for each container *
+//* This is where all the images for each product are added *
 
-    @include tablet {
-        max-width: 277px;
-        background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg")
-        no-repeat;
-    background-size: cover;
-    }
-
-    @include desktop {
-        max-width: 445px;
-        height: 280px;
-        background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg")
-        no-repeat;
-    background-size: cover;
-    }
-}
-
-.image-2-container {
-    grid-area: img-2;
-    width: 100%;
-    max-width: 327px;
-    height: 174px;
-    margin: 0 auto;
-    background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg")
-        no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    transition: all .3s ease;
-
-    @include tablet {
-        max-width: 277px;
-        background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg")
-        no-repeat;
-    background-size: cover;
-    }
-
-    @include desktop {
-        max-width: 445px;
-        height: 280px;
-        background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg")
-        no-repeat;
-    background-size: cover;
-    }
-}
-
-.image-3-container {
-    grid-area: img-3;
-    width: 100%;
-    max-width: 327px;
-    height: 353px;
-    margin: 0 auto;
-    background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg")
-        no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    transition: all .3s ease;
-
-    @include tablet {
-        max-width: 395px;
-        background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg")
+.mark-two-headphones-collage {
+    .image-1-container {
+        background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg")
             no-repeat;
         background-size: cover;
+
+        @include tablet {
+            background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg")
+                no-repeat;
+            background-size: cover;
+        }
+
+        @include desktop {
+            background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg")
+                no-repeat;
+            background-size: cover;
+        }
     }
 
-    @include desktop {
-        max-width: 635px;
-        height: 565px;
-        background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg")
+    .image-2-container {
+        background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg")
             no-repeat;
         background-size: cover;
+
+        @include tablet {
+            background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg")
+                no-repeat;
+            background-size: cover;
+        }
+
+        @include desktop {
+            background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg")
+                no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .image-3-container {
+        background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg")
+            no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        @include tablet {
+            background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg")
+                no-repeat;
+            background-size: cover;
+        }
+
+        @include desktop {
+            background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg")
+                no-repeat;
+            background-size: cover;
+        }
     }
 }
