@@ -814,6 +814,7 @@ body {
 .section-title {
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .suggested-products {
@@ -849,7 +850,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 20px auto;
   height: 300px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
