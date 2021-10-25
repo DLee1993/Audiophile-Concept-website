@@ -2326,7 +2326,7 @@ body {
   cursor: pointer;
 }
 
-.mark2-headphones {
+.individual-product-layout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2343,12 +2343,101 @@ body {
 }
 
 @media (min-width: 700px) {
-  .mark2-headphones {
+  .individual-product-layout {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.individual-product-layout .product-text {
+  width: 90%;
+  max-width: 327px;
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .individual-product-layout .product-text {
+    max-width: 445px;
+    height: 420px;
+  }
+}
+
+.individual-product-layout .product-text .sup-heading {
+  color: #D87D4A;
+}
+
+.individual-product-layout .product-text .product-price {
+  font-size: 18px;
+}
+
+.individual-product-layout .add-to-cart {
+  width: 100%;
+  max-width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector .minus-btn, .individual-product-layout .add-to-cart .quantity-selector .plus-btn {
+  width: 40px;
+  height: 48px;
+  background-color: #F1F1F1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector .minus-btn:hover, .individual-product-layout .add-to-cart .quantity-selector .plus-btn:hover {
+  cursor: pointer;
+  color: #D87D4A;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector input {
+  width: 40px;
+  height: 48px;
+  background-color: #F1F1F1;
+  border: none;
+  outline: none;
+  text-align: center;
 }
 
 .mark2-headphones .product-image {
@@ -2379,94 +2468,6 @@ body {
     background-size: cover;
     background-position: center;
   }
-}
-
-.mark2-headphones .product-text {
-  width: 90%;
-  max-width: 327px;
-  height: 470px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media (min-width: 700px) {
-  .mark2-headphones .product-text {
-    max-width: 445px;
-  }
-}
-
-.mark2-headphones .product-text .sup-heading {
-  color: #D87D4A;
-}
-
-.mark2-headphones .product-text .product-price {
-  font-size: 18px;
-}
-
-.mark2-headphones .add-to-cart {
-  width: 100%;
-  max-width: 327px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.mark2-headphones .add-to-cart .quantity-selector {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.mark2-headphones .add-to-cart .quantity-selector .minus-btn, .mark2-headphones .add-to-cart .quantity-selector .plus-btn {
-  width: 40px;
-  height: 48px;
-  background-color: #F1F1F1;
-  border: none;
-  outline: none;
-  font-size: 18px;
-}
-
-.mark2-headphones .add-to-cart .quantity-selector .minus-btn:hover, .mark2-headphones .add-to-cart .quantity-selector .plus-btn:hover {
-  cursor: pointer;
-  color: #D87D4A;
-}
-
-.mark2-headphones .add-to-cart .quantity-selector input {
-  width: 40px;
-  height: 48px;
-  background-color: #F1F1F1;
-  border: none;
-  outline: none;
-  text-align: center;
 }
 
 * {
