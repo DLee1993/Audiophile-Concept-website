@@ -2300,6 +2300,175 @@ body {
   }
 }
 
+.return-btn {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}
+
+@media (min-width: 700px) {
+  .return-btn {
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .return-btn {
+    margin-left: 90px;
+  }
+}
+
+.return-btn:hover {
+  cursor: pointer;
+}
+
+.mark2-headphones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .mark2-headphones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.mark2-headphones .product-image {
+  width: 90%;
+  max-width: 327px;
+  height: 327px;
+  background: url("../style/assets/shared/mobile/image-xx99-mark-two-headphones.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .mark2-headphones .product-image {
+    max-width: 281px;
+    height: 450px;
+    background: url("../style/assets/shared/tablet/image-xx99-mark-two-headphones.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark2-headphones .product-image {
+    max-width: 400px;
+    height: 420px;
+    background: url("../style/assets/shared/desktop/image-xx99-mark-two-headphones.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.mark2-headphones .product-text {
+  width: 90%;
+  max-width: 327px;
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .mark2-headphones .product-text {
+    max-width: 445px;
+  }
+}
+
+.mark2-headphones .product-text .sup-heading {
+  color: #D87D4A;
+}
+
+.mark2-headphones .product-text .product-price {
+  font-size: 18px;
+}
+
+.mark2-headphones .add-to-cart {
+  width: 100%;
+  max-width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mark2-headphones .add-to-cart .quantity-selector {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mark2-headphones .add-to-cart .quantity-selector .minus-btn, .mark2-headphones .add-to-cart .quantity-selector .plus-btn {
+  width: 40px;
+  height: 48px;
+  background-color: #F1F1F1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.mark2-headphones .add-to-cart .quantity-selector .minus-btn:hover, .mark2-headphones .add-to-cart .quantity-selector .plus-btn:hover {
+  cursor: pointer;
+  color: #D87D4A;
+}
+
+.mark2-headphones .add-to-cart .quantity-selector input {
+  width: 40px;
+  height: 48px;
+  background-color: #F1F1F1;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
