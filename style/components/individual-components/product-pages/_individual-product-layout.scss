@@ -104,7 +104,7 @@
         width: 90%;
         max-width: 327px;
         height: 327px;
-        background: url("../style/assets/shared/mobile/image-xx99-mark-two-headphones.jpg")
+        background: url("./style/assets/shared/mobile/image-xx99-mark-two-headphones.jpg")
             no-repeat;
         background-size: cover;
         background-position: center;
@@ -113,7 +113,7 @@
         @include tablet {
             max-width: 281px;
             height: 450px;
-            background: url("../style/assets/shared/tablet/image-xx99-mark-two-headphones.jpg")
+            background: url("./style/assets/shared/tablet/image-xx99-mark-two-headphones.jpg")
                 no-repeat;
             background-size: cover;
             background-position: center;
@@ -122,7 +122,7 @@
         @include desktop {
             max-width: 400px;
             height: 420px;
-            background: url("../style/assets/shared/desktop/image-xx99-mark-two-headphones.jpg")
+            background: url("./style/assets/shared/desktop/image-xx99-mark-two-headphones.jpg")
                 no-repeat;
             background-size: cover;
             background-position: center;
