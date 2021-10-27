@@ -121,19 +121,83 @@
         </ul>
         <!--* Main page content *-->
         <main class="main-content">
+            <button
+                class="return-btn sub-styling"
+                onclick="window.history.go(-1)"
+            >
+                Go Back
+            </button>
+
+            <section class="individual-product-layout mark1-headphones">
+                <figure class="product-image"></figure>
+                <section class="product-text">
+                    <h2 class="h2-styling">xx99 mark | headphones</h2>
+                    <p class="sub-text">
+                        As the gold standard for headphones, the classic XX99
+                        Mark I offers detailed and accurate audio reproduction
+                        for audiophiles, mixing engineers, and music aficionados
+                        alike in studios and on the go.
+                    </p>
+                    <p class="product-price cta-styling sub-styling">$1,750</p>
+                    <section class="add-to-cart">
+                        <section class="quantity-selector">
+                            <button class="minus-btn">-</button>
+                            <input
+                                class="quanitity-input"
+                                type="text"
+                                name="quantity-value"
+                                value="1"
+                                aria-label="quantity-value"
+                            />
+                            <button class="plus-btn">+</button>
+                        </section>
+                        <button class="add-to-cart-btn primary-btn cta-styling">
+                            add to cart
+                        </button>
+                    </section>
+                </section>
+            </section>
+
+            <section class="product-features">
+                <section class="features">
+                    <h3 class="h3-styling">features</h3>
+                    <p class="sub-styling">
+                        As the headphones all others are measured against, the
+                        XX99 Mark I demonstrates over five decades of audio
+                        expertise, redefining the critical listening experience.
+                        This pair of closed-back headphones are made of
+                        industrial, aerospace-grade materials to emphasize
+                        durability at a relatively light weight of 11 oz. From
+                        the handcrafted microfiber ear cushions to the robust
+                        metal headband with inner damping element, the
+                        components work together to deliver comfort and
+                        uncompromising sound. Its closed-back design delivers up
+                        to 27 dB of passive noise cancellation, reducing
+                        resonance by reflecting sound to a dedicated absorber.
+                        For connectivity, a specially tuned cable is included
+                        with a balanced gold connector.
+                    </p>
+                </section>
+                <section class="in-the-box">
+                    <h3 class="h3-styling">in the box</h3>
+                    <ul class="accessory-list">
+                        <li><span>1x</span> Headphone Unit</li>
+                        <li><span>2x</span> Replacement Earcups</li>
+                        <li><span>1x</span> User Manual</li>
+                        <li><span>1x</span> 3.5mm 5m Audio Cable</li>
+                    </ul>
+                </section>
+            </section>
+
             <section class="collage-grid-container mark-one-headphones-collage">
-                <section class="image-1-container">
-                </section>
-                <section class="image-2-container">
-                </section>
-                <section class="image-3-container">
-                </section>
+                <section class="image-1-container"></section>
+                <section class="image-2-container"></section>
+                <section class="image-3-container"></section>
             </section>
             <h3 class="h3-styling section-title">you may also like</h3>
             <ul class="suggested-products">
                 <li class="suggested-product mark-two">
-                    <figure class="product-image">
-                    </figure>
+                    <figure class="product-image"></figure>
                     <h5 class="h5-styling">xx99 mark ||</h5>
                     <a
                         href="./xx99-Mark2-headphones.html"
@@ -142,8 +206,7 @@
                     >
                 </li>
                 <li class="suggested-product xx59">
-                    <figure class="product-image">
-                    </figure>
+                    <figure class="product-image"></figure>
                     <h5 class="h5-styling">xx59</h5>
                     <a
                         href="./xx59-headphones.html"
@@ -152,12 +215,9 @@
                     >
                 </li>
                 <li class="suggested-product zx9">
-                    <figure class="product-image">
-                    </figure>
+                    <figure class="product-image"></figure>
                     <h5 class="h5-styling">zx9 speaker</h5>
-                    <a
-                        href="./zx9-speaker.html"
-                        class="cta-styling primary-btn"
+                    <a href="./zx9-speaker.html" class="cta-styling primary-btn"
                         >see product</a
                     >
                 </li>
@@ -165,36 +225,57 @@
             <ul class="category-links">
                 <li class="headphones-link">
                     <a href="./category-headphones.html">
-                        <img src="../style/assets/shared/desktop/image-headphones.png" alt="mark 2 headphones">
+                        <img
+                            src="../style/assets/shared/desktop/image-headphones.png"
+                            alt="mark 2 headphones"
+                        />
                         <p class="link-text cta-styling">
                             headphones
                             <button class="shop-btn cta-styling">
                                 shop
-                                <span><img src="../style/assets/shared/desktop/icon-arrow-right.svg" alt="right arrow"></span>
+                                <span
+                                    ><img
+                                        src="../style/assets/shared/desktop/icon-arrow-right.svg"
+                                        alt="right arrow"
+                                /></span>
                             </button>
                         </p>
                     </a>
                 </li>
                 <li class="speakers-link">
                     <a href="./category-speakers.html">
-                        <img src="../style/assets/shared/desktop/image-speakers.png" alt="zx9 speaker">
+                        <img
+                            src="../style/assets/shared/desktop/image-speakers.png"
+                            alt="zx9 speaker"
+                        />
                         <p class="link-text cta-styling">
                             speakers
                             <button class="shop-btn cta-styling">
                                 shop
-                                <span><img src="../style/assets/shared/desktop/icon-arrow-right.svg" alt="right arrow"></span>
+                                <span
+                                    ><img
+                                        src="../style/assets/shared/desktop/icon-arrow-right.svg"
+                                        alt="right arrow"
+                                /></span>
                             </button>
                         </p>
                     </a>
                 </li>
                 <li class="earphones-link">
                     <a href="./category-earphones.html">
-                        <img src="../style/assets/shared/desktop/image-earphones.png" alt=" yx1 earphones">
+                        <img
+                            src="../style/assets/shared/desktop/image-earphones.png"
+                            alt=" yx1 earphones"
+                        />
                         <p class="link-text cta-styling">
                             earphones
                             <button class="shop-btn cta-styling">
                                 shop
-                                <span><img src="../style/assets/shared/desktop/icon-arrow-right.svg" alt="right arrow"></span>
+                                <span
+                                    ><img
+                                        src="../style/assets/shared/desktop/icon-arrow-right.svg"
+                                        alt="right arrow"
+                                /></span>
                             </button>
                         </p>
                     </a>

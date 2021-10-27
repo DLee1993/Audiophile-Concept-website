@@ -121,29 +121,94 @@
         </ul>
         <!--* Main page content *-->
         <main class="main-content">
+            <button
+                class="return-btn sub-styling"
+                onclick="window.history.go(-1)"
+            >
+                Go Back
+            </button>
+
+            <section class="individual-product-layout zx9-speaker">
+                <figure class="product-image"></figure>
+                <section class="product-text">
+                    <p class="sup-styling sup-heading">new product</p>
+                    <h2 class="h2-styling">zx9 speaker</h2>
+                    <p class="sub-text">
+                        Upgrade your sound system with the all new ZX9 active
+                        speaker. It's a bookshelf speaker system that offers
+                        truly wireless connectivity -- creating new
+                        possibilities for more pleasing and practical audio
+                        setups.
+                    </p>
+                    <p class="product-price cta-styling sub-styling">$4,500</p>
+                    <section class="add-to-cart">
+                        <section class="quantity-selector">
+                            <button class="minus-btn">-</button>
+                            <input
+                                class="quanitity-input"
+                                type="text"
+                                name="quantity-value"
+                                value="1"
+                                aria-label="quantity-value"
+                            />
+                            <button class="plus-btn">+</button>
+                        </section>
+                        <button class="add-to-cart-btn primary-btn cta-styling">
+                            add to cart
+                        </button>
+                    </section>
+                </section>
+            </section>
+
+            <section class="product-features">
+                <section class="features">
+                    <h3 class="h3-styling">features</h3>
+                    <p class="sub-styling">
+                        Connect via Bluetooth or nearly any wired source. This
+                        speaker features optical, digital coaxial, USB Type-B,
+                        stereo RCA, and stereo XLR inputs, allowing you to have
+                        up to five wired source devices connected for easy
+                        switching. Improved bluetooth technology offers near
+                        lossless audio quality at up to 328ft (100m).
+                        <br /><br />
+                        Discover clear, more natural sounding highs than the
+                        competition with ZX9's signature planar diaphragm
+                        tweeter. Equally important is its powerful room-shaking
+                        bass courtesy of a 6.5" aluminum alloy bass unit. You'll
+                        be able to enjoy equal sound quality whether in a large
+                        room or small den. Furthermore, you will experience new
+                        sensations from old songs since it can respond to even
+                        the subtle waveforms.
+                    </p>
+                </section>
+                <section class="in-the-box">
+                    <h3 class="h3-styling">in the box</h3>
+                    <ul class="accessory-list">
+                        <li><span>2x</span> Speaker Unit</li>
+                        <li><span>2x</span> Speaker Cloth Panel</li>
+                        <li><span>1x</span> User Manual</li>
+                        <li><span>1x</span> 3.5mm 10m Audio Cable</li>
+                        <li><span>1x</span> 10m Optical Cable</li>
+                    </ul>
+                </section>
+            </section>
+
             <section class="collage-grid-container zx9-speaker-collage">
-                <section class="image-1-container">
-                </section>
-                <section class="image-2-container">
-                </section>
-                <section class="image-3-container">
-                </section>
+                <section class="image-1-container"></section>
+                <section class="image-2-container"></section>
+                <section class="image-3-container"></section>
             </section>
             <h3 class="h3-styling section-title">you may also like</h3>
             <ul class="suggested-products">
                 <li class="suggested-product zx7">
-                    <figure class="product-image">
-                    </figure>
+                    <figure class="product-image"></figure>
                     <h5 class="h5-styling">zx7 speaker</h5>
-                    <a
-                        href="./zx7-speaker.html"
-                        class="cta-styling primary-btn"
+                    <a href="./zx7-speaker.html" class="cta-styling primary-btn"
                         >see product</a
                     >
                 </li>
                 <li class="suggested-product mark-one">
-                    <figure class="product-image">
-                    </figure>
+                    <figure class="product-image"></figure>
                     <h5 class="h5-styling">xx99 mark |</h5>
                     <a
                         href="./xx99-Mark1-headphones.html"
@@ -152,8 +217,7 @@
                     >
                 </li>
                 <li class="suggested-product xx59">
-                    <figure class="product-image">
-                    </figure>
+                    <figure class="product-image"></figure>
                     <h5 class="h5-styling">xx59</h5>
                     <a
                         href="./xx59-headphones.html"
@@ -165,36 +229,57 @@
             <ul class="category-links">
                 <li class="headphones-link">
                     <a href="./category-headphones.html">
-                        <img src="../style/assets/shared/desktop/image-headphones.png" alt="mark 2 headphones">
+                        <img
+                            src="../style/assets/shared/desktop/image-headphones.png"
+                            alt="mark 2 headphones"
+                        />
                         <p class="link-text cta-styling">
                             headphones
                             <button class="shop-btn cta-styling">
                                 shop
-                                <span><img src="../style/assets/shared/desktop/icon-arrow-right.svg" alt="right arrow"></span>
+                                <span
+                                    ><img
+                                        src="../style/assets/shared/desktop/icon-arrow-right.svg"
+                                        alt="right arrow"
+                                /></span>
                             </button>
                         </p>
                     </a>
                 </li>
                 <li class="speakers-link">
                     <a href="./category-speakers.html">
-                        <img src="../style/assets/shared/desktop/image-speakers.png" alt="zx9 speaker">
+                        <img
+                            src="../style/assets/shared/desktop/image-speakers.png"
+                            alt="zx9 speaker"
+                        />
                         <p class="link-text cta-styling">
                             speakers
                             <button class="shop-btn cta-styling">
                                 shop
-                                <span><img src="../style/assets/shared/desktop/icon-arrow-right.svg" alt="right arrow"></span>
+                                <span
+                                    ><img
+                                        src="../style/assets/shared/desktop/icon-arrow-right.svg"
+                                        alt="right arrow"
+                                /></span>
                             </button>
                         </p>
                     </a>
                 </li>
                 <li class="earphones-link">
                     <a href="./category-earphones.html">
-                        <img src="../style/assets/shared/desktop/image-earphones.png" alt=" yx1 earphones">
+                        <img
+                            src="../style/assets/shared/desktop/image-earphones.png"
+                            alt=" yx1 earphones"
+                        />
                         <p class="link-text cta-styling">
                             earphones
                             <button class="shop-btn cta-styling">
                                 shop
-                                <span><img src="../style/assets/shared/desktop/icon-arrow-right.svg" alt="right arrow"></span>
+                                <span
+                                    ><img
+                                        src="../style/assets/shared/desktop/icon-arrow-right.svg"
+                                        alt="right arrow"
+                                /></span>
                             </button>
                         </p>
                     </a>
