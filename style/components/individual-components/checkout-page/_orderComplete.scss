@@ -1,0 +1,13 @@
+.order-complete{
+    display: none;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 90%;
+    max-width: 540px;
+    background-color: colorSet(base, light-silver);
+    height: 400px;
+    border-radius: 10px;
+}
