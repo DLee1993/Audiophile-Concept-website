@@ -2791,14 +2791,12 @@ body {
 
 .order-complete {
   position: absolute;
-  top: 11%;
+  top: 90px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -2815,8 +2813,9 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 500px;
+  min-height: 450px;
   border-radius: 10px;
+  border: 1px solid #D87D4A;
 }
 
 .order-complete svg {
@@ -2849,65 +2848,6 @@ body {
 .order-complete .return-home-btn {
   width: 80%;
   margin: 0 auto;
-}
-
-.order-complete .order-confirmed-summary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  height: 140px;
-  margin: 0 auto;
-}
-
-.order-complete .order-confirmed-summary .product-summary {
-  width: 60%;
-  height: 100%;
-  background-color: #F1F1F1;
-  border-radius: 10px 0 0 10px;
-}
-
-.order-complete .order-confirmed-summary .product-summary-total {
-  width: 40%;
-  height: 100%;
-  background-color: #000000;
-  border-radius: 0 10px 10px 0;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.order-complete .order-confirmed-summary .product-summary-total .price-title {
-  color: #F1F1F1;
-}
-
-.order-complete .order-confirmed-summary .product-summary-total .total-cost {
-  color: white;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.order-complete .order-confirmed-summary .product-summary-total p {
-  position: relative;
-  top: 80px;
-  margin-left: 10px;
 }
 
 * {

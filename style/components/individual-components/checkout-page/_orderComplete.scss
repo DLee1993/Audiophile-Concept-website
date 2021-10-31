@@ -1,10 +1,10 @@
-.order-complete{
+.order-complete {
     position: absolute;
-    top: 11%;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: column;
@@ -12,15 +12,16 @@
     max-width: 540px;
     background-color: colorSet(base, white);
     height: fit-content;
-    min-height: 500px;
+    min-height: 450px;
     border-radius: 10px;
+    border: 1px solid colorSet(accent, dark-orange);
 
-    & svg{
+    & svg {
         fill: colorSet(accent, dark-orange);
         margin-left: 50px;
     }
 
-    & h3{
+    & h3 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -33,52 +34,8 @@
         font-weight: 200;
     }
 
-    & .return-home-btn{
+    & .return-home-btn {
         width: 80%;
         margin: 0 auto;
-    }
-
-    & .order-confirmed-summary{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 140px;
-        margin: 0 auto;
-
-        & .product-summary{
-            width: 60%;
-            height: 100%;
-            background-color: colorSet(base, light-silver);
-            border-radius: 10px 0 0 10px;
-        }
-
-        & .product-summary-total{
-            width: 40%;
-            height: 100%;
-            background-color: colorSet(base, black);
-            border-radius: 0 10px 10px 0;
-            text-transform: uppercase;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-
-            & .price-title{
-                color: colorSet(base, light-silver);
-            }
-
-            & .total-cost{
-                color: white;
-                font-size: 18px;
-                font-weight: 800;
-            }
-
-            & p {
-                position: relative;
-                top: 80px;
-                margin-left: 10px;
-            }
-        }
     }
 }
