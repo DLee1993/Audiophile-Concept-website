@@ -24,7 +24,8 @@
         "style/components/individual-components/index-page-promo/_zx9-speaker-promotion.scss",
         "style/components/individual-components/product-pages/_image-collage.scss",
         "style/components/individual-components/product-pages/_individual-product-layout.scss",
-        "style/components/individual-components/checkout-page/_orderComplete.scss"
+        "style/components/individual-components/checkout-page/_orderComplete.scss",
+        "style/components/individual-components/shopping-cart/_shopping-cart.scss"
     ],
     "names": [],
     "file": "main.css"
