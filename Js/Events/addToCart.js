@@ -28,6 +28,8 @@ function ready(){
     for(plusBtn of plus){
         plusBtn.addEventListener("click", increaseQuantity)
     }
+
+    cartCounter()
 }
 
 function decreaseQuantity(e){
@@ -43,3 +45,10 @@ function increaseQuantity(e){
     var btn = e.target
     btn.previousElementSibling.value++
 }
+
+function cartCounter(){
+    var cartItems = document.getElementsByClassName("cart-items")[0]
+    var count = cartItems.childElementCount;
+    const counterValueInput = document.getElementsByClassName("counter-value")[0];
+    counterValueInput.innerHTML = count; 
+};

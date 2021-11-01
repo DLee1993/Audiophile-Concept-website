@@ -8,6 +8,7 @@
         />
         <link rel="stylesheet" href="./main.css" />
         <script src="./Js/Events/addToCart.js" defer></script>
+        <script src="./Js/Events/cart.js" defer></script>
         <script src="./Js/Events/navBar.js" defer></script>
         <script src="./Js/Events/animations.js" defer></script>
         <title>Audiophile | Home page</title>
@@ -131,7 +132,11 @@
                         Experience natural, lifelike audio and exceptional build
                         quality made for the passionate music enthusiast.
                     </p>
-                    <a href="./html/xx99-Mark2-headphones.html" class="cta-styling primary-btn">See product</a>
+                    <a
+                        href="./html/xx99-Mark2-headphones.html"
+                        class="cta-styling primary-btn"
+                        >See product</a
+                    >
                 </section>
             </section>
             <ul class="category-links">
@@ -204,7 +209,9 @@
                         Upgrade to premium speakers that are phenomenally built
                         to deliver truly remarkable sound.
                     </p>
-                    <a href="./html/zx9-speaker.html" class="quaternary-btn cta-styling"
+                    <a
+                        href="./html/zx9-speaker.html"
+                        class="quaternary-btn cta-styling"
                         >see product</a
                     >
                 </section>
@@ -212,7 +219,9 @@
             <section class="zx7-speaker-promotion">
                 <section class="zx7-speaker-text">
                     <h2 class="h2-styling">zx7 speaker</h2>
-                    <a href="./html/zx7-speaker.html" class="secondary-btn cta-styling"
+                    <a
+                        href="./html/zx7-speaker.html"
+                        class="secondary-btn cta-styling"
                         >see product</a
                     >
                 </section>
@@ -221,7 +230,9 @@
                 <section class="yx1-earphones-image"></section>
                 <section class="yx1-earphones-cta">
                     <h2 class="h2-styling">yx1 earphones</h2>
-                    <a href="./html/yx1-earphones.html" class="secondary-btn cta-styling"
+                    <a
+                        href="./html/yx1-earphones.html"
+                        class="secondary-btn cta-styling"
                         >see product</a
                     >
                 </section>
@@ -248,7 +259,43 @@
 
         <!-- Shopping cart modal -->
         <section class="shopping-cart">
-            
+            <section class="cart-header">
+                <p class="cart-counter h6-styling">
+                    CART (<span class="counter-value"></span>)
+                </p>
+                <button class="remove-all-btn">Remove all</button>
+            </section>
+            <section class="cart-items">
+                <section class="cart-row">
+                    <img
+                        src="./style/assets/cart/image-xx99-mark-two-headphones.jpg"
+                        alt=""
+                    />
+                    <section class="nameAndPrice">
+                        <p class="cart-item-name">XX99 Mark 11</p>
+                        <p class="cart-item-price">$2999</p>
+                    </section>
+                    <section class="cart-quantity-selector">
+                        <button class="cart-minus-btn">-</button>
+                        <input
+                            class="cart-quanitity-input"
+                            type="text"
+                            name="quantity-value"
+                            value="1"
+                            aria-label="quantity-value"
+                        />
+                        <button class="cart-plus-btn">+</button>
+                    </section>
+                </section>
+            </section>
+            <section class="total">
+                TOTAL <span class="cart-total-value h6-styling"></span>
+            </section>
+            <a
+                class="primary-btn cta-styling checkout-btn"
+                href="./html/checkout.html"
+                >Checkout</a
+            >
         </section>
 
         <!------------------------->
