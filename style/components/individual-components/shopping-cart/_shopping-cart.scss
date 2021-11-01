@@ -17,8 +17,9 @@
     transition: all .3s ease;
     pointer-events: none;
 
-    @media screen and (min-width: 350px){
+    @media screen and (min-width: 380px){
         right: 5%;
+        width: 360px;
     }
 
     @include tablet{

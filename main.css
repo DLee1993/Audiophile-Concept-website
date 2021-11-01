@@ -2879,9 +2879,10 @@ body {
   pointer-events: none;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 380px) {
   .shopping-cart {
     right: 5%;
+    width: 360px;
   }
 }
 
