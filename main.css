@@ -2429,6 +2429,7 @@ body {
   width: 40px;
   height: 48px;
   background-color: #F1F1F1;
+  color: #7e7e7e;
   border: none;
   outline: none;
   font-size: 18px;
@@ -2436,7 +2437,6 @@ body {
 
 .individual-product-layout .add-to-cart .quantity-selector .minus-btn:hover, .individual-product-layout .add-to-cart .quantity-selector .plus-btn:hover {
   cursor: pointer;
-  color: #D87D4A;
 }
 
 .individual-product-layout .add-to-cart .quantity-selector input {
@@ -2986,7 +2986,6 @@ body {
 
 .shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-minus-btn:hover, .shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-plus-btn:hover {
   cursor: pointer;
-  color: #D87D4A;
 }
 
 .shopping-cart .cart-items .cart-row .cart-quantity-selector input {

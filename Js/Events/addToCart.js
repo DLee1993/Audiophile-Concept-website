@@ -20,6 +20,12 @@ function ready(){
 
     for(minusBtn of minus){
         minusBtn.addEventListener("click", decreaseQuantity)
+        minusBtn.addEventListener("mousedown", () => {
+            minusBtn.style.color = "#D87D4A"
+        })
+        minusBtn.addEventListener("mouseup", () => {
+            minusBtn.style.color = "#7e7e7e"
+        })
     }
 
     //quantity selector plus btn
@@ -27,6 +33,12 @@ function ready(){
 
     for(plusBtn of plus){
         plusBtn.addEventListener("click", increaseQuantity)
+        plusBtn.addEventListener("mousedown", () => {
+            plusBtn.style.color = "#D87D4A"
+        })
+        plusBtn.addEventListener("mouseup", () => {
+            plusBtn.style.color = "#7e7e7e"
+        })
     }
 
     cartCounter()

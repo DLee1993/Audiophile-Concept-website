@@ -80,13 +80,13 @@
                 width: 40px;
                 height: 48px;
                 background-color: colorSet(base, light-silver);
+                color: colorSet(base, light-grey);
                 border: none;
                 outline: none;
                 font-size: 18px;
 
                 &:hover{
                     cursor: pointer;
-                    color: colorSet(accent, dark-orange);
                 }
             }
 
