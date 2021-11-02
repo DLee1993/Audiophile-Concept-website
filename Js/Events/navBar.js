@@ -3,7 +3,10 @@
 const hamburger = document.querySelector(".hamburger-icon"),
     menu = document.querySelector(".mobile-nav-list"),
     mainContent = document.querySelector(".main-content"),
-    nav = document.querySelector(".nav");
+    nav = document.querySelector(".nav"), 
+    cart = document.querySelector(".shopping-cart"), 
+    shoppingCartIcon = document.querySelector(".cart-icon");
+
 
 hamburger.addEventListener("click", () => {
     if (menu.classList.contains("nav-open")) {
@@ -17,6 +20,16 @@ hamburger.addEventListener("click", () => {
     }
 });
 
+shoppingCartIcon.addEventListener("click", () => {
+    if (cart.classList.contains("open-cart")) {
+        cart.classList.remove("open-cart");
+        shoppingCartIcon.style.fill = "#fff";
+    } else {
+        cart.classList.add("open-cart");
+        shoppingCartIcon.style.fill = "#D87D4A";
+    }
+});
+
 mainContent.addEventListener("click", () => {
     if (menu.classList.contains("nav-open")) {
         menu.classList.remove("nav-open");
@@ -24,20 +37,6 @@ mainContent.addEventListener("click", () => {
         document.body.style.overflow = "auto";
     }
 });
-
-//shopping cart funcitonality
-const shoppingCartIcon = document.getElementsByClassName("cart-icon");
-for (cartIcon of shoppingCartIcon) {
-    cartIcon.addEventListener("click", () => {
-        const cart = document.querySelector(".shopping-cart");
-
-        if (cart.classList.contains("open-cart")) {
-            cart.classList.remove("open-cart");
-        } else {
-            cart.classList.add("open-cart");
-        }
-    });
-}
 
 if (document.URL.includes("index.html")) {
     window.addEventListener("scroll", () => {
