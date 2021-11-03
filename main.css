@@ -2446,6 +2446,7 @@ body {
   border: none;
   outline: none;
   text-align: center;
+  font-weight: 800;
 }
 
 .product-features {
