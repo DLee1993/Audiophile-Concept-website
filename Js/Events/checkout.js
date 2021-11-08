@@ -2,3 +2,30 @@
 if (document.URL.includes("checkout.html")) {
     document.body.style.backgroundColor = "#F1F1F1";
 }
+
+//* The below code is for the payment methods */
+const eMoney = document.querySelector(".e-money"),
+    eMoneySelected = document.querySelector(".e-money .inner-circle"),
+    eMoneyDetails = document.querySelector(".e-money-details"),
+    cash = document.querySelector(".cash"),
+    cashSelected = document.querySelector(".cash .inner-circle"),
+    cashDetails = document.querySelector(".cash-details");
+
+document.addEventListener("DOMContentLoaded", () => {
+    eMoneySelected.style.backgroundColor = "#D87D4A";
+    eMoneyDetails.style.display = "flex";
+});
+
+cash.addEventListener("click", () => {
+    eMoneySelected.style.backgroundColor = "transparent";
+    eMoneyDetails.style.display = "none";
+    cashSelected.style.backgroundColor = "#D87D4A"
+    cashDetails.style.display = "flex"
+});
+
+eMoney.addEventListener("click", () => {
+    eMoneySelected.style.backgroundColor = "#D87D4A";
+    eMoneyDetails.style.display = "flex";
+    cashSelected.style.backgroundColor = "transparent"
+    cashDetails.style.display = "none"
+});
