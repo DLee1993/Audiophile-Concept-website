@@ -1,20 +1,21 @@
 .order-complete {
     position: absolute;
-    top: 90px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
     display: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
     width: 90%;
     max-width: 540px;
     background-color: colorSet(base, white);
     height: fit-content;
-    min-height: 450px;
+    min-height: 540px;
     border-radius: 10px;
     border: 1px solid colorSet(accent, dark-orange);
+    padding: 10px 0;
 
     & svg {
         fill: colorSet(accent, dark-orange);
@@ -26,16 +27,19 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        margin-left: 50px;
+        margin: 20px 0 10px 50px;
     }
 
     & p {
         margin-left: 50px;
         font-weight: 200;
     }
-
     & .return-home-btn {
         width: 80%;
-        margin: 0 auto;
+        margin: 10px auto;
+    }
+
+    & .content-visible {
+        transition: all 0.5s ease;
     }
 }
