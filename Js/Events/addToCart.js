@@ -61,7 +61,7 @@ function ready() {
 }
 
 function returnToPreviousPage() {
-    window.history.go(-1);
+    window.location= document.referrer;
 }
 
 function decreaseQuantity(e) {
