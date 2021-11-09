@@ -2867,13 +2867,19 @@ form {
 
 @media (min-width: 700px) {
   form {
-    max-width: 689px;
+    max-width: 500px;
     margin: -10px 0 0 50px;
     padding: 10px 15px;
   }
 }
 
 @media (min-width: 1000px) {
+  form {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1240px) {
   form {
     max-width: 730px;
   }
@@ -3469,6 +3475,71 @@ form .payment-info .cash-details p {
 @media (min-width: 700px) {
   form .payment-info .cash-details p {
     width: 77%;
+  }
+}
+
+.body-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+  .body-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.summary-checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 327px;
+  height: 488px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 50px auto 0 auto;
+}
+
+@media (min-width: 700px) {
+  .summary-checkout {
+    max-width: 500px;
+    margin: 50px 0 0 50px;
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .summary-checkout {
+    max-width: 350px;
+    margin: -10px auto 0 auto;
   }
 }
 
