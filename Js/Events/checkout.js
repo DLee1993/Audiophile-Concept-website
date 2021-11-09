@@ -1,6 +1,7 @@
 //* The below code is strictly to change the background color of the checkout page, this is done according to design spec*/
 if (document.URL.includes("checkout.html")) {
     document.body.style.backgroundColor = "#F1F1F1";
+    document.querySelector(".flex-container").classList.add("body-flex")
 }
 
 //* The below code is for the payment methods */
