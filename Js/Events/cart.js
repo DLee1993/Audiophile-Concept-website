@@ -1,3 +1,5 @@
+//*! The below code is strictly for the shopping cart - DO NOT REMOVE!*/
+
 if(document.readyState === 'loading'){
     document.addEventListener("DOMContentLoaded", ready)
 } else {
