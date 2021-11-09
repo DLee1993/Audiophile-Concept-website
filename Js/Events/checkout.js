@@ -13,6 +13,7 @@ const eMoney = document.querySelector(".e-money"),
 
 document.addEventListener("DOMContentLoaded", () => {
     eMoneySelected.style.backgroundColor = "#D87D4A";
+    eMoney.style.border = "1px solid #D87D4A"
     eMoneyDetails.style.display = "flex";
 });
 
@@ -21,6 +22,8 @@ cash.addEventListener("click", () => {
     eMoneyDetails.style.display = "none";
     cashSelected.style.backgroundColor = "#D87D4A"
     cashDetails.style.display = "flex"
+    cash.style.border = "1px solid #D87D4A"
+    eMoney.style.border = "1px solid #cfcfcf"
 });
 
 eMoney.addEventListener("click", () => {
@@ -28,4 +31,6 @@ eMoney.addEventListener("click", () => {
     eMoneyDetails.style.display = "flex";
     cashSelected.style.backgroundColor = "transparent"
     cashDetails.style.display = "none"
+    cash.style.border = "1px solid #cfcfcf"
+    eMoney.style.border = "1px solid #D87D4A"
 });
