@@ -2859,7 +2859,7 @@ body {
 form {
   width: 100%;
   max-width: 327px;
-  margin: 0 auto;
+  margin: -15px auto 0 auto;
   background-color: #FFFFFF;
   border-radius: 10px;
   padding-bottom: 10px;
@@ -2868,7 +2868,7 @@ form {
 @media (min-width: 700px) {
   form {
     max-width: 689px;
-    margin: 10px 0 0 50px;
+    margin: -10px 0 0 50px;
     padding: 10px 15px;
   }
 }
