@@ -14,8 +14,9 @@
     }
 
     @include desktop {
-        height: 500px;
+        height: 490px;
         flex-direction: row-reverse;
+        justify-content: space-evenly;
     }
 
     & .company-desc-image {
@@ -32,7 +33,7 @@
         }
 
         @include desktop {
-            width: 49%;
+            width: 40%;
             height: 100%;
             background-image: url("./style/assets/shared/desktop/image-best-gear.jpg");
         }
@@ -54,6 +55,7 @@
         @include desktop {
             width: 49%;
             height: 100%;
+            align-items: flex-start;
         }
 
         & .title {
