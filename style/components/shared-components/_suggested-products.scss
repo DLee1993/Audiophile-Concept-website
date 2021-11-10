@@ -14,6 +14,13 @@
     flex-wrap: wrap;
     list-style: none;
 
+    @include tablet{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    @include desktop {}
+
     & .suggested-product {
         display: flex;
         justify-content: space-evenly;
@@ -39,6 +46,7 @@
         margin: 0;
         & .product-image {
             width: 100%;
+            max-width: 327px;
             height: 150px;
             background: url("./style/assets/shared/mobile/image-xx99-mark-one-headphones.jpg")
                 no-repeat;
@@ -48,6 +56,7 @@
 
             @include tablet {
                 height: 318px;
+                max-width: none;
                 background: url("./style/assets/shared/tablet/image-xx99-mark-one-headphones.jpg")
                     no-repeat;
                 background-size: cover;
@@ -66,6 +75,7 @@
         margin: 0;
         & .product-image {
             width: 100%;
+            max-width: 327px;
             height: 150px;
             background: url("./style/assets/shared/mobile/image-xx99-mark-two-headphones.jpg")
                 no-repeat;
@@ -75,6 +85,7 @@
 
             @include tablet {
                 height: 318px;
+                max-width: none;
                 background: url("./style/assets/shared/tablet/image-xx99-mark-two-headphones.jpg")
                     no-repeat;
                 background-size: cover;
@@ -93,6 +104,7 @@
         margin: 0;
         & .product-image {
             width: 100%;
+            max-width: 327px;
             height: 150px;
             background: url("./style/assets/shared/mobile/image-xx59-headphones.jpg")
                 no-repeat;
@@ -102,6 +114,7 @@
 
             @include tablet {
                 height: 318px;
+                max-width: none;
                 background: url("./style/assets/shared/tablet/image-xx59-headphones.jpg")
                     no-repeat;
                 background-size: cover;
@@ -120,6 +133,7 @@
         margin: 0;
         & .product-image {
             width: 100%;
+            max-width: 327px;
             height: 150px;
             background: url("./style/assets/shared/mobile/image-zx7-speaker.jpg")
                 no-repeat;
@@ -129,6 +143,7 @@
 
             @include tablet {
                 height: 318px;
+                max-width: none;
                 background: url("./style/assets/shared/tablet/image-zx7-speaker.jpg")
                     no-repeat;
                 background-size: cover;
@@ -147,6 +162,7 @@
         margin: 0;
         & .product-image {
             width: 100%;
+            max-width: 327px;
             height: 150px;
             background: url("./style/assets/shared/mobile/image-zx9-speaker.jpg")
                 no-repeat;
@@ -156,6 +172,7 @@
 
             @include tablet {
                 height: 318px;
+                max-width: none;
                 background: url("./style/assets/shared/tablet/image-zx9-speaker.jpg")
                     no-repeat;
                 background-size: cover;

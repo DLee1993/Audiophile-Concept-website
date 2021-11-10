@@ -203,9 +203,9 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -277,8 +277,8 @@ body {
   height: 700px;
   background-color: #000000;
   color: #4c4c4c;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 700px) {
@@ -297,8 +297,8 @@ body {
   height: 5px;
   margin: 0 auto;
   background-color: #D87D4A;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 700px) {
@@ -416,14 +416,14 @@ body {
 
 .bottom-nav .footer-nav ul li a {
   color: #F1F1F1;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .bottom-nav .footer-nav ul li a:hover {
   color: #D87D4A;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .bottom-nav .footer-comp-desc {
@@ -457,8 +457,8 @@ body {
 
 .bottom-nav .footer-comp-desc .comp-desc {
   text-align: center;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   width: auto;
   max-width: 400px;
 }
@@ -501,8 +501,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 700px) {
@@ -539,14 +539,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   fill: #fff;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .bottom-nav .footer-comp-desc .social-media li a:hover {
   fill: #D87D4A;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .bottom-nav .footer-comp-desc .social-media li > a > p {
@@ -834,6 +834,15 @@ body {
   list-style: none;
 }
 
+@media (min-width: 700px) {
+  .suggested-products {
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .suggested-products .suggested-product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,6 +884,7 @@ body {
 
 .suggested-products .mark-one .product-image {
   width: 100%;
+  max-width: 327px;
   height: 150px;
   background: url("./style/assets/shared/mobile/image-xx99-mark-one-headphones.jpg") no-repeat;
   background-size: cover;
@@ -885,6 +895,7 @@ body {
 @media (min-width: 700px) {
   .suggested-products .mark-one .product-image {
     height: 318px;
+    max-width: none;
     background: url("./style/assets/shared/tablet/image-xx99-mark-one-headphones.jpg") no-repeat;
     background-size: cover;
   }
@@ -904,6 +915,7 @@ body {
 
 .suggested-products .mark-two .product-image {
   width: 100%;
+  max-width: 327px;
   height: 150px;
   background: url("./style/assets/shared/mobile/image-xx99-mark-two-headphones.jpg") no-repeat;
   background-size: cover;
@@ -914,6 +926,7 @@ body {
 @media (min-width: 700px) {
   .suggested-products .mark-two .product-image {
     height: 318px;
+    max-width: none;
     background: url("./style/assets/shared/tablet/image-xx99-mark-two-headphones.jpg") no-repeat;
     background-size: cover;
   }
@@ -933,6 +946,7 @@ body {
 
 .suggested-products .xx59 .product-image {
   width: 100%;
+  max-width: 327px;
   height: 150px;
   background: url("./style/assets/shared/mobile/image-xx59-headphones.jpg") no-repeat;
   background-size: cover;
@@ -943,6 +957,7 @@ body {
 @media (min-width: 700px) {
   .suggested-products .xx59 .product-image {
     height: 318px;
+    max-width: none;
     background: url("./style/assets/shared/tablet/image-xx59-headphones.jpg") no-repeat;
     background-size: cover;
   }
@@ -962,6 +977,7 @@ body {
 
 .suggested-products .zx7 .product-image {
   width: 100%;
+  max-width: 327px;
   height: 150px;
   background: url("./style/assets/shared/mobile/image-zx7-speaker.jpg") no-repeat;
   background-size: cover;
@@ -972,6 +988,7 @@ body {
 @media (min-width: 700px) {
   .suggested-products .zx7 .product-image {
     height: 318px;
+    max-width: none;
     background: url("./style/assets/shared/tablet/image-zx7-speaker.jpg") no-repeat;
     background-size: cover;
   }
@@ -991,6 +1008,7 @@ body {
 
 .suggested-products .zx9 .product-image {
   width: 100%;
+  max-width: 327px;
   height: 150px;
   background: url("./style/assets/shared/mobile/image-zx9-speaker.jpg") no-repeat;
   background-size: cover;
@@ -1001,6 +1019,7 @@ body {
 @media (min-width: 700px) {
   .suggested-products .zx9 .product-image {
     height: 318px;
+    max-width: none;
     background: url("./style/assets/shared/tablet/image-zx9-speaker.jpg") no-repeat;
     background-size: cover;
   }
@@ -1086,7 +1105,7 @@ body {
 }
 
 .category-links {
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   height: 800px;
   margin: 0px auto;
@@ -1264,9 +1283,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2350,9 +2368,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2360,9 +2378,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: auto;
-  max-width: 1100px;
-  margin: auto;
 }
 
 @media (min-width: 700px) {
@@ -2474,9 +2489,8 @@ body {
 }
 
 .product-features {
-  width: auto;
-  max-width: 1100px;
-  margin: 70px auto 100px auto;
+  width: 100%;
+  margin: 70px 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2502,6 +2516,8 @@ body {
 
 @media (min-width: 1000px) {
   .product-features {
+    width: 90%;
+    max-width: 1000px;
     margin: 100px auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

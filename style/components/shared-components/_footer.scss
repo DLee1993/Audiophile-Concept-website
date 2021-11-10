@@ -4,7 +4,7 @@
     height: 700px;
     background-color: colorSet(base, black);
     color: colorSet(base, dark-grey);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     @include tablet {
         height: 400px;
@@ -19,7 +19,7 @@
         height: 5px;
         margin: 0 auto;
         background-color: colorSet(accent, dark-orange);
-        transition: all .3s ease;
+        transition: all 0.3s ease;
 
         @include tablet {
             top: 0;
@@ -27,7 +27,7 @@
             transform: none;
         }
 
-        @include desktop{
+        @include desktop {
             left: 120px;
         }
     }
@@ -47,7 +47,7 @@
             align-items: flex-start;
         }
 
-        @include desktop{
+        @include desktop {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -64,7 +64,7 @@
                 margin: 25px 0px 30px 30px;
             }
 
-            @include desktop{
+            @include desktop {
                 margin: 0;
             }
         }
@@ -88,11 +88,11 @@
 
                 & a {
                     color: colorSet(base, light-silver);
-                    transition: .3s ease;
+                    transition: 0.3s ease;
 
-                    &:hover{
-                        color: colorSet(accent, dark-orange); 
-                        transition: .3s ease;
+                    &:hover {
+                        color: colorSet(accent, dark-orange);
+                        transition: 0.3s ease;
                     }
                 }
             }
@@ -117,7 +117,7 @@
 
         & .comp-desc {
             text-align: center;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
             width: auto;
             max-width: 400px;
 
@@ -128,14 +128,14 @@
                 padding-left: 30px;
             }
 
-            @include desktop{
+            @include desktop {
                 max-width: 570px;
                 padding-left: 30px;
             }
         }
 
-        & .copyright{
-            @include tablet{
+        & .copyright {
+            @include tablet {
                 padding-left: 30px;
             }
         }
@@ -149,7 +149,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
 
             @include tablet {
                 right: 50px;
@@ -158,7 +158,7 @@
                 justify-content: flex-end;
             }
 
-            @include desktop{
+            @include desktop {
                 right: 15px;
                 bottom: 100px;
             }
@@ -171,11 +171,11 @@
                     justify-content: center;
                     align-items: center;
                     fill: #fff;
-                    transition: .3s ease;
+                    transition: 0.3s ease;
 
-                    &:hover{
+                    &:hover {
                         fill: colorSet(accent, dark-orange);
-                        transition: .3s ease;
+                        transition: 0.3s ease;
                     }
                 }
             }
