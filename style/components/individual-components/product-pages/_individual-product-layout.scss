@@ -21,10 +21,13 @@
 }
 
 .individual-product-layout{
+    width: 90%;
+    max-width: 1100px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
 
     @include tablet {
         flex-direction: row;
@@ -104,8 +107,8 @@
 }
 
 .product-features{
-    width: 100%;
-    margin: 70px 0 100px 0;
+    width: 90%;
+    margin: 70px auto 100px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -117,7 +120,7 @@
 
     @include desktop{
         width: 90%;
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 100px auto;
         flex-direction: row;
         justify-content: space-between;

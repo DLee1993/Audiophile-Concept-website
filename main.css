@@ -169,9 +169,6 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
 }
 
@@ -1289,8 +1286,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2371,12 +2369,14 @@ body {
 }
 
 .individual-product-layout {
+  width: 90%;
+  max-width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2384,6 +2384,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
 }
 
 @media (min-width: 700px) {
@@ -2495,8 +2496,8 @@ body {
 }
 
 .product-features {
-  width: 100%;
-  margin: 70px 0 100px 0;
+  width: 90%;
+  margin: 70px auto 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2523,7 +2524,7 @@ body {
 @media (min-width: 1000px) {
   .product-features {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 100px auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

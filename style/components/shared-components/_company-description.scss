@@ -16,7 +16,6 @@
     @include desktop {
         height: 490px;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
     }
 
     & .company-desc-image {
