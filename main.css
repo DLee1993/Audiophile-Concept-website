@@ -817,7 +817,7 @@ body {
 }
 
 .suggested-products {
-  width: 90%;
+  width: 100%;
   margin: 0 auto 100px auto;
   max-width: 1100px;
   display: -webkit-box;
@@ -869,6 +869,10 @@ body {
   }
 }
 
+.suggested-products .mark-one {
+  margin: 0;
+}
+
 .suggested-products .mark-one .product-image {
   width: 100%;
   height: 150px;
@@ -892,6 +896,10 @@ body {
     background: url("./style/assets/shared/desktop/image-xx99-mark-one-headphones.jpg") no-repeat;
     background-size: cover;
   }
+}
+
+.suggested-products .mark-two {
+  margin: 0;
 }
 
 .suggested-products .mark-two .product-image {
@@ -919,6 +927,10 @@ body {
   }
 }
 
+.suggested-products .xx59 {
+  margin: 0;
+}
+
 .suggested-products .xx59 .product-image {
   width: 100%;
   height: 150px;
@@ -944,6 +956,10 @@ body {
   }
 }
 
+.suggested-products .zx7 {
+  margin: 0;
+}
+
 .suggested-products .zx7 .product-image {
   width: 100%;
   height: 150px;
@@ -967,6 +983,10 @@ body {
     background: url("./style/assets/shared/desktop/image-zx7-speaker.jpg") no-repeat;
     background-size: cover;
   }
+}
+
+.suggested-products .zx9 {
+  margin: 0;
 }
 
 .suggested-products .zx9 .product-image {
@@ -1066,7 +1086,7 @@ body {
 }
 
 .category-links {
-  width: 90%;
+  width: 100%;
   max-width: 1100px;
   height: 800px;
   margin: 0px auto;
@@ -2330,9 +2350,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2340,6 +2360,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: auto;
+  max-width: 1100px;
+  margin: auto;
 }
 
 @media (min-width: 700px) {
@@ -2451,8 +2474,9 @@ body {
 }
 
 .product-features {
-  width: 100%;
-  margin: 70px 0 100px 0;
+  width: auto;
+  max-width: 1100px;
+  margin: 70px auto 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2478,8 +2502,6 @@ body {
 
 @media (min-width: 1000px) {
   .product-features {
-    width: 90%;
-    max-width: 1000px;
     margin: 100px auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
