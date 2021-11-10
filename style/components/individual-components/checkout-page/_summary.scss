@@ -24,6 +24,11 @@
 
     & .cart-header {
         width: 100%;
+        margin-left: 30px;
+
+        @include tablet{
+            margin: 0;
+        }
     }
 
     & .summary-items {
@@ -42,11 +47,17 @@
         }
 
         & .summary-row {
-            width: 100%;
+            width: 92%;
             height: 70px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            margin: 0 auto;
+
+            @include tablet{
+                width: 100%;
+                margin: 0;
+            }
 
             & img {
                 width: 50px;
@@ -79,8 +90,14 @@
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        width: 92%;
         height: 130px;
+        margin: 0 auto;
+
+        @include tablet{
+            width: 100%;
+            margin: 0;
+        }
 
         & p {
             display: flex;
@@ -104,7 +121,12 @@
     }
 
     & .checkout-btn{
-        width: 100%;
-        margin-top: 20px;
+        width: 92%;
+        margin: 20px auto;
+
+        @include tablet{
+            width: 100%;
+            margin: 20px 0;
+        }
     }
 }
