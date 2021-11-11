@@ -29,6 +29,10 @@
     border: 1px solid colorSet(accent, dark-orange);
     padding: 10px 0;
 
+    @include tablet{
+        top: 30px;
+    }
+
     & svg {
         fill: colorSet(accent, dark-orange);
         margin-left: 50px;
