@@ -35,3 +35,18 @@ eMoney.addEventListener("click", () => {
     cash.style.border = "1px solid #cfcfcf"
     eMoney.style.border = "1px solid #D87D4A"
 });
+
+
+const payBtn = document.querySelector(".checkout-btn")
+
+payBtn.addEventListener("click", pay)
+
+
+function pay(){
+    //*? The below code for the pay function will be modified to include a check to ensire form validation is correct before proceeding */
+    const orderConfirmed = document.querySelector(".order-complete"); 
+    orderConfirmed.style.display = "flex"
+    orderConfirmed.style.pointerEvents = "all"
+    document.body.style.pointerEvents = "none"
+    document.body.style.overflow = "hidden"
+}

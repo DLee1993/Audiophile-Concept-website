@@ -37,10 +37,6 @@ function ready(){
             plusBtn.style.color = "#7e7e7e"
         })
     }
-
-    const payBtn = document.querySelector(".checkout-btn")
-
-    payBtn.addEventListener("click", pay)
 }; 
 
 
@@ -62,13 +58,4 @@ function cartCounter(){
 
 function quantityChanged(){
     console.log("it worked")
-}
-
-
-function pay(){
-    //*? The below code for the pay function will be modified to include a check to ensire form validation is correct before proceeding */
-    const orderConfirmed = document.querySelector(".order-complete"); 
-    orderConfirmed.style.display = "flex"
-    orderConfirmed.style.pointerEvents = "all"
-    document.body.style.pointerEvents = "none"
 }
