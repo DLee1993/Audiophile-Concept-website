@@ -1,5 +1,17 @@
+.order-complete-faded-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+
 .order-complete {
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 50%;
     transform: translateX(-50%);

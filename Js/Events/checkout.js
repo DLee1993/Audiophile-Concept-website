@@ -37,15 +37,17 @@ eMoney.addEventListener("click", () => {
 });
 
 
-const payBtn = document.querySelector(".checkout-btn")
+const payBtn = document.querySelector(".checkout-btn"), 
+fadedBG = document.querySelector(".order-complete-faded-bg")
 
 payBtn.addEventListener("click", pay)
 
 
 function pay(){
-    //*? The below code for the pay function will be modified to include a check to ensire form validation is correct before proceeding */
+    //*? The below code for the pay function will be modified to include a check to ensure form validation is correct before proceeding */
     const orderConfirmed = document.querySelector(".order-complete"); 
     orderConfirmed.style.display = "flex"
+    fadedBG.style.display = "block"
     orderConfirmed.style.pointerEvents = "all"
     document.body.style.pointerEvents = "none"
     document.body.style.overflow = "hidden"
