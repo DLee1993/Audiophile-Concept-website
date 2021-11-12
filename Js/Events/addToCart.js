@@ -83,22 +83,11 @@ function increaseQuantity(e) {
     increaseCounter()
 }
 
+
 function cartCounter() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     var count = cartItems.childElementCount;
     const counterValueInput =
         document.getElementsByClassName("counter-value")[0];
     counterValueInput.innerHTML = count;
-}
-
-function increaseCounter(){
-    const counterValueInput =
-        document.getElementsByClassName("counter-value")[0];
-    counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) + 1;
-}
-
-function decreaseCounter(){
-    const counterValueInput =
-    document.getElementsByClassName("counter-value")[0];
-    counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) - 1;
 }

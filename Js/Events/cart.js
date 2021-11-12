@@ -1,10 +1,13 @@
 //*! The below code is strictly for the shopping cart - DO NOT REMOVE!*/
+//* All of the below code is relevant to when an item is added to the cart */
 
 if(document.readyState === 'loading'){
     document.addEventListener("DOMContentLoaded", ready)
 } else {
     ready()
 }; 
+
+
 
 function ready(){
     const removeAllBtn = document.getElementsByClassName("remove-all-btn"); 
@@ -40,6 +43,8 @@ function ready(){
 }; 
 
 
+//Remove all items from the cart
+
 function removeAllItems(){
     var cartItems = document.getElementsByClassName("cart-items")[0]
     while(cartItems.hasChildNodes()){
@@ -48,14 +53,38 @@ function removeAllItems(){
     }
 }; 
 
-
-function cartCounter(){
-    var cartItems = document.getElementsByClassName("cart-items")[0]
-    var count = cartItems.childElementCount;
-    const counterValueInput = document.getElementsByClassName("counter-value")[0];
-    counterValueInput.innerHTML = count; 
-};
-
 function quantityChanged(){
     console.log("it worked")
+}
+
+function decreaseQuantity(e) {
+    var btn = e.target;
+    if (
+        btn.nextElementSibling.value === null ||
+        btn.nextElementSibling.value == 1
+    ) {
+        btn.parentElement.parentElement.remove();
+        decreaseCounter()
+    } else {
+        btn.nextElementSibling.value--;
+        decreaseCounter()
+    }
+}
+
+function increaseQuantity(e) {
+    var btn = e.target;
+    btn.previousElementSibling.value++;
+    increaseCounter()
+}
+
+function increaseCounter(){
+    const counterValueInput =
+        document.getElementsByClassName("counter-value")[0];
+    counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) + 1;
+}
+
+function decreaseCounter(){
+    const counterValueInput =
+    document.getElementsByClassName("counter-value")[0];
+    counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) - 1;
 }
