@@ -7,6 +7,18 @@ if (document.readyState === "loading") {
 }
 
 function ready() {
+
+    //quantity selector loop
+
+    const quantitySelectorValue = document.getElementsByClassName("quanitity-input");
+    for (quantityValue of quantitySelectorValue) {
+        window.onload = function(){
+            quantityValue.value = 1;
+        };
+    }
+
+    //Go back button loop
+
     const returnBtn = document.getElementsByClassName("return-btn");
 
     for (btn of returnBtn) {
@@ -16,18 +28,11 @@ function ready() {
     }
 
     //Add to cart button loop
-    const addToCartBtns = document.getElementsByClassName("add-to-cart-btn"),
-        quantitySelectorValue =
-            document.getElementsByClassName("quanitity-input");
+    const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
     for (btn of addToCartBtns) {
         btn.addEventListener("click", () => {
             console.log("clicked");
-            
-            for (quantityValue of quantitySelectorValue) {
-                quantityValue.value = 1;
-                window.onload((quantityValue.value = 1));
-            }
         });
     }
 
@@ -59,6 +64,7 @@ function ready() {
 
     cartCounter();
 }
+
 
 function returnToPreviousPage() {
     window.location= document.referrer;
