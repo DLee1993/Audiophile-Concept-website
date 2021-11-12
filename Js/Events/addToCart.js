@@ -73,14 +73,12 @@ function decreaseQuantity(e) {
         btn.nextElementSibling.value = 1;
     } else {
         btn.nextElementSibling.value--;
-        decreaseCounter()
     }
 }
 
 function increaseQuantity(e) {
     var btn = e.target;
     btn.previousElementSibling.value++;
-    increaseCounter()
 }
 
 
