@@ -73,12 +73,14 @@ function decreaseQuantity(e) {
         btn.nextElementSibling.value = 1;
     } else {
         btn.nextElementSibling.value--;
+        decreaseCounter()
     }
 }
 
 function increaseQuantity(e) {
     var btn = e.target;
     btn.previousElementSibling.value++;
+    increaseCounter()
 }
 
 function cartCounter() {
@@ -87,4 +89,16 @@ function cartCounter() {
     const counterValueInput =
         document.getElementsByClassName("counter-value")[0];
     counterValueInput.innerHTML = count;
+}
+
+function increaseCounter(){
+    const counterValueInput =
+        document.getElementsByClassName("counter-value")[0];
+    counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) + 1;
+}
+
+function decreaseCounter(){
+    const counterValueInput =
+    document.getElementsByClassName("counter-value")[0];
+    counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) - 1;
 }

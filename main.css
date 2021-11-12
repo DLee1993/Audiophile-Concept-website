@@ -2875,6 +2875,12 @@ body {
   padding: 10px 0;
 }
 
+@media (min-width: 700px) {
+  .order-complete {
+    top: 30px;
+  }
+}
+
 .order-complete svg {
   fill: #D87D4A;
   margin-left: 50px;
