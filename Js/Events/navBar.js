@@ -5,7 +5,8 @@ const hamburger = document.querySelector(".hamburger-icon"),
     mainContent = document.querySelector(".main-content"),
     nav = document.querySelector(".nav"), 
     cart = document.querySelector(".shopping-cart"), 
-    shoppingCartIcon = document.querySelector(".cart-icon");
+    shoppingCartIcon = document.querySelector(".cart-icon"), 
+    pageTitle = document.getElementsByTagName("title")[0];
 
 
 hamburger.addEventListener("click", () => {
@@ -38,7 +39,7 @@ mainContent.addEventListener("click", () => {
     }
 });
 
-if (document.URL.includes("index.html")) {
+if (pageTitle.innerHTML.includes("Home page")) {
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
             nav.style.backgroundColor = "black";
