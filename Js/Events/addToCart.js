@@ -31,9 +31,7 @@ function ready() {
     const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
     for (btn of addToCartBtns) {
-        btn.addEventListener("click", () => {
-            console.log("clicked");
-        });
+        btn.addEventListener("click", addToCartClicked);
     }
 
     //quantity selector minus btn
@@ -91,7 +89,25 @@ function increaseQuantity(e) {
 function cartCounter() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     var count = cartItems.childElementCount;
-    const counterValueInput =
-        document.getElementsByClassName("counter-value")[0];
-    counterValueInput.innerHTML = count;
+    var counterValueInput = document.querySelector(".counter-value");
+    var cartQuantitySelector = document.getElementsByClassName("cart-quanitity-input");
+    for(cartQuantity of cartQuantitySelector){
+        counterValueInput.innerHTML = count
+    }
+}
+
+
+function addToCartClicked(e){
+    let productList = []; 
+    if(typeof(Storage) !== 'undefined'){
+        let product = {
+            name: e.target.parentElement.parentElement.querySelector(".product-name").id, 
+            // The below price element needed to be accessed this way due to additional children with certain product parent elements
+            price: e.target.parentElement.parentElement.querySelector(".product-price").innerHTML, 
+            img: e.target.parentElement.parentElement.parentElement.children[0].baseURI,
+            quantityValue: e.target.parentElement.children[0].children[1].value, 
+            number: 1
+        };  
+        localStorage.setItem("productList", JSON.stringify(product)); 
+    }
 }

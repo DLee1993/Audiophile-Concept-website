@@ -3854,6 +3854,11 @@ form .payment-info .cash-details p {
   border-radius: 10px;
 }
 
+.shopping-cart .cart-items .cart-row .cart-item-name {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .shopping-cart .cart-items .cart-row .cart-quantity-selector {
   width: -webkit-fit-content;
   width: -moz-fit-content;
