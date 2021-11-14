@@ -46,7 +46,8 @@ function removeAllItems() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild);
-        cartCounter();
+        var counterValueInput = document.querySelector(".counter-value");
+        counterValueInput.innerHTML = 0
     }
 }
 
