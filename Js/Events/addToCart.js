@@ -96,18 +96,13 @@ function cartCounter() {
     }
 }
 
+/*
+add to cart - 
+take the value from the quantity selector on the main page
+then add that value to the quantity selector in the cart
+it needs to include the current value so parse int it
+add event listener to the add to cart for the new quantity selectors
+make sure to update the cart counter
+ */
 
-function addToCartClicked(e){
-    let productList = []; 
-    if(typeof(Storage) !== 'undefined'){
-        let product = {
-            name: e.target.parentElement.parentElement.querySelector(".product-name").id, 
-            // The below price element needed to be accessed this way due to additional children with certain product parent elements
-            price: e.target.parentElement.parentElement.querySelector(".product-price").innerHTML, 
-            img: e.target.parentElement.parentElement.parentElement.children[0].baseURI,
-            quantityValue: e.target.parentElement.children[0].children[1].value, 
-            number: 1
-        };  
-        localStorage.setItem("productList", JSON.stringify(product)); 
-    }
-}
+function addToCartClicked(e){};
