@@ -122,21 +122,31 @@
         </ul>
         <!--* Main page content *-->
         <main class="main-content">
-            <button
-                class="return-btn sub-styling"
-            >
-                Go Back
-            </button>
+            <button class="return-btn sub-styling">Go Back</button>
 
             <section class="individual-product-layout mark2-headphones">
                 <figure class="product-image">
-                    <img src="../style/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg" alt="mark 2 headphones" class="mobile-image" />
-                    <img src="../style/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg" alt="mark 2 headphones" class="tablet-image" />
-                    <img src="../style/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg" alt="mark 2 headphones" class="desktop-image" />
+                    <img
+                        src="../style/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg"
+                        alt="mark 2 headphones"
+                        class="mobile-image"
+                    />
+                    <img
+                        src="../style/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg"
+                        alt="mark 2 headphones"
+                        class="tablet-image"
+                    />
+                    <img
+                        src="../style/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
+                        alt="mark 2 headphones"
+                        class="desktop-image"
+                    />
                 </figure>
                 <section class="product-text">
                     <p class="sup-styling sup-heading">new product</p>
-                    <h2 class="h2-styling product-name" id="xx99 mk ||">xx99 mark || headphones</h2>
+                    <h2 class="h2-styling product-name" id="xx99 mk ||">
+                        xx99 mark || headphones
+                    </h2>
                     <p class="sub-text">
                         The new XX99 Mark II headphones is the pinnacle of
                         pristine audio. It redefines your premium headphone
@@ -173,39 +183,27 @@
                         intuitive controls designed for any situation. Whether
                         you're taking a business call or just in your own
                         personal space, the auto on/off and pause features
-                        ensure that you'll never miss a beat. <br><br>The advanced
-                        Active Noise Cancellation with built-in equalizer allow
-                        you to experience your audio world on your terms. It
-                        lets you enjoy your audio in peace, but quickly interact
-                        with your surroundings when you need to. Combined with
-                        Bluetooth 5. 0 compliant connectivity and 17 hour
-                        battery life, the XX99 Mark II headphones gives you
-                        superior sound, cutting-edge technology, and a modern
-                        design aesthetic.
+                        ensure that you'll never miss a beat. <br /><br />The
+                        advanced Active Noise Cancellation with built-in
+                        equalizer allow you to experience your audio world on
+                        your terms. It lets you enjoy your audio in peace, but
+                        quickly interact with your surroundings when you need
+                        to. Combined with Bluetooth 5. 0 compliant connectivity
+                        and 17 hour battery life, the XX99 Mark II headphones
+                        gives you superior sound, cutting-edge technology, and a
+                        modern design aesthetic.
                     </p>
                 </section>
                 <section class="in-the-box">
-                        <h3 class="h3-styling">
-                            in the box
-                        </h3>
-                        <ul class="accessory-list">
-                            <li>
-                                <span>1x</span> Headphone Unit
-                            </li>
-                            <li>
-                                <span>2x</span> Replacement Earcups
-                            </li>
-                            <li>
-                                <span>1x</span> User Manual
-                            </li>
-                            <li>
-                                <span>1x</span> 3.5mm 5m Audio Cable
-                            </li>
-                            <li>
-                                <span>1x</span> Travel Bag
-                            </li>
-                        </ul>
-                    </section>
+                    <h3 class="h3-styling">in the box</h3>
+                    <ul class="accessory-list">
+                        <li><span>1x</span> Headphone Unit</li>
+                        <li><span>2x</span> Replacement Earcups</li>
+                        <li><span>1x</span> User Manual</li>
+                        <li><span>1x</span> 3.5mm 5m Audio Cable</li>
+                        <li><span>1x</span> Travel Bag</li>
+                    </ul>
+                </section>
             </section>
 
             <section class="collage-grid-container mark-two-headphones-collage">
@@ -319,24 +317,21 @@
                 </section>
             </section>
         </main>
-        
+
         <!-- Shopping cart modal -->
         <section class="shopping-cart">
             <section class="cart-header">
                 <p class="cart-counter h6-styling">
-                    CART (<span class="counter-value"></span>)
+                    CART (<span class="counter-value">0</span>)
                 </p>
                 <button class="remove-all-btn">Remove all</button>
             </section>
             <section class="cart-items">
                 <section class="cart-row">
-                    <img
-                        src="../style/assets/cart/image-xx99-mark-two-headphones.jpg"
-                        alt=""
-                    />
+                    <img src="${data.img}" alt="" />
                     <section class="nameAndPrice">
-                        <p class="cart-item-name">XX99 Mark 11</p>
-                        <p class="cart-item-price">$2999</p>
+                        <p class="cart-item-name">${data.name}</p>
+                        <p class="cart-item-price">${data.price}</p>
                     </section>
                     <section class="cart-quantity-selector">
                         <button class="cart-minus-btn">-</button>
@@ -344,7 +339,7 @@
                             class="cart-quantity-input"
                             type="text"
                             name="quantity-value"
-                            value="1"
+                            value="${data.quantity}"
                             aria-label="quantity-value"
                         />
                         <button class="cart-plus-btn">+</button>
@@ -360,7 +355,7 @@
                 >Checkout</a
             >
         </section>
-        
+
         <!------------------------->
         <!--* Footer / bottom navigation *-->
         <footer class="bottom-nav">
