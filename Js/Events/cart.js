@@ -20,6 +20,8 @@ function ready() {
 
 //Remove all items from the cart
 
+
+
 function removeAllItems() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     var counterValueInput = document.querySelector(".counter-value");
@@ -29,6 +31,11 @@ function removeAllItems() {
         localStorage.clear()
     }
 }
+
+
+// This function is for the cart quantity selectors
+
+
 
 function cartQuantitySelector(){
     const cartMinus = document.getElementsByClassName("cart-minus-btn");
@@ -43,7 +50,8 @@ function cartQuantitySelector(){
         });
     }
 
-    //quantity selector plus btn
+
+
     const cartPlus = document.getElementsByClassName("cart-plus-btn");
 
     for (plusBtn of cartPlus) {
@@ -57,6 +65,10 @@ function cartQuantitySelector(){
     }
 }
 
+
+// This function will decrease the quantity of the car quantity Selector
+
+
 function decreaseCartQuantity(e) {
     var btn = e.target;
     if (
@@ -65,11 +77,16 @@ function decreaseCartQuantity(e) {
     ) {
         btn.parentElement.parentElement.remove();
         decreaseCounter();
+        removeItem(e)
     } else {
         btn.nextElementSibling.value--;
         decreaseCounter();
     }
 }
+
+
+// This function will increase the quantity of the car quantity Selector
+
 
 function increaseCartQuantity(e) {
     var btn = e.target;
@@ -77,11 +94,18 @@ function increaseCartQuantity(e) {
     increaseCounter();
 }
 
+
+// This function increases the value of the cart counter
+
+
 function increaseCounter() {
     const counterValueInput =
         document.getElementsByClassName("counter-value")[0];
     counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) + 1;
 }
+
+
+// This function decreases the value of the cart counter
 
 function decreaseCounter() {
     const counterValueInput =

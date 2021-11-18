@@ -10,9 +10,10 @@ function ready() {
 
     //quantity selector loop
 
-    const quantitySelectorValue = document.getElementsByClassName("quanitity-input");
+    const quantitySelectorValue =
+        document.getElementsByClassName("quantity-input");
     for (quantityValue of quantitySelectorValue) {
-        window.onload = function(){
+        window.onload = function () {
             quantityValue.value = 1;
         };
     }
@@ -28,6 +29,7 @@ function ready() {
     }
 
     //Add to cart button loop
+
     const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
     for (btn of addToCartBtns) {
@@ -35,6 +37,7 @@ function ready() {
     }
 
     //quantity selector minus btn
+
     const minus = document.getElementsByClassName("minus-btn");
 
     for (minusBtn of minus) {
@@ -48,6 +51,7 @@ function ready() {
     }
 
     //quantity selector plus btn
+
     const plus = document.getElementsByClassName("plus-btn");
 
     for (plusBtn of plus) {
@@ -63,10 +67,13 @@ function ready() {
     cartCounter();
 }
 
+// Return to previous page function
 
 function returnToPreviousPage() {
-    window.location= document.referrer;
+    window.location = document.referrer;
 }
+
+// reduce the value of the product page quantity Selector
 
 function decreaseQuantity(e) {
     var btn = e.target;
@@ -80,29 +87,88 @@ function decreaseQuantity(e) {
     }
 }
 
+// increase the value of the product page quantity Selector
+
 function increaseQuantity(e) {
     var btn = e.target;
     btn.previousElementSibling.value++;
 }
 
+/* 
+
+the below function changes the value of the cart counter based on the quantity selector values and the amount
+of child elements the cart items element has
+
+*/
 
 function cartCounter() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     var count = cartItems.childElementCount;
     var counterValueInput = document.querySelector(".counter-value");
-    var cartQuantitySelector = document.getElementsByClassName("cart-quantity-input");
-    for(cartQuantity of cartQuantitySelector){
-        counterValueInput.innerHTML = count
+    var cartQuantitySelector = document.getElementsByClassName(
+        "cart-quantity-input"
+    );
+    for (cartQuantity of cartQuantitySelector) {
+        counterValueInput.innerHTML = count * cartQuantity.value;
     }
 }
 
-/*
-add to cart - 
-take the value from the quantity selector on the main page
-then add that value to the quantity selector in the cart
-it needs to include the current value so parse int it
-add event listener to the add to cart for the new quantity selectors
-make sure to update the cart counter
- */
 
-function addToCartClicked(e){};
+// Notes for going forward
+
+/* 
+
+- when add to cart is clicked ( you need to access the name, price, img and the quantity of the product)
+- set all the above information into the local storage, into an abject
+- get all the above information and add it to the cart row templete 
+
+
+*/
+
+function addToCartClicked(){
+
+
+    // This is where I add all the info to the local storage 
+
+};
+
+
+
+function addItemToCart(){
+
+
+    // This is where I add the local storage items to the cart & summary
+    // I will also need to add the call to the cart.js - cartQuantitySelector function
+
+};
+
+
+
+function removeItem(e){
+
+    /* itemName = e.target.parentElement.parentElement.children[1].children[0].innerHTML; */
+
+    /* 
+    
+    Use an if statment to check wether the itemName = a key in the array, 
+    if it does, remove that item from the local storage array
+    
+    */
+    
+    // This will remove the item if the cart quantity Seletor = 0
+}
+
+
+
+function updateCartTotal(){
+
+    /* 
+    This where we will update the below elements  
+
+    - cart total
+
+    -summary total
+    -summary-grand total
+    
+    */
+}
