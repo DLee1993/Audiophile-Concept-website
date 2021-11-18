@@ -3951,6 +3951,11 @@ form .payment-info .cash-details p {
   border-radius: 10px;
 }
 
+.shopping-cart .cart-items .cart-row .nameAndPrice {
+  width: 100%;
+  padding-left: 20px;
+}
+
 .shopping-cart .cart-items .cart-row .cart-item-name {
   font-weight: 800;
   text-transform: uppercase;
