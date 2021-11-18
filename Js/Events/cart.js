@@ -14,10 +14,27 @@ function ready() {
         btn.addEventListener("click", removeAllItems);
     }
 
-    const minus = document.getElementsByClassName("cart-minus-btn");
+    cartQuantitySelector()
+}
 
-    for (minusBtn of minus) {
-        minusBtn.addEventListener("click", decreaseQuantity);
+
+//Remove all items from the cart
+
+function removeAllItems() {
+    var cartItems = document.getElementsByClassName("cart-items")[0];
+    var counterValueInput = document.querySelector(".counter-value");
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild);
+        counterValueInput.innerHTML = 0; 
+        localStorage.clear()
+    }
+}
+
+function cartQuantitySelector(){
+    const cartMinus = document.getElementsByClassName("cart-minus-btn");
+
+    for (minusBtn of cartMinus) {
+        minusBtn.addEventListener("click", decreaseCartQuantity);
         minusBtn.addEventListener("mousedown", () => {
             minusBtn.style.color = "#D87D4A";
         });
@@ -27,10 +44,10 @@ function ready() {
     }
 
     //quantity selector plus btn
-    const plus = document.getElementsByClassName("cart-plus-btn");
+    const cartPlus = document.getElementsByClassName("cart-plus-btn");
 
-    for (plusBtn of plus) {
-        plusBtn.addEventListener("click", increaseQuantity);
+    for (plusBtn of cartPlus) {
+        plusBtn.addEventListener("click", increaseCartQuantity);
         plusBtn.addEventListener("mousedown", () => {
             plusBtn.style.color = "#D87D4A";
         });
@@ -40,22 +57,7 @@ function ready() {
     }
 }
 
-//Remove all items from the cart
-
-function removeAllItems() {
-    var cartItems = document.getElementsByClassName("cart-items")[0];
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild);
-        var counterValueInput = document.querySelector(".counter-value");
-        counterValueInput.innerHTML = 0
-    }
-}
-
-function quantityChanged() {
-    console.log("it worked");
-}
-
-function decreaseQuantity(e) {
+function decreaseCartQuantity(e) {
     var btn = e.target;
     if (
         btn.nextElementSibling.value === null ||
@@ -69,7 +71,7 @@ function decreaseQuantity(e) {
     }
 }
 
-function increaseQuantity(e) {
+function increaseCartQuantity(e) {
     var btn = e.target;
     btn.previousElementSibling.value++;
     increaseCounter();
