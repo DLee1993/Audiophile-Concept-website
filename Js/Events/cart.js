@@ -28,7 +28,6 @@ function removeAllItems() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild);
         counterValueInput.innerHTML = 0; 
-        localStorage.clear()
     }
 }
 

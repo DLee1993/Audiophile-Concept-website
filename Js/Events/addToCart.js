@@ -7,7 +7,6 @@ if (document.readyState === "loading") {
 }
 
 function ready() {
-
     //quantity selector loop
 
     const quantitySelectorValue =
@@ -113,7 +112,6 @@ function cartCounter() {
     }
 }
 
-
 // Notes for going forward
 
 /* 
@@ -125,43 +123,24 @@ function cartCounter() {
 
 */
 
-function addToCartClicked(){
+function addToCartClicked(e) {}
 
 
-    // This is where I add all the info to the local storage 
-
-};
+function addItemToCart() {}; 
 
 
-
-function addItemToCart(){
-
-
-    // This is where I add the local storage items to the cart & summary
-    // I will also need to add the call to the cart.js - cartQuantitySelector function
-
-};
-
-
-
-function removeItem(e){
-
+function removeItem(e) {
     /* itemName = e.target.parentElement.parentElement.children[1].children[0].innerHTML; */
-
     /* 
     
     Use an if statment to check wether the itemName = a key in the array, 
     if it does, remove that item from the local storage array
     
     */
-    
     // This will remove the item if the cart quantity Seletor = 0
 }
 
-
-
-function updateCartTotal(){
-
+function updateCartTotal() {
     /* 
     This where we will update the below elements  
 
@@ -172,3 +151,22 @@ function updateCartTotal(){
     
     */
 }
+
+
+
+
+
+/*
+<section class="cart-row">
+                    <img src="../style/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg" alt="">
+                    <section class="nameAndPrice">
+                        <p class="cart-item-name">xx99 mk ||</p>
+                        <p class="cart-item-price">$2999</p>
+                    </section>
+                    <section class="cart-quantity-selector">
+                        <button class="cart-minus-btn">-</button>
+                        <input type="number" value="1" aria-label="cart-quantity-value" class="cart-quantity-input">
+                        <button class="cart-plus-btn">+</button>
+                    </section>
+                </section> 
+*/
