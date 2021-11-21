@@ -76,7 +76,6 @@ function decreaseCartQuantity(e) {
     ) {
         btn.parentElement.parentElement.remove();
         decreaseCounter();
-        removeItem(e)
     } else {
         btn.nextElementSibling.value--;
         decreaseCounter();

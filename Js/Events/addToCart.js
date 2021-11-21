@@ -110,63 +110,10 @@ function cartCounter() {
     for (cartQuantity of cartQuantitySelector) {
         counterValueInput.innerHTML = count * cartQuantity.value;
     }
+
+    if(count == 0){
+        counterValueInput.innerHTML = 0
+    }
 }
 
-// Notes for going forward
-
-/* 
-
-- when add to cart is clicked ( you need to access the name, price, img and the quantity of the product)
-- set all the above information into the local storage, into an abject
-- get all the above information and add it to the cart row templete 
-
-
-*/
-
-function addToCartClicked(e) {}
-
-
-function addItemToCart() {}; 
-
-
-function removeItem(e) {
-    /* itemName = e.target.parentElement.parentElement.children[1].children[0].innerHTML; */
-    /* 
-    
-    Use an if statment to check wether the itemName = a key in the array, 
-    if it does, remove that item from the local storage array
-    
-    */
-    // This will remove the item if the cart quantity Seletor = 0
-}
-
-function updateCartTotal() {
-    /* 
-    This where we will update the below elements  
-
-    - cart total
-
-    -summary total
-    -summary-grand total
-    
-    */
-}
-
-
-
-
-
-/*
-<section class="cart-row">
-                    <img src="../style/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg" alt="">
-                    <section class="nameAndPrice">
-                        <p class="cart-item-name">xx99 mk ||</p>
-                        <p class="cart-item-price">$2999</p>
-                    </section>
-                    <section class="cart-quantity-selector">
-                        <button class="cart-minus-btn">-</button>
-                        <input type="number" value="1" aria-label="cart-quantity-value" class="cart-quantity-input">
-                        <button class="cart-plus-btn">+</button>
-                    </section>
-                </section> 
-*/
+function addToCartClicked(e){}
