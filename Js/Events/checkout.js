@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 cash.addEventListener("click", () => {
+    cash.classList.add("selected")
+    eMoney.classList.remove("selected")
     eMoneySelected.style.backgroundColor = "transparent";
     eMoneyDetails.style.display = "none";
     cashSelected.style.backgroundColor = "#D87D4A"
@@ -28,6 +30,8 @@ cash.addEventListener("click", () => {
 });
 
 eMoney.addEventListener("click", () => {
+    cash.classList.remove("selected")
+    eMoney.classList.add("selected")
     eMoneySelected.style.backgroundColor = "#D87D4A";
     eMoneyDetails.style.display = "flex";
     cashSelected.style.backgroundColor = "transparent"
@@ -35,20 +39,3 @@ eMoney.addEventListener("click", () => {
     cash.style.border = "1px solid #cfcfcf"
     eMoney.style.border = "1px solid #D87D4A"
 });
-
-
-const payBtn = document.querySelector(".checkout-btn"), 
-fadedBG = document.querySelector(".order-complete-faded-bg")
-
-payBtn.addEventListener("click", pay)
-
-
-function pay(){
-    //*? The below code for the pay function will be modified to include a check to ensure form validation is correct before proceeding */
-    const orderConfirmed = document.querySelector(".order-complete"); 
-    orderConfirmed.style.display = "flex"
-    fadedBG.style.display = "block"
-    orderConfirmed.style.pointerEvents = "all"
-    document.body.style.pointerEvents = "none"
-    document.body.style.overflow = "hidden"
-}

@@ -2974,7 +2974,7 @@ body {
 
 @media (min-width: 700px) {
   .order-complete {
-    top: 30px;
+    top: 15px;
   }
 }
 
@@ -3832,13 +3832,13 @@ form .payment-info .cash-details p {
   color: #D87D4A;
 }
 
-.summary-checkout .checkout-btn {
+.summary-checkout .pay-btn {
   width: 92%;
   margin: 20px auto;
 }
 
 @media (min-width: 700px) {
-  .summary-checkout .checkout-btn {
+  .summary-checkout .pay-btn {
     width: 100%;
     margin: 20px 0;
   }

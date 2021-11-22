@@ -12,6 +12,7 @@
         <script src="../Js/Events/checkout.js" defer></script>
         <script src="../Js/Events/navBar.js" defer></script>
         <script src="../Js/Events/animations.js" defer></script>
+        <script src="../Js/Validation/formValidation.js" defer></script>
         <title>Audiophile | Checkout</title>
     </head>
     <body>
@@ -123,13 +124,9 @@
         </ul>
         <!--* Main page content *-->
         <main class="main-content">
-            <button
-                class="return-btn sub-styling"
-            >
-                Go Back
-            </button>
+            <button class="return-btn sub-styling">Go Back</button>
             <section class="flex-container">
-                <form action="#">
+                <form action="#" name="checkout-form">
                     <h3 class="h3-styling form-title">Checkout</h3>
                     <fieldset class="billing-info">
                         <legend class="cta-styling">Billing Details</legend>
@@ -139,6 +136,7 @@
                                 <p class="error-message">wrong format</p>
                             </section>
                             <input
+                                name="name"
                                 type="text"
                                 id="name"
                                 placeholder="Alexei Ward"
@@ -150,6 +148,7 @@
                                 <p class="error-message">wrong format</p>
                             </section>
                             <input
+                                name="email"
                                 type="email"
                                 id="email"
                                 placeholder="alexeiward@mail.com"
@@ -161,8 +160,9 @@
                                 <p class="error-message">wrong format</p>
                             </section>
                             <input
-                                type="number"
-                                id="number"
+                                name="phone"
+                                type="phone"
+                                id="phoneNumber"
                                 placeholder="+1 202-555-0136"
                             />
                         </section>
@@ -171,46 +171,50 @@
                         <legend class="cta-styling">Shipping Info</legend>
                         <section class="addressInput">
                             <section class="label-message">
-                                <label for="name">Your Address</label>
+                                <label for="address">Your Address</label>
                                 <p class="error-message">wrong format</p>
                             </section>
                             <input
+                                name="address"
                                 type="text"
-                                id="name"
-                                placeholder="Alexei Ward"
+                                id="address"
+                                placeholder="1137 Williams Avenue"
                             />
                         </section>
                         <section class="zipCodeInput">
                             <section class="label-message">
-                                <label for="email">ZIP Code</label>
+                                <label for="zipCode">ZIP Code</label>
                                 <p class="error-message">wrong format</p>
                             </section>
                             <input
-                                type="email"
-                                id="email"
-                                placeholder="alexeiward@mail.com"
+                                name="zipCode"
+                                type="text"
+                                id="zipCode"
+                                placeholder="10001"
                             />
                         </section>
                         <section class="cityInput">
                             <section class="label-message">
-                                <label for="number">City</label>
+                                <label for="city">City</label>
                                 <p class="error-message">wrong format</p>
                             </section>
                             <input
-                                type="number"
-                                id="number"
-                                placeholder="+1 202-555-0136"
+                                name="city"
+                                type="text"
+                                id="city"
+                                placeholder="New York"
                             />
                         </section>
                         <section class="countryInput">
                             <section class="label-message">
-                                <label for="number">Country</label>
+                                <label for="country">Country</label>
                                 <p class="error-message">wrong format</p>
                             </section>
                             <input
-                                type="number"
-                                id="number"
-                                placeholder="+1 202-555-0136"
+                                name="country"
+                                type="text"
+                                id="country"
+                                placeholder="United States"
                             />
                         </section>
                     </fieldset>
@@ -219,7 +223,7 @@
                         <section class="payment-type">
                             <p>Payment Method</p>
                             <ul class="payment-methods">
-                                <li class="e-money">
+                                <li class="e-money selected">
                                     <div class="circle-btn">
                                         <div class="inner-circle"></div>
                                     </div>
@@ -236,10 +240,13 @@
                         <section class="e-money-details">
                             <section class="e-money-num">
                                 <section class="label-message">
-                                    <label for="account-no">e-Money Number</label>
+                                    <label for="account-no"
+                                        >e-Money Number</label
+                                    >
                                     <p class="error-message">wrong format</p>
                                 </section>
                                 <input
+                                    name="account"
                                     type="number"
                                     id="account-no"
                                     placeholder="238521993"
@@ -250,7 +257,12 @@
                                     <label for="pin">e-Money PIN</label>
                                     <p class="error-message">wrong format</p>
                                 </section>
-                                <input type="number" id="pin" placeholder="6891" />
+                                <input
+                                    name="pin"
+                                    type="password"
+                                    id="pin"
+                                    placeholder="6891"
+                                />
                             </section>
                         </section>
                         <section class="cash-details">
@@ -269,10 +281,11 @@
                                 />
                             </svg>
                             <p class="cash-desc">
-                                The 'Cash on Delivery' option enables you to pay in
-                                cash when our delivery courier arrives at your
-                                residence. Just make sure your address is correct so
-                                that your order will not be cancelled.
+                                The 'Cash on Delivery' option enables you to pay
+                                in cash when our delivery courier arrives at
+                                your residence. Just make sure your address is
+                                correct so that your order will not be
+                                cancelled.
                             </p>
                         </section>
                     </fieldset>
@@ -281,8 +294,7 @@
                     <section class="cart-header">
                         <p class="cart-counter h6-styling">SUMMARY</p>
                     </section>
-                    <section class="summary-items">
-                    </section>
+                    <section class="summary-items"></section>
                     <section class="total">
                         <p class="summary-item-total sub-styling">
                             TOTAL
@@ -290,19 +302,24 @@
                         </p>
                         <p class="shipping-cost sub-styling">
                             SHIPPING
-                            <span class="shipping-cost-value h6-styling"></span>
+                            <span class="shipping-cost-value h6-styling"
+                                >$50</span
+                            >
                         </p>
                         <p class="VAT-cost sub-styling">
                             VAT (INCLUDED)
-                            <span class="VAT-cost-value h6-styling"></span>
+                            <span class="VAT-cost-value h6-styling">20%</span>
                         </p>
                         <p class="grand-total-cost sub-styling">
                             GRAND TOTAL
-                            <span class="grand-total-cost-value h6-styling"></span
-                            >
+                            <span
+                                class="grand-total-cost-value h6-styling"
+                            ></span>
                         </p>
                     </section>
-                    <a class="primary-btn cta-styling checkout-btn" href="javascript: void(0)"
+                    <a
+                        class="primary-btn cta-styling pay-btn"
+                        href="javascript: void(0)"
                         >Continue & pay</a
                     >
                 </section>
@@ -341,8 +358,7 @@
                 </p>
                 <button class="remove-all-btn">Remove all</button>
             </section>
-            <section class="cart-items">
-            </section>
+            <section class="cart-items"></section>
             <section class="total">
                 TOTAL <span class="cart-total-value h6-styling"></span>
             </section>
