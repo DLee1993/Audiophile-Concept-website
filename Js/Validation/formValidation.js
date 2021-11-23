@@ -86,7 +86,7 @@ const validateAllInputs = () => {
         isFormValid = false;
     }
 
-    if(!isValidPhoneNumber(phoneInput.value)){
+    if(!isValidPhoneNumber(phoneInput.value) || phoneInput.value.length < 11){
         invalidateInput(phoneInput); 
         isFormValid = false;
     }
@@ -123,12 +123,13 @@ const validateAllInputs = () => {
 
     const eMoneyPaymentType = document.querySelector(".e-money"); 
     if(eMoneyPaymentType.classList.contains("selected")){
-        if(!isValidAccNo(accountInput.value) || accountInput.value.length < 9){
+
+        if(!isValidAccNo(accountInput.value) || accountInput.value.length !== 9){
             invalidateInput(accountInput); 
             isFormValid = false
         }
         
-        if(pinInput.value.length < 4){
+        if(pinInput.value.length !== 4){
             invalidateInput(pinInput);
             isFormValid = false
         }
