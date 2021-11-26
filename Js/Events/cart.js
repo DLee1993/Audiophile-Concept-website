@@ -15,6 +15,7 @@ function ready() {
     }
 
     cartQuantitySelector()
+    updateCartTotal()
 }
 
 
@@ -28,6 +29,7 @@ function removeAllItems() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild);
         counterValueInput.innerHTML = 0; 
+        document.getElementsByClassName("cart-total-value")[0].innerText = "$" + 0;
         localStorage.clear();
     }
 }
@@ -76,10 +78,12 @@ function decreaseCartQuantity(e) {
         btn.nextElementSibling.value == 1
     ) {
         btn.parentElement.parentElement.remove();
+        updateCartTotal()
         decreaseCounter();
     } else {
         btn.nextElementSibling.value--;
         decreaseCounter();
+        updateCartTotal()
     }
 }
 
@@ -91,6 +95,7 @@ function increaseCartQuantity(e) {
     var btn = e.target;
     btn.previousElementSibling.value++;
     increaseCounter();
+    updateCartTotal()
 }
 
 
@@ -110,4 +115,20 @@ function decreaseCounter() {
     const counterValueInput =
         document.getElementsByClassName("counter-value")[0];
     counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) - 1;
+}
+
+
+function updateCartTotal() {
+    const cartItems = document.getElementsByClassName("cart-items")[0]; 
+    const cartRow = cartItems.getElementsByClassName("cart-row"); 
+    var total = 0; 
+    for(var i = 0; i < cartRow.length; i++){
+        const cartRowPrice = cartRow[i].querySelector(".cart-item-price").innerHTML.replace("$", '');
+        const cartRowQuantity = cartRow[i].getElementsByClassName("cart-quantity-input")[0];
+        const quantity = cartRowQuantity.value
+        total = total + (parseInt(cartRowPrice) * quantity);
+    }
+    total = Math.round(total * 100) / 100; 
+    function numberWithCommas(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+    document.getElementsByClassName("cart-total-value")[0].innerText = "$" + numberWithCommas(total);
 }

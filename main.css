@@ -4021,6 +4021,9 @@ form .payment-info .cash-details p {
 }
 
 .shopping-cart .total span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #000000;
 }
 

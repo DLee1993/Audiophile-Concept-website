@@ -130,6 +130,7 @@
         color: colorSet(base, light-grey);
 
         & span {
+            width: fit-content;
             color: colorSet(base, black);
         }
     }

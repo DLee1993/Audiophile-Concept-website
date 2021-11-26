@@ -116,21 +116,4 @@ function cartCounter() {
     }
 }
 
-
-function cartCounter() {
-    var cartItems = document.getElementsByClassName("cart-items")[0];
-    var count = cartItems.childElementCount;
-    var counterValueInput = document.querySelector(".counter-value");
-    var cartQuantitySelector = document.getElementsByClassName(
-        "cart-quantity-input"
-    );
-    for (cartQuantity of cartQuantitySelector) {
-        counterValueInput.innerHTML = count * cartQuantity.value;
-    }
-
-    if (count == 0) {
-        counterValueInput.innerHTML = 0;
-    }
-}
-
 function addToCartClicked(e){}; 
