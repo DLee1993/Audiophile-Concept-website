@@ -3869,8 +3869,8 @@ form .payment-info .cash-details p {
   border-radius: 10px;
   border: 1px solid #D87D4A;
   overflow: hidden;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   pointer-events: none;
 }
 
@@ -3923,7 +3923,7 @@ form .payment-info .cash-details p {
 }
 
 .shopping-cart .cart-items::-webkit-scrollbar {
-  width: .2rem;
+  width: 0.2rem;
   background-color: transparent;
 }
 
@@ -3979,7 +3979,8 @@ form .payment-info .cash-details p {
           align-items: center;
 }
 
-.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-minus-btn, .shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-plus-btn {
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-minus-btn,
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-plus-btn {
   width: 32px;
   height: 32px;
   background-color: #F1F1F1;
@@ -3989,7 +3990,8 @@ form .payment-info .cash-details p {
   color: #7e7e7e;
 }
 
-.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-minus-btn:hover, .shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-plus-btn:hover {
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-minus-btn:hover,
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-plus-btn:hover {
   cursor: pointer;
 }
 
@@ -4030,8 +4032,8 @@ form .payment-info .cash-details p {
 .open-cart {
   opacity: 1;
   pointer-events: all;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 * {
@@ -4045,19 +4047,30 @@ a {
   text-decoration: none;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100vh;
 }
 
 body::-webkit-scrollbar {
-  width: .4rem;
+  width: 0.4rem;
   background-color: black;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #D87D4A;
   border-radius: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 main {

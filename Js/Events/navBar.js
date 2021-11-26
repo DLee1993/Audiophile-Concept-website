@@ -2,7 +2,6 @@
 
 const hamburger = document.querySelector(".hamburger-icon"),
     menu = document.querySelector(".mobile-nav-list"),
-    mainContent = document.querySelector(".main-content"),
     nav = document.querySelector(".nav"), 
     cart = document.querySelector(".shopping-cart"), 
     shoppingCartIcon = document.querySelector(".cart-icon"), 
@@ -28,14 +27,6 @@ shoppingCartIcon.addEventListener("click", () => {
     } else {
         cart.classList.add("open-cart");
         shoppingCartIcon.style.fill = "#D87D4A";
-    }
-});
-
-mainContent.addEventListener("click", () => {
-    if (menu.classList.contains("nav-open")) {
-        menu.classList.remove("nav-open");
-        hamburger.style.fill = "#fff";
-        document.body.style.overflow = "auto";
     }
 });
 
