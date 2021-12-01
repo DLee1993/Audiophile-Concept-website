@@ -62,8 +62,12 @@ function ready() {
             plusBtn.style.color = "#7e7e7e";
         });
     }
+    if(localStorage.getItem("productList") !== null){
+        loadCart();
+    }
 
     cartCounter();
+
 }
 
 // Return to previous page function
@@ -116,4 +120,64 @@ function cartCounter() {
     }
 }
 
-function addToCartClicked(e){}; 
+function addToCartClicked(e) {
+    let productList = [];
+
+    if (typeof Storage != undefined) {
+        let product = {
+            name: e.target.parentElement.parentElement.querySelector(
+                ".product-name"
+            ).id,
+            image: e.target.parentElement.parentElement.parentElement.querySelector(
+                ".product-image"
+            ).children[0].src,
+            price: e.target.parentElement.previousElementSibling.innerHTML.replace(
+                "$",
+                ""
+            ),
+            cartQuantity: e.target.parentElement.children[0].querySelector(".quantity-input").value
+        };
+        if (JSON.parse(localStorage.getItem("productList")) === null) {
+            productList.push(product);
+            localStorage.setItem("productList", JSON.stringify(productList));
+        } else {
+            const localStorageItems = JSON.parse(
+                localStorage.getItem("productList")
+            );
+            localStorageItems.map((data) => {
+                if (product.name == data.name) {
+                    alert("item already added to basked");
+                    e.preventDefault()
+                } else {
+                    productList.push(data);
+                }
+            });
+            productList.push(product);
+            localStorage.setItem("productList", JSON.stringify(productList));
+        }
+    }
+    window.location.reload();
+}
+
+function loadCart() {
+    const localStorageItems = JSON.parse(localStorage.getItem("productList"));
+    localStorageItems.map((data) => {
+        const cartItems = document.querySelector(".cart-items"); 
+        var cartRow = document.createElement("section"); 
+        cartRow.classList.add("cart-row"); 
+        cartRowContent = `
+        <img src="${data.image}" alt=""></img>
+                    <section class="nameAndPrice">
+                        <p class="cart-item-name">${data.name}</p>
+                        <p class="cart-item-price">$${data.price}</p>
+                    </section>
+                    <section class="cart-quantity-selector">
+                        <button class="cart-minus-btn">-</button>
+                        <input type="number" value="${data.cartQuantity}" aria-label="cart-item-quantity" class="cart-quantity-input">
+                        <button class="cart-plus-btn">+</button>
+                    </section>`; 
+        cartRow.innerHTML = cartRowContent; 
+        cartItems.append(cartRow); 
+    });
+    cartCounter();
+}

@@ -126,7 +126,7 @@ function updateCartTotal() {
         const cartRowPrice = cartRow[i].querySelector(".cart-item-price").innerHTML.replace("$", '');
         const cartRowQuantity = cartRow[i].getElementsByClassName("cart-quantity-input")[0];
         const quantity = cartRowQuantity.value
-        total = total + (parseInt(cartRowPrice) * quantity);
+        total = total + (parseInt(cartRowPrice.replace(",", '')) * quantity);
     }
     total = Math.round(total * 100) / 100; 
     function numberWithCommas(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
