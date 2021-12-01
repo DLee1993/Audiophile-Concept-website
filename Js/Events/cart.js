@@ -14,32 +14,27 @@ function ready() {
         btn.addEventListener("click", removeAllItems);
     }
 
-    cartQuantitySelector()
-    updateCartTotal()
+    cartQuantitySelector();
+    updateCartTotal();
 }
 
-
 //Remove all items from the cart
-
-
 
 function removeAllItems() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     var counterValueInput = document.querySelector(".counter-value");
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild);
-        counterValueInput.innerHTML = 0; 
-        document.getElementsByClassName("cart-total-value")[0].innerText = "$" + 0;
+        counterValueInput.innerHTML = 0;
+        document.getElementsByClassName("cart-total-value")[0].innerText =
+            "$" + 0;
         localStorage.clear();
     }
 }
 
-
 // This function is for the cart quantity selectors
 
-
-
-function cartQuantitySelector(){
+function cartQuantitySelector() {
     const cartMinus = document.getElementsByClassName("cart-minus-btn");
 
     for (minusBtn of cartMinus) {
@@ -51,8 +46,6 @@ function cartQuantitySelector(){
             minusBtn.style.color = "#7e7e7e";
         });
     }
-
-
 
     const cartPlus = document.getElementsByClassName("cart-plus-btn");
 
@@ -67,9 +60,7 @@ function cartQuantitySelector(){
     }
 }
 
-
 // This function will decrease the quantity of the car quantity Selector
-
 
 function decreaseCartQuantity(e) {
     var btn = e.target;
@@ -77,37 +68,51 @@ function decreaseCartQuantity(e) {
         btn.nextElementSibling.value === null ||
         btn.nextElementSibling.value == 1
     ) {
+        //below code removes the item from localstorage
+
+        let itemRemoved =
+            btn.parentElement.parentElement.querySelector(
+                ".cart-item-name"
+            ).innerHTML;
+        let productList = [];
+        JSON.parse(localStorage.getItem("productList")).map((data) => {
+            if (data.name != itemRemoved) {
+                productList.push(data);
+            }
+        });
+        localStorage.setItem("productList", JSON.stringify(productList));
+        if(localStorage.getItem("productList").length < 3){
+            localStorage.clear()
+        }
+
+        //below code removes the cart row
         btn.parentElement.parentElement.remove();
-        updateCartTotal()
+
+        updateCartTotal();
         decreaseCounter();
     } else {
         btn.nextElementSibling.value--;
         decreaseCounter();
-        updateCartTotal()
+        updateCartTotal();
     }
 }
 
-
 // This function will increase the quantity of the car quantity Selector
-
 
 function increaseCartQuantity(e) {
     var btn = e.target;
     btn.previousElementSibling.value++;
     increaseCounter();
-    updateCartTotal()
+    updateCartTotal();
 }
 
-
 // This function increases the value of the cart counter
-
 
 function increaseCounter() {
     const counterValueInput =
         document.getElementsByClassName("counter-value")[0];
     counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) + 1;
 }
-
 
 // This function decreases the value of the cart counter
 
@@ -117,18 +122,24 @@ function decreaseCounter() {
     counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) - 1;
 }
 
-
 function updateCartTotal() {
-    const cartItems = document.getElementsByClassName("cart-items")[0]; 
-    const cartRow = cartItems.getElementsByClassName("cart-row"); 
-    var total = 0; 
-    for(var i = 0; i < cartRow.length; i++){
-        const cartRowPrice = cartRow[i].querySelector(".cart-item-price").innerHTML.replace("$", '');
-        const cartRowQuantity = cartRow[i].getElementsByClassName("cart-quantity-input")[0];
-        const quantity = cartRowQuantity.value
-        total = total + (parseInt(cartRowPrice.replace(",", '')) * quantity);
+    const cartItems = document.getElementsByClassName("cart-items")[0];
+    const cartRow = cartItems.getElementsByClassName("cart-row");
+    var total = 0;
+    for (var i = 0; i < cartRow.length; i++) {
+        const cartRowPrice = cartRow[i]
+            .querySelector(".cart-item-price")
+            .innerHTML.replace("$", "");
+        const cartRowQuantity = cartRow[i].getElementsByClassName(
+            "cart-quantity-input"
+        )[0];
+        const quantity = cartRowQuantity.value;
+        total = total + parseInt(cartRowPrice.replace(",", "")) * quantity;
     }
-    total = Math.round(total * 100) / 100; 
-    function numberWithCommas(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
-    document.getElementsByClassName("cart-total-value")[0].innerText = "$" + numberWithCommas(total);
+    total = Math.round(total * 100) / 100;
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    document.getElementsByClassName("cart-total-value")[0].innerText =
+        "$" + numberWithCommas(total);
 }
