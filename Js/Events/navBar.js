@@ -5,7 +5,8 @@ const hamburger = document.querySelector(".hamburger-icon"),
     nav = document.querySelector(".nav"), 
     cart = document.querySelector(".shopping-cart"), 
     shoppingCartIcon = document.querySelector(".cart-icon"), 
-    pageTitle = document.getElementsByTagName("title")[0];
+    pageTitle = document.getElementsByTagName("title")[0], 
+    mainContent = document.querySelector(".main-content");
 
 
 hamburger.addEventListener("click", () => {
@@ -19,6 +20,15 @@ hamburger.addEventListener("click", () => {
         document.body.style.overflow = "hidden";
     }
 });
+
+mainContent.addEventListener("click", () => {
+    if (cart.classList.contains("open-cart")) {
+        cart.classList.remove("open-cart");
+        shoppingCartIcon.style.fill = "#fff";
+        document.body.style.overflow = "auto";
+        console.log("clicked")
+    }
+})
 
 shoppingCartIcon.addEventListener("click", () => {
     if (cart.classList.contains("open-cart")) {
