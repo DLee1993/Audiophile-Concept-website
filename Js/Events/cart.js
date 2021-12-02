@@ -148,10 +148,11 @@ function updateCartTotal() {
     } else {
         grandTotal = total + shippingCost;
     }
+    var vatTotal = numberWithCommas(parseInt((vatIncluded / 100) * total)); 
     document.getElementsByClassName("cart-total-value")[0].innerText =
         "$" + numberWithCommas(total);
     document.getElementsByClassName("summary-total-value")[0].innerText =
         "$" + numberWithCommas(total);
-    document.getElementsByClassName("VAT-cost-value")[0].innerText = "$" + parseInt((vatIncluded / 100) * total); 
+    document.getElementsByClassName("VAT-cost-value")[0].innerText = "$" + vatTotal; 
     document.getElementsByClassName("grand-total-cost-value")[0].innerText = "$" + numberWithCommas(grandTotal); 
 }
