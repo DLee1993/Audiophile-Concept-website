@@ -13,10 +13,6 @@ function ready() {
     for (btn of removeAllBtn) {
         btn.addEventListener("click", removeAllItems);
     }
-
-    const returnToHome = document.querySelector(".return-home-btn"); 
-    returnToHome.addEventListener("click", resetCart); 
-
     cartQuantitySelector();
     updateCartTotal();
 }
@@ -125,6 +121,10 @@ function decreaseCounter() {
     counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) - 1;
 }
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function updateCartTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
     const cartRow = cartItems.getElementsByClassName("cart-row");
@@ -148,18 +148,10 @@ function updateCartTotal() {
     } else {
         grandTotal = total + shippingCost;
     }
-    function numberWithCommas(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
     document.getElementsByClassName("cart-total-value")[0].innerText =
         "$" + numberWithCommas(total);
     document.getElementsByClassName("summary-total-value")[0].innerText =
         "$" + numberWithCommas(total);
-    document.getElementsByClassName("VAT-cost-value")[0].innerText = "$" + (vatIncluded / 100) * total; 
+    document.getElementsByClassName("VAT-cost-value")[0].innerText = "$" + parseInt((vatIncluded / 100) * total); 
     document.getElementsByClassName("grand-total-cost-value")[0].innerText = "$" + numberWithCommas(grandTotal); 
-}
-
-
-function resetCart(){
-    localStorage.clear();
 }
