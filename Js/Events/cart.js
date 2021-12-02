@@ -14,6 +14,9 @@ function ready() {
         btn.addEventListener("click", removeAllItems);
     }
 
+    const returnToHome = document.querySelector(".return-home-btn"); 
+    returnToHome.addEventListener("click", resetCart); 
+
     cartQuantitySelector();
     updateCartTotal();
 }
@@ -81,8 +84,8 @@ function decreaseCartQuantity(e) {
             }
         });
         localStorage.setItem("productList", JSON.stringify(productList));
-        if(localStorage.getItem("productList").length < 3){
-            localStorage.clear()
+        if (localStorage.getItem("productList").length < 3) {
+            localStorage.clear();
         }
 
         //below code removes the cart row
@@ -126,6 +129,9 @@ function updateCartTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
     const cartRow = cartItems.getElementsByClassName("cart-row");
     var total = 0;
+    var grandTotal = 0;
+    var shippingCost = 50; 
+    var vatIncluded = 20; 
     for (var i = 0; i < cartRow.length; i++) {
         const cartRowPrice = cartRow[i]
             .querySelector(".cart-item-price")
@@ -137,9 +143,23 @@ function updateCartTotal() {
         total = total + parseInt(cartRowPrice.replace(",", "")) * quantity;
     }
     total = Math.round(total * 100) / 100;
+    if(total === 0){
+        grandTotal = 0
+    } else {
+        grandTotal = total + shippingCost;
+    }
     function numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     document.getElementsByClassName("cart-total-value")[0].innerText =
         "$" + numberWithCommas(total);
+    document.getElementsByClassName("summary-total-value")[0].innerText =
+        "$" + numberWithCommas(total);
+    document.getElementsByClassName("VAT-cost-value")[0].innerText = "$" + (vatIncluded / 100) * total; 
+    document.getElementsByClassName("grand-total-cost-value")[0].innerText = "$" + numberWithCommas(grandTotal); 
+}
+
+
+function resetCart(){
+    localStorage.clear();
 }
