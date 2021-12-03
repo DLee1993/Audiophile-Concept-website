@@ -141,7 +141,7 @@ function addToCartClicked(e) {
             );
             localStorageItems.map((data) => {
                 if (product.name == data.name) {
-                    alert("Quantity Chng");
+                    alert("Item already in basket")
                     e.preventDefault()
                 } else {
                     productList.push(data);

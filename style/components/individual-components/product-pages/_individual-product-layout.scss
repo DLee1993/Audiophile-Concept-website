@@ -6,6 +6,10 @@
     background-color: transparent;
     text-align: left;
 
+    & a {
+        color: colorSet(base, black);
+    }
+
     @include tablet {
         margin-top: 30px;
         margin-left: 50px;

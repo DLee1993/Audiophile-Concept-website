@@ -89,10 +89,12 @@ function decreaseCartQuantity(e) {
 
         updateCartTotal();
         decreaseCounter();
+        updateSummaryTotal(); 
     } else {
         btn.nextElementSibling.value--;
         decreaseCounter();
         updateCartTotal();
+        updateSummaryTotal(); 
     }
 }
 
@@ -103,6 +105,7 @@ function increaseCartQuantity(e) {
     btn.previousElementSibling.value++;
     increaseCounter();
     updateCartTotal();
+    updateSummaryTotal();
 }
 
 // This function increases the value of the cart counter

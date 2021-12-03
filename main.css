@@ -2351,6 +2351,10 @@ body {
   text-align: left;
 }
 
+.return-btn a {
+  color: #000000;
+}
+
 @media (min-width: 700px) {
   .return-btn {
     margin-top: 30px;
