@@ -129,6 +129,31 @@ function updateCartTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
     const cartRow = cartItems.getElementsByClassName("cart-row");
     var total = 0;
+    for (var i = 0; i < cartRow.length; i++) {
+        const cartRowPrice = cartRow[i]
+            .querySelector(".cart-item-price")
+            .innerHTML.replace("$", "");
+        const cartRowQuantity = cartRow[i].getElementsByClassName(
+            "cart-quantity-input"
+        )[0];
+        const quantity = cartRowQuantity.value;
+        total = total + parseInt(cartRowPrice.replace(",", "")) * quantity;
+    }
+    total = Math.round(total * 100) / 100;
+    document.getElementsByClassName("cart-total-value")[0].innerText =
+        "$" + numberWithCommas(total);
+}
+
+const checkoutPage = document.getElementsByTagName("title")[0]
+
+if(checkoutPage.innerHTML.includes("Checkout")){
+    updateSummaryTotal(); 
+}
+
+function updateSummaryTotal() {
+    const cartItems = document.getElementsByClassName("cart-items")[0];
+    const cartRow = cartItems.getElementsByClassName("cart-row");
+    var total = 0;
     var grandTotal = 0;
     var shippingCost = 50; 
     var vatIncluded = 20; 
