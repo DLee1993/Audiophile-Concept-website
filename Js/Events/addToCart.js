@@ -70,12 +70,6 @@ function ready() {
 
 }
 
-// Return to previous page function
-
-function returnToPreviousPage() {
-    window.location = document.referrer;
-}
-
 // reduce the value of the product page quantity Selector
 
 function decreaseQuantity(e) {
@@ -120,6 +114,7 @@ function cartCounter() {
     }
 }
 
+
 function addToCartClicked(e) {
     let productList = [];
 
@@ -158,6 +153,7 @@ function addToCartClicked(e) {
     }
     window.location.reload();
 }
+
 
 function loadCart() {
     const localStorageItems = JSON.parse(localStorage.getItem("productList"));
