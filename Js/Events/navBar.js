@@ -26,7 +26,6 @@ mainContent.addEventListener("click", () => {
         cart.classList.remove("open-cart");
         shoppingCartIcon.style.fill = "#fff";
         document.body.style.overflow = "auto";
-        console.log("clicked")
     }
 })
 

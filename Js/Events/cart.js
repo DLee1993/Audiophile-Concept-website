@@ -86,15 +86,17 @@ function decreaseCartQuantity(e) {
 
         //below code removes the cart row
         btn.parentElement.parentElement.remove();
-
-        updateCartTotal();
         decreaseCounter();
-        updateSummaryTotal(); 
+        if (checkoutPage.innerHTML.includes("Checkout")) {
+            updateSummaryTotal();
+        }
     } else {
         btn.nextElementSibling.value--;
         decreaseCounter();
         updateCartTotal();
-        updateSummaryTotal(); 
+        if (checkoutPage.innerHTML.includes("Checkout")) {
+            updateSummaryTotal();
+        }
     }
 }
 
@@ -105,7 +107,9 @@ function increaseCartQuantity(e) {
     btn.previousElementSibling.value++;
     increaseCounter();
     updateCartTotal();
-    updateSummaryTotal();
+    if (checkoutPage.innerHTML.includes("Checkout")) {
+        updateSummaryTotal();
+    }
 }
 
 // This function increases the value of the cart counter
@@ -147,10 +151,10 @@ function updateCartTotal() {
         "$" + numberWithCommas(total);
 }
 
-const checkoutPage = document.getElementsByTagName("title")[0]
+const checkoutPage = document.getElementsByTagName("title")[0];
 
-if(checkoutPage.innerHTML.includes("Checkout")){
-    updateSummaryTotal(); 
+if (checkoutPage.innerHTML.includes("Checkout")) {
+    updateSummaryTotal();
 }
 
 function updateSummaryTotal() {
@@ -158,8 +162,8 @@ function updateSummaryTotal() {
     const cartRow = cartItems.getElementsByClassName("cart-row");
     var total = 0;
     var grandTotal = 0;
-    var shippingCost = 50; 
-    var vatIncluded = 20; 
+    var shippingCost = 50;
+    var vatIncluded = 20;
     for (var i = 0; i < cartRow.length; i++) {
         const cartRowPrice = cartRow[i]
             .querySelector(".cart-item-price")
@@ -171,16 +175,18 @@ function updateSummaryTotal() {
         total = total + parseInt(cartRowPrice.replace(",", "")) * quantity;
     }
     total = Math.round(total * 100) / 100;
-    if(total === 0){
-        grandTotal = 0
+    if (total === 0) {
+        grandTotal = 0;
     } else {
         grandTotal = total + shippingCost;
     }
-    var vatTotal = numberWithCommas(parseInt((vatIncluded / 100) * total)); 
+    var vatTotal = numberWithCommas(parseInt((vatIncluded / 100) * total));
     document.getElementsByClassName("cart-total-value")[0].innerText =
         "$" + numberWithCommas(total);
     document.getElementsByClassName("summary-total-value")[0].innerText =
         "$" + numberWithCommas(total);
-    document.getElementsByClassName("VAT-cost-value")[0].innerText = "$" + vatTotal; 
-    document.getElementsByClassName("grand-total-cost-value")[0].innerText = "$" + numberWithCommas(grandTotal); 
+    document.getElementsByClassName("VAT-cost-value")[0].innerText =
+        "$" + vatTotal;
+    document.getElementsByClassName("grand-total-cost-value")[0].innerText =
+        "$" + numberWithCommas(grandTotal);
 }

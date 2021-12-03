@@ -119,6 +119,7 @@ function addToCartClicked(e) {
     let productList = [];
 
     if (typeof Storage != undefined) {
+        console.log( e.target.parentElement)
         let product = {
             name: e.target.parentElement.parentElement.querySelector(
                 ".product-name"
@@ -141,7 +142,7 @@ function addToCartClicked(e) {
             );
             localStorageItems.map((data) => {
                 if (product.name == data.name) {
-                    alert("Item already in basket")
+                    alert(`${data.name} quantity updated`)
                     e.preventDefault()
                 } else {
                     productList.push(data);
