@@ -29,6 +29,9 @@ function removeAllItems() {
             "$" + 0;
         localStorage.clear();
     }
+    if (checkoutPage.innerHTML.includes("Checkout")) {
+        updateSummaryTotal();
+    }
 }
 
 // This function is for the cart quantity selectors
