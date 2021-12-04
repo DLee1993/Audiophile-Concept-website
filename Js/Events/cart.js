@@ -165,7 +165,7 @@ function updateSummaryTotal() {
     const cartRow = cartItems.getElementsByClassName("cart-row");
     var total = 0;
     var grandTotal = 0;
-    var shippingCost = 50;
+    var shippingCost = 0;
     var vatIncluded = 20;
     for (var i = 0; i < cartRow.length; i++) {
         const cartRowPrice = cartRow[i]
@@ -179,8 +179,10 @@ function updateSummaryTotal() {
     }
     total = Math.round(total * 100) / 100;
     if (total === 0) {
+        shippingCost = 0; 
         grandTotal = 0;
     } else {
+        shippingCost = 50; 
         grandTotal = total + shippingCost;
     }
     var vatTotal = numberWithCommas(parseInt((vatIncluded / 100) * total));
@@ -188,6 +190,7 @@ function updateSummaryTotal() {
         "$" + numberWithCommas(total);
     document.getElementsByClassName("summary-total-value")[0].innerText =
         "$" + numberWithCommas(total);
+    document.getElementsByClassName("shipping-cost-value")[0].innerText = "$" + shippingCost;
     document.getElementsByClassName("VAT-cost-value")[0].innerText =
         "$" + vatTotal;
     document.getElementsByClassName("grand-total-cost-value")[0].innerText =
