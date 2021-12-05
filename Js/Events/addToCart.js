@@ -1,11 +1,13 @@
 //*! The below code is strictly for the add to cart btns - DO NOT REMOVE!*/
 
+//This function checks to see if the document is ready i.e loaded, if so it will run eventlisteners and call the ready function
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready);
 } else {
     ready();
 }
 
+//The ready function initiates event listeners on all relevant buttons and calls functions
 function ready() {
     //quantity selector loop
 
@@ -70,8 +72,8 @@ function ready() {
 
 }
 
-// reduce the value of the product page quantity Selector
 
+// reduce the value of the product page quantity Selector
 function decreaseQuantity(e) {
     var btn = e.target;
     if (
@@ -84,20 +86,18 @@ function decreaseQuantity(e) {
     }
 }
 
-// increase the value of the product page quantity Selector
 
+// increase the value of the product page quantity Selector
 function increaseQuantity(e) {
     var btn = e.target;
     btn.previousElementSibling.value++;
 }
 
-/* 
 
+/* 
 the below function changes the value of the cart counter based on the quantity selector values and the amount
 of child elements the cart items element has
-
 */
-
 function cartCounter() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     var count = cartItems.childElementCount;
@@ -115,6 +115,7 @@ function cartCounter() {
 }
 
 
+//This function adds all the relevent item information to the local storage for later use
 function addToCartClicked(e) {
     let productList = [];
 
@@ -155,7 +156,7 @@ function addToCartClicked(e) {
     window.location.reload();
 }
 
-
+//This function takes all the relvent item information and adds it to the cart
 function loadCart() {
     const localStorageItems = JSON.parse(localStorage.getItem("productList"));
     localStorageItems.map((data) => {
