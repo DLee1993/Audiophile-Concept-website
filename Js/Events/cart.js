@@ -1,12 +1,14 @@
 //*! The below code is strictly for the shopping cart - DO NOT REMOVE!*/
 //* All of the below code is relevant to when an item is added to the cart */
 
+//This function checks to see if the document is ready i.e loaded, if so it will run eventlisteners and call the ready function
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready);
 } else {
     ready();
 }
 
+//The ready function initiates event listeners on all relevant buttons and calls functions
 function ready() {
     const removeAllBtn = document.getElementsByClassName("remove-all-btn");
 
@@ -155,10 +157,13 @@ function decreaseCounter() {
     counterValueInput.innerHTML = parseInt(counterValueInput.innerHTML) - 1;
 }
 
+//This function adds a comma to numbers above one thousand
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+
+//This function updates the cart total
 function updateCartTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
     const cartRow = cartItems.getElementsByClassName("cart-row");
@@ -178,12 +183,14 @@ function updateCartTotal() {
         "$" + numberWithCommas(total);
 }
 
+//This code checks to see if the user is on the checkout page, if they are it will update the summary total
 const checkoutPage = document.getElementsByTagName("title")[0];
 
 if (checkoutPage.innerHTML.includes("Checkout")) {
     updateSummaryTotal();
 }
 
+//This function updates the summary total
 function updateSummaryTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
     const cartRow = cartItems.getElementsByClassName("cart-row");
