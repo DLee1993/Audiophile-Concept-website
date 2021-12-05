@@ -80,7 +80,16 @@
             & .summary-quantity{
                 margin-left: auto;
                 margin-right: 10px;
+                width: fit-content;
                 color: colorSet(base, light-grey);
+                
+
+                & input { 
+                    border: none;
+                    width: 25px;
+                    text-align: right;
+                    color: colorSet(base, light-grey);
+                }
             }
         }
     }

@@ -3781,6 +3781,16 @@ form .payment-info .cash-details p {
 .summary-checkout .summary-items .summary-row .summary-quantity {
   margin-left: auto;
   margin-right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #7e7e7e;
+}
+
+.summary-checkout .summary-items .summary-row .summary-quantity input {
+  border: none;
+  width: 25px;
+  text-align: right;
   color: #7e7e7e;
 }
 
