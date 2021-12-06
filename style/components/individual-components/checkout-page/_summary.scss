@@ -69,11 +69,13 @@
                 margin-left: 10px;
 
                 & .summary-item-name{
+                    text-transform: uppercase;
                     font-weight: 800;
                 }
 
                 & .summary-item-price{
                     color: colorSet(base, light-grey);
+                    font-weight: bold;
                 }
             }
 
@@ -82,13 +84,14 @@
                 margin-right: 10px;
                 width: fit-content;
                 color: colorSet(base, light-grey);
+                font-weight: bold;
                 
 
                 & input { 
                     border: none;
                     width: 25px;
-                    text-align: right;
                     color: colorSet(base, light-grey);
+                    font-weight: bold;
                 }
             }
         }

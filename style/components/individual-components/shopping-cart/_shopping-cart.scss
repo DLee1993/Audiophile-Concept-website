@@ -86,6 +86,11 @@
                 text-transform: uppercase;
             }
 
+            & .cart-item-price{
+                color: colorSet(base, light-grey);
+                font-weight: bold;
+            }
+            
             & .cart-quantity-selector {
                 width: fit-content;
                 height: fit-content;

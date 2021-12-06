@@ -188,6 +188,7 @@ const checkoutPage = document.getElementsByTagName("title")[0];
 
 if (checkoutPage.innerHTML.includes("Checkout")) {
     updateSummaryTotal();
+    loadSummaryCart();
 }
 
 //This function updates the summary total
@@ -227,4 +228,26 @@ function updateSummaryTotal() {
         "$" + vatTotal;
     document.getElementsByClassName("grand-total-cost-value")[0].innerText =
         "$" + numberWithCommas(grandTotal);
+}
+
+
+function loadSummaryCart() {
+    const localStorageItems = JSON.parse(localStorage.getItem("productList"));
+    localStorageItems.map((data) => {
+        const summaryItems = document.querySelector(".summary-items"); 
+        var summaryRow = document.createElement("section"); 
+        summaryRow.classList.add("summary-row"); 
+        summaryRowContent = `
+        <img src="${data.image}" alt=""></img>
+                    <section class="nameAndPrice">
+                        <p class="summary-item-name sub-styling">${data.name}</p>
+                        <p class="summary-item-price sub-styling">$${data.price}</p>
+                    </section>
+                    <section class="summary-quantity">
+                        <span>x</span>
+                        <input type="number" value="${data.cartQuantity}" aria-label="cart-item-quantity" class="cart-quantity-input">
+                    </section>`; 
+        summaryRow.innerHTML = summaryRowContent; 
+        summaryItems.append(summaryRow); 
+    });
 }

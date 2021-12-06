@@ -166,8 +166,8 @@ function loadCart() {
         cartRowContent = `
         <img src="${data.image}" alt=""></img>
                     <section class="nameAndPrice">
-                        <p class="cart-item-name">${data.name}</p>
-                        <p class="cart-item-price">$${data.price}</p>
+                        <p class="cart-item-name sub-styling">${data.name}</p>
+                        <p class="cart-item-price sub-styling">$${data.price}</p>
                     </section>
                     <section class="cart-quantity-selector">
                         <button class="cart-minus-btn">-</button>
