@@ -82,6 +82,8 @@ function cartQuantitySelector() {
 // This function will decrease the quantity of the car quantity Selector
 
 function decreaseCartQuantity(e) {
+    var checkoutBtn = document.querySelector(".checkout-btn"); 
+    checkoutBtn.innerHTML = "update & checkout"
     var btn = e.target;
     if (
         btn.nextElementSibling.value === null ||
@@ -126,6 +128,7 @@ function decreaseCartQuantity(e) {
         btn.nextElementSibling.value--;
         decreaseCounter();
         updateCartTotal();
+        const checkoutPage = document.getElementsByTagName("title")[0];
         if (checkoutPage.innerHTML.includes("Checkout")) {
             updateSummaryTotal();
         }
@@ -135,10 +138,13 @@ function decreaseCartQuantity(e) {
 // This function will increase the quantity of the car quantity Selector
 
 function increaseCartQuantity(e) {
+    var checkoutBtn = document.querySelector(".checkout-btn"); 
+    checkoutBtn.innerHTML = "update & checkout"
     var btn = e.target;
     btn.previousElementSibling.value++;
     increaseCounter();
     updateCartTotal();
+    const checkoutPage = document.getElementsByTagName("title")[0];
     if (checkoutPage.innerHTML.includes("Checkout")) {
         updateSummaryTotal();
     }
