@@ -162,7 +162,6 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-
 //This function updates the cart total
 function updateCartTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
@@ -230,14 +229,16 @@ function updateSummaryTotal() {
         "$" + numberWithCommas(grandTotal);
 }
 
-
 function loadSummaryCart() {
-    const localStorageItems = JSON.parse(localStorage.getItem("productList"));
-    localStorageItems.map((data) => {
-        const summaryItems = document.querySelector(".summary-items"); 
-        var summaryRow = document.createElement("section"); 
-        summaryRow.classList.add("summary-row"); 
-        summaryRowContent = `
+    if (localStorage.getItem("productList") == true) {
+        const localStorageItems = JSON.parse(
+            localStorage.getItem("productList")
+        );
+        localStorageItems.map((data) => {
+            const summaryItems = document.querySelector(".summary-items");
+            var summaryRow = document.createElement("section");
+            summaryRow.classList.add("summary-row");
+            summaryRowContent = `
         <img src="${data.image}" alt=""></img>
                     <section class="nameAndPrice">
                         <p class="summary-item-name sub-styling">${data.name}</p>
@@ -246,8 +247,9 @@ function loadSummaryCart() {
                     <section class="summary-quantity">
                         <span>x</span>
                         <input type="number" value="${data.cartQuantity}" aria-label="cart-item-quantity" class="cart-quantity-input">
-                    </section>`; 
-        summaryRow.innerHTML = summaryRowContent; 
-        summaryItems.append(summaryRow); 
-    });
+                    </section>`;
+            summaryRow.innerHTML = summaryRowContent;
+            summaryItems.append(summaryRow);
+        });
+    }
 }
