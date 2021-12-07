@@ -230,7 +230,7 @@ function updateSummaryTotal() {
 }
 
 function loadSummaryCart() {
-    if (localStorage.getItem("productList") == true) {
+    if (typeof Storage !== undefined) {
         const localStorageItems = JSON.parse(
             localStorage.getItem("productList")
         );
@@ -251,5 +251,7 @@ function loadSummaryCart() {
             summaryRow.innerHTML = summaryRowContent;
             summaryItems.append(summaryRow);
         });
+    } else {
+        cons
     }
 }
