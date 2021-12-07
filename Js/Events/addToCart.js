@@ -110,7 +110,6 @@ function addToCartClicked(e) {
     let productList = [];
 
     if (typeof Storage != undefined) {
-        console.log( e.target.parentElement)
         let product = {
             name: e.target.parentElement.parentElement.querySelector(
                 ".product-name"
@@ -122,7 +121,7 @@ function addToCartClicked(e) {
                 "$",
                 ""
             ),
-            cartQuantity: e.target.parentElement.children[0].querySelector(".quantity-input").value
+            cartQuantity: 1
         };
         if (JSON.parse(localStorage.getItem("productList")) === null) {
             productList.push(product);
