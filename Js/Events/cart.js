@@ -192,7 +192,9 @@ const checkoutPage = document.getElementsByTagName("title")[0];
 
 if (checkoutPage.innerHTML.includes("Checkout")) {
     updateSummaryTotal();
-    loadSummaryCart();
+    if(localStorage.getItem("productList") !== null){
+        loadSummaryCart();
+    }
 }
 
 //This function updates the summary total
