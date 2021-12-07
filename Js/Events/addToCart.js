@@ -121,7 +121,7 @@ function addToCartClicked(e) {
                 "$",
                 ""
             ),
-            cartQuantity: 1
+            cartQuantity: e.target.parentElement.children[0].querySelector('.quantity-input').value
         };
         if (JSON.parse(localStorage.getItem("productList")) === null) {
             productList.push(product);
@@ -132,7 +132,7 @@ function addToCartClicked(e) {
             );
             localStorageItems.map((data) => {
                 if (product.name == data.name) {
-                    product.cartQuantity = parseInt(data.cartQuantity) + 1;
+                    product.cartQuantity = parseInt(product.cartQuantity) + parseInt(data.cartQuantity);
                 } else {
                     productList.push(data);
                 }
@@ -167,3 +167,7 @@ function loadCart() {
     });
     cartCounter();
 }
+
+
+
+/* ADD ALL OF THE QUANTITY SELECTORS BACK TO HTML !!!!!!!!! */
