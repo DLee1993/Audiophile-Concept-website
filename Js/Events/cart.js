@@ -9,6 +9,7 @@ if (document.readyState === "loading") {
 }
 
 //The ready function initiates event listeners on all relevant buttons and calls functions
+
 function ready() {
     const removeAllBtn = document.getElementsByClassName("remove-all-btn");
 
@@ -34,6 +35,7 @@ function removeAllItems() {
     if (checkoutPage.innerHTML.includes("Checkout")) {
         updateSummaryTotal();
     }
+    window.location.reload();
 }
 
 // This function is for the cart quantity selectors
@@ -158,11 +160,13 @@ function decreaseCounter() {
 }
 
 //This function adds a comma to numbers above one thousand
+
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 //This function updates the cart total
+
 function updateCartTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
     const cartRow = cartItems.getElementsByClassName("cart-row");
@@ -183,6 +187,7 @@ function updateCartTotal() {
 }
 
 //This code checks to see if the user is on the checkout page, if they are it will update the summary total
+
 const checkoutPage = document.getElementsByTagName("title")[0];
 
 if (checkoutPage.innerHTML.includes("Checkout")) {
@@ -191,6 +196,7 @@ if (checkoutPage.innerHTML.includes("Checkout")) {
 }
 
 //This function updates the summary total
+
 function updateSummaryTotal() {
     const cartItems = document.getElementsByClassName("cart-items")[0];
     const cartRow = cartItems.getElementsByClassName("cart-row");
