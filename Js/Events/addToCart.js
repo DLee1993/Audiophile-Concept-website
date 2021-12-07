@@ -19,16 +19,6 @@ function ready() {
         };
     }
 
-    //Go back button loop
-
-    const returnBtn = document.getElementsByClassName("return-btn");
-
-    for (btn of returnBtn) {
-        btn.addEventListener("click", () => {
-            returnToPreviousPage();
-        });
-    }
-
     //Add to cart button loop
 
     const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
@@ -106,7 +96,7 @@ function cartCounter() {
         "cart-quantity-input"
     );
     for (cartQuantity of cartQuantitySelector) {
-        counterValueInput.innerHTML = count * cartQuantity.value;
+        counterValueInput.innerHTML = count; 
     }
 
     if (count == 0) {
