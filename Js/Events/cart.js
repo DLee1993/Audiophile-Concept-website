@@ -16,6 +16,18 @@ function ready() {
     for (btn of removeAllBtn) {
         btn.addEventListener("click", removeAllItems);
     }
+
+    //This code checks to see if the user is on the checkout page, if they are it will update the summary total
+
+    const checkoutPage = document.getElementsByTagName("title")[0];
+
+    if (checkoutPage.innerHTML.includes("Checkout")) {
+        updateSummaryTotal();
+        if (localStorage.getItem("productList") !== null) {
+            loadSummaryCart();
+        }
+    }
+
     cartQuantitySelector();
     updateCartTotal();
 }
@@ -32,6 +44,7 @@ function removeAllItems() {
             "$" + 0;
         localStorage.clear();
     }
+    const checkoutPage = document.getElementsByTagName("title")[0];
     if (checkoutPage.innerHTML.includes("Checkout")) {
         updateSummaryTotal();
     }
@@ -186,17 +199,6 @@ function updateCartTotal() {
         "$" + numberWithCommas(total);
 }
 
-//This code checks to see if the user is on the checkout page, if they are it will update the summary total
-
-const checkoutPage = document.getElementsByTagName("title")[0];
-
-if (checkoutPage.innerHTML.includes("Checkout")) {
-    updateSummaryTotal();
-    if(localStorage.getItem("productList") !== null){
-        loadSummaryCart();
-    }
-}
-
 //This function updates the summary total
 
 function updateSummaryTotal() {
@@ -260,6 +262,6 @@ function loadSummaryCart() {
             summaryItems.append(summaryRow);
         });
     } else {
-        cons
+        cons;
     }
 }
