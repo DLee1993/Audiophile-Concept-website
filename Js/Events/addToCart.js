@@ -92,15 +92,15 @@ function cartCounter() {
     var cartItems = document.getElementsByClassName("cart-items")[0];
     var count = cartItems.childElementCount;
     var counterValueInput = document.querySelector(".counter-value");
-    var cartQuantitySelector = document.getElementsByClassName(
-        "cart-quantity-input"
-    );
-    for (cartQuantity of cartQuantitySelector) {
-        counterValueInput.innerHTML = count; 
-    }
+    var cartQuantitySelector = document.getElementsByClassName("cart-quantity-input");
+    var sum = 0;
 
     if (count == 0) {
         counterValueInput.innerHTML = 0;
+    } else {
+        for (var i = 0; i < cartQuantitySelector.length; i++) {
+            counterValueInput.innerHTML = sum += parseInt(cartQuantitySelector[i].value);
+        }
     }
 }
 
