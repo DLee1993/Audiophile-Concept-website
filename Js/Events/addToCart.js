@@ -132,8 +132,7 @@ function addToCartClicked(e) {
             );
             localStorageItems.map((data) => {
                 if (product.name == data.name) {
-                    alert(`${data.name} quantity updated`)
-                    e.preventDefault()
+                    product.cartQuantity = parseInt(data.cartQuantity) + 1;
                 } else {
                     productList.push(data);
                 }
