@@ -3001,12 +3001,102 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 0 10px 50px;
+  margin: 20px 0 10px 55px;
 }
 
 .order-complete p {
-  margin-left: 50px;
+  margin-left: 55px;
   font-weight: 200;
+}
+
+.order-complete .items-ordered-accordian {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #F1F1F1;
+  -webkit-transition: all ease 3s;
+  transition: all ease 3s;
+  overflow: hidden;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .ordered-item-list {
+  position: absolute;
+  top: 0;
+  width: 99%;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .ordered-item-list::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: #F1F1F1;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .ordered-item-list::-webkit-scrollbar-thumb {
+  background-color: #D87D4A;
+  border-radius: 5px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  color: #F1F1F1;
+  border-radius: 0 10px 10px 0;
+  background-color: #000000;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal .grandTotal-title {
+  position: absolute;
+  bottom: 40px;
+  color: #cfcfcf;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal .grandTotal-value {
+  position: absolute;
+  bottom: 15px;
+  font-weight: bold;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal p {
+  margin: 0 0 0 20px;
+}
+
+.order-complete .accordian-extended {
+  height: 300px;
+  -webkit-transition: all ease 3s;
+  transition: all ease 3s;
 }
 
 .order-complete .return-home-btn {

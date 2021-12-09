@@ -155,7 +155,7 @@ payBtn.addEventListener("click", () => {
         }
         document.querySelector(".order-complete-faded-bg").style.display =
             "block";
-        document.querySelector(".order-complete").style.display = "block";
+        document.querySelector(".order-complete").style.display = "flex";
         document.body.style.overflow = "hidden";
     }
 });
