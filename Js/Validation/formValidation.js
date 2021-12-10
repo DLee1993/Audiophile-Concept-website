@@ -153,9 +153,9 @@ payBtn.addEventListener("click", () => {
         for (var i = 0; i < inputFields.length; i++) {
             inputFields[i].style.border = "1px solid #cfcfcf";
         }
-        document.querySelector(".order-complete-faded-bg").style.display =
-            "block";
+        const fadedBg = document.querySelector(".order-complete-faded-bg");
+        fadedBg.style.display = "block"; 
         document.querySelector(".order-complete").style.display = "flex";
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "hidden";
     }
 });

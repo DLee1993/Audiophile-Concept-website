@@ -2948,12 +2948,14 @@ body {
 
 .order-complete {
   position: fixed;
-  top: 70px;
+  top: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 100;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2964,7 +2966,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 100%;
   max-width: 540px;
   background-color: #FFFFFF;
   height: -webkit-fit-content;
@@ -2984,7 +2986,7 @@ body {
 
 .order-complete svg {
   fill: #D87D4A;
-  margin-left: 50px;
+  margin-left: 5%;
 }
 
 .order-complete h3 {
@@ -3001,11 +3003,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 0 10px 55px;
+  margin: 20px 0 10px 5%;
 }
 
 .order-complete p {
-  margin-left: 55px;
+  margin-left: 5%;
   font-weight: 200;
 }
 
@@ -3019,14 +3021,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 90%;
   height: 200px;
   margin: 0 auto;
   border-radius: 5px;
   background-color: #F1F1F1;
   -webkit-transition: all ease 3s;
   transition: all ease 3s;
-  overflow: hidden;
+}
+
+@media screen and (max-width: 320px) {
+  .order-complete .items-ordered-accordian {
+    width: 100%;
+  }
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list {
@@ -3047,10 +3054,21 @@ body {
   width: 55%;
   height: 100%;
   border-radius: 10px 0 0 10px;
+  overflow-y: scroll;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: black;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list::-webkit-scrollbar-thumb {
+  background-color: #D87D4A;
+  border-radius: 50px;
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list .item-ordered {
-  width: 92%;
+  width: 100%;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3061,47 +3079,57 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  margin: 8px auto;
 }
 
 @media (min-width: 700px) {
   .order-complete .items-ordered-accordian .ordered-items-list .item-ordered {
-    width: 100%;
-    margin: 0;
+    width: 95%;
   }
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list .item-ordered img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
-  margin-left: 5px;
+}
+
+@media (min-width: 700px) {
+  .order-complete .items-ordered-accordian .ordered-items-list .item-ordered img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice .ordered-item-name {
   text-transform: uppercase;
   font-weight: 800;
   margin: 0;
+  font-size: 13px;
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice .ordered-item-price {
   color: #7e7e7e;
   font-weight: bold;
   margin: 0;
+  font-size: 13px;
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity {
   margin-left: auto;
-  margin-right: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #7e7e7e;
   font-weight: bold;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity span {
+  text-align: center;
 }
 
 .order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity input {
@@ -3137,20 +3165,9 @@ body {
   margin: 0 0 0 20px;
 }
 
-.order-complete .accordian-extended {
-  height: 300px;
-  -webkit-transition: all ease 3s;
-  transition: all ease 3s;
-}
-
 .order-complete .return-home-btn {
   width: 80%;
   margin: 10px auto;
-}
-
-.order-complete .content-visible {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 form {
@@ -4094,6 +4111,7 @@ form .payment-info .cash-details p {
       -ms-flex-align: center;
           align-items: center;
   height: 70px;
+  margin-right: 5px;
 }
 
 .shopping-cart .cart-items .cart-row img {
