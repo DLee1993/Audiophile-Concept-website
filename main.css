@@ -3049,23 +3049,67 @@ body {
   border-radius: 10px 0 0 10px;
 }
 
-.order-complete .items-ordered-accordian .ordered-items-list .ordered-item-list {
-  position: absolute;
-  top: 0;
-  width: 99%;
-  height: 100%;
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered {
+  width: 92%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
-  overflow-y: scroll;
 }
 
-.order-complete .items-ordered-accordian .ordered-items-list .ordered-item-list::-webkit-scrollbar {
-  width: 0.3rem;
-  background-color: #F1F1F1;
+@media (min-width: 700px) {
+  .order-complete .items-ordered-accordian .ordered-items-list .item-ordered {
+    width: 100%;
+    margin: 0;
+  }
 }
 
-.order-complete .items-ordered-accordian .ordered-items-list .ordered-item-list::-webkit-scrollbar-thumb {
-  background-color: #D87D4A;
-  border-radius: 5px;
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice {
+  margin-left: 10px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice .ordered-item-name {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice .ordered-item-price {
+  color: #7e7e7e;
+  font-weight: bold;
+  margin: 0;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity {
+  margin-left: auto;
+  margin-right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity input {
+  border: none;
+  width: 25px;
+  color: #7e7e7e;
+  font-weight: bold;
+  background-color: transparent;
 }
 
 .order-complete .items-ordered-accordian .ordered-items-grandTotal {
@@ -3857,7 +3901,7 @@ form .payment-info .cash-details p {
 }
 
 .summary-checkout .summary-items .summary-row .nameAndPrice {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .summary-checkout .summary-items .summary-row .nameAndPrice .summary-item-name {

@@ -72,22 +72,56 @@
             height: 100%;
             border-radius: 10px 0 0 10px;
 
-            & .ordered-item-list {
-                position: absolute;
-                top: 0;
-                width: 99%;
-                height: 100%;
+            & .item-ordered {
+                width: 92%;
+                height: 70px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
                 margin: 0 auto;
-                overflow-y: scroll;
 
-                &::-webkit-scrollbar {
-                    width: 0.3rem;
-                    background-color: colorSet(base, light-silver);
+                @include tablet {
+                    width: 100%;
+                    margin: 0;
                 }
-                
-                &::-webkit-scrollbar-thumb {
-                    background-color: colorSet(accent, dark-orange);
-                    border-radius: 5px;
+
+                & img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 10px;
+                    margin-left: 5px;
+                }
+
+                & .nameAndPrice {
+                    margin-left: 10px;
+
+                    & .ordered-item-name {
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        margin: 0;
+                    }
+
+                    & .ordered-item-price {
+                        color: colorSet(base, light-grey);
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                }
+
+                & .ordered-item-quantity {
+                    margin-left: auto;
+                    margin-right: 10px;
+                    width: fit-content;
+                    color: colorSet(base, light-grey);
+                    font-weight: bold;
+
+                    & input {
+                        border: none;
+                        width: 25px;
+                        color: colorSet(base, light-grey);
+                        font-weight: bold;
+                        background-color: transparent;
+                    }
                 }
             }
         }
@@ -118,7 +152,7 @@
         }
     }
 
-    & .accordian-extended{
+    & .accordian-extended {
         height: 300px;
         transition: all ease 3s;
     }

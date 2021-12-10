@@ -25,6 +25,7 @@ function ready() {
         updateSummaryTotal();
         if (localStorage.getItem("productList") !== null) {
             loadSummaryCart();
+            loadOrderConfirmed();
         }
     }
 
@@ -82,8 +83,8 @@ function cartQuantitySelector() {
 // This function will decrease the quantity of the car quantity Selector
 
 function decreaseCartQuantity(e) {
-    var checkoutBtn = document.querySelector(".checkout-btn"); 
-    checkoutBtn.innerHTML = "update & checkout"
+    var checkoutBtn = document.querySelector(".checkout-btn");
+    checkoutBtn.innerHTML = "update & checkout";
     var btn = e.target;
     if (
         btn.nextElementSibling.value === null ||
@@ -138,8 +139,8 @@ function decreaseCartQuantity(e) {
 // This function will increase the quantity of the car quantity Selector
 
 function increaseCartQuantity(e) {
-    var checkoutBtn = document.querySelector(".checkout-btn"); 
-    checkoutBtn.innerHTML = "update & checkout"
+    var checkoutBtn = document.querySelector(".checkout-btn");
+    checkoutBtn.innerHTML = "update & checkout";
     var btn = e.target;
     btn.previousElementSibling.value++;
     increaseCounter();
@@ -243,6 +244,8 @@ function updateSummaryTotal() {
         "$" + vatTotal;
     document.getElementsByClassName("grand-total-cost-value")[0].innerText =
         "$" + numberWithCommas(grandTotal);
+    document.getElementsByClassName("grandTotal-value")[0].innerText =
+        "$" + numberWithCommas(grandTotal);
 }
 
 function loadSummaryCart() {
@@ -267,7 +270,32 @@ function loadSummaryCart() {
             summaryRow.innerHTML = summaryRowContent;
             summaryItems.append(summaryRow);
         });
-    } else {
-        cons;
+    }
+}
+
+// This function updates the order confirmed modal
+
+function loadOrderConfirmed() {
+    if (typeof Storage !== undefined) {
+        const localStorageItems = JSON.parse(
+            localStorage.getItem("productList")
+        );
+        localStorageItems.map((data) => {
+            const orderedItems = document.querySelector(".ordered-items-list");
+            var itemRow = document.createElement("section");
+            itemRow.classList.add("item-ordered");
+            orderedItemsRowContent = `
+        <img src="${data.image}" alt=""></img>
+                    <section class="nameAndPrice">
+                        <p class="ordered-item-name sub-styling">${data.name}</p>
+                        <p class="ordered-item-price sub-styling">$${data.price}</p>
+                    </section>
+                    <section class="ordered-item-quantity">
+                        <span>x</span>
+                        <input type="number" value="${data.cartQuantity}" aria-label="cart-item-quantity" class="cart-quantity-input">
+                    </section>`;
+            itemRow.innerHTML = orderedItemsRowContent;
+            orderedItems.append(itemRow);
+        });
     }
 }
