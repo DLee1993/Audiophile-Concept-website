@@ -15,7 +15,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
@@ -93,7 +93,10 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                margin: 8px auto;
+                margin: 3px auto;
+                padding: 10px 0;
+                border-bottom: 1px solid colorSet(base, faded-grey);
+                border-radius: 0 0 10px 10px;
 
                 @include tablet {
                     width: 95%;
@@ -176,7 +179,7 @@
     }
 
     & .return-home-btn {
-        width: 80%;
+        width: 90%;
         margin: 10px auto;
     }
 }

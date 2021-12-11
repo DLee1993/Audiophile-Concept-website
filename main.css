@@ -2953,9 +2953,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3080,7 +3078,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 8px auto;
+  margin: 3px auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 0 0 10px 10px;
 }
 
 @media (min-width: 700px) {
@@ -3167,7 +3168,7 @@ body {
 }
 
 .order-complete .return-home-btn {
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
 }
 
@@ -4087,7 +4088,7 @@ form .payment-info .cash-details p {
 .shopping-cart .cart-items {
   width: 90%;
   margin: 0 auto;
-  height: 60%;
+  height: 63%;
   overflow-y: scroll;
 }
 
