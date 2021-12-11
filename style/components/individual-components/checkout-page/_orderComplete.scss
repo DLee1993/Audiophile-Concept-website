@@ -11,11 +11,11 @@
 
 .order-complete {
     position: fixed;
-    top: 10px;
+    top: 65px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
@@ -23,7 +23,7 @@
     max-width: 540px;
     background-color: colorSet(base, white);
     height: fit-content;
-    min-height: 540px;
+    min-height: 600px;
     border-radius: 10px;
     border: 1px solid colorSet(accent, dark-orange);
     padding: 10px 0;

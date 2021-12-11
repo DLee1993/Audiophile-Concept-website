@@ -2948,14 +2948,12 @@ body {
 
 .order-complete {
   position: fixed;
-  top: 10px;
+  top: 65px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2972,7 +2970,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 540px;
+  min-height: 600px;
   border-radius: 10px;
   border: 1px solid #D87D4A;
   padding: 10px 0;
@@ -3862,7 +3860,7 @@ form .payment-info .cash-details p {
 
 .summary-checkout .cart-header {
   width: 100%;
-  margin-left: 30px;
+  margin: 10px 0 0 30px;
 }
 
 @media (min-width: 700px) {
