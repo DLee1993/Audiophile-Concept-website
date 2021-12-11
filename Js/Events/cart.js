@@ -298,4 +298,13 @@ function loadOrderConfirmed() {
             orderedItems.append(itemRow);
         });
     }
+
+    const returnHomeBn = document.querySelector(".return-home-btn"); 
+    returnHomeBn.addEventListener("click", () => {
+        localStorage.clear(); 
+        updateCartTotal(); 
+        updateSummaryTotal(); 
+        loadSummaryCart(); 
+        loadCart(); 
+    })
 }
