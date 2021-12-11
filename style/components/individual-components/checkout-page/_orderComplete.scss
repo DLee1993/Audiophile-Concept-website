@@ -15,7 +15,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
@@ -30,6 +30,7 @@
 
     @include tablet {
         top: 15px;
+        min-height: 540px;
     }
 
     & svg {
