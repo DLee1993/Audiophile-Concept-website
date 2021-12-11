@@ -3021,12 +3021,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  height: 200px;
+  height: 300px;
   margin: 0 auto;
   border-radius: 5px;
   background-color: #F1F1F1;
   -webkit-transition: all ease 3s;
   transition: all ease 3s;
+}
+
+@media (min-width: 700px) {
+  .order-complete .items-ordered-accordian {
+    height: 230px;
+  }
 }
 
 @media screen and (max-width: 320px) {
